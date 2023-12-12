@@ -1,6 +1,5 @@
 
 
-
 function Planet() {
     this.x = random(-spaceDimensions.x*10, spaceDimensions.x*10);
     this.y = random(-spaceDimensions.y*10, spaceDimensions.y*10);
@@ -22,13 +21,13 @@ function Planet() {
     //   noStroke();
     let dist = this.z - cameraCoords.z;
 
-        if (this.z > cameraCoords.z && dist < spaceDimensions.z*.1 ) {
+        if (this.z > cameraCoords.z && dist < visibleDist ) {
         // if (this.z > cameraCoords.z) {
 
             var sx = map(this.x / dist, 0, 1, 0, spaceDimensions.x);
             var sy = map(this.y / dist, 0, 1, 0, spaceDimensions.y);
         
-            var r = map(dist, 0, spaceDimensions.z*.1, 120, 0);
+            var r = map(dist, 0, visibleDist, 120, 4);
             
             square(sx, sy, r);
         }

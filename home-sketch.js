@@ -8,6 +8,8 @@ var spaceDimensions = {
     z: 800000
   };
 
+let visibleDist = spaceDimensions.z * 0.1
+
 let cameraCoords = {
     x: spaceDimensions.x/2,
     y: spaceDimensions.y/2,
@@ -20,7 +22,7 @@ function setup() {
     let canvas = createCanvas(windowWidth, windowHeight);
     canvas.parent('myCanvasContainer');
     angleMode(DEGREES); // Set angle mode to degrees
-    for (var i = 0; i < 1800; i++) {
+    for (var i = 0; i < 1600; i++) {
         planets[i] = new Planet();
     }
     rectMode(CENTER); // Draw the rectangle from its center
@@ -28,7 +30,8 @@ function setup() {
 
 function draw() {
     background(color('#E6FFFF'))
-    fill(0,0)
+    // fill(0,0)
+    fill('#E6FFFF')
     stroke(color('#0000E9'))
 
     translate(width / 2, height / 2);
@@ -54,14 +57,3 @@ slider.oninput = function() {
 }
 
 
-
-
-// function draw() {
-//   speed = map(mouseX, 0, width, 0, 50);
-//   background(0);
-//   translate(width / 2, height / 2);
-//   for (var i = 0; i < planets.length; i++) {
-//     planets[i].update();
-//     planets[i].show();
-//   }
-// }
