@@ -36,14 +36,6 @@ layout: default
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
         <script src="scripts/planet.js"></script>
 
-        <script>
-            var postFilenames = [
-              {% for post in posts %}
-              "{{ post.url | remove: '/' }}"{% unless forloop.last %},{% endunless %}
-              {% endfor %}
-            ];
-            console.log(postFilenames);
-        </script>
           
 
     </body>

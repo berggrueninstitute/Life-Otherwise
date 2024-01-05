@@ -9,6 +9,7 @@ function Planet(depth, numPlanets) {
     this.markOffset;
     this.description;
     this.r;
+    this.link;
   
     // this.update = function() {
     //   this.z = this.z - speed;

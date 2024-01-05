@@ -31,13 +31,15 @@ function setup() {
         planets[i] = new Planet(i, 6000);
     }
     // place stories on random planets
-    for (let i = 0; i < numStories; i++) {
+    for (let i = 0; i < articlePaths.length; i++) {
       let rand = Math.floor(Math.random() * planets.length-1000) + 1000;
+      planets[rand].link = articlePaths[i];
       let hoverContainer = document.createElement("div");
       let menuPlanet = document.createElement("div");
       menuPlanet.classList.add('menuPlanetMarker')
       menu.appendChild(menuPlanet);
       planets[rand].description = document.createElement("div");
+      planets[rand].description.innerHTML = planets[rand].link
       domElements.appendChild(hoverContainer);
       planets[rand].mark = document.createElement("div");
       let x = random()*spaceDimensions.x*2 - spaceDimensions.y*1
@@ -49,9 +51,7 @@ function setup() {
       hoverContainer.appendChild(planets[rand].mark);
       hoverContainer.appendChild(planets[rand].description);
       planets[rand].markOffset = [random()-.5, random()-.5]
-      // planets[rand].markOffset = [random()*1000-500, random()*1000-500]
-      
-  }
+    }
   
     rectMode(CENTER); // Draw the rectangle from its center
 }
