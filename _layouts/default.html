@@ -1,8 +1,13 @@
 {%- include head.html -%}
 {%- include article-count.html -%}
 
-
+{% if page.url == "/" %}
 <div id="logo"><img src='{{ "/assets/logo.svg" | relative_url }}'></div>
+{% else %}
+<a href='{{ "index.html" | relative_url }}'>
+    <div id="logo"><img src='{{ "/assets/logo.svg" | relative_url }}'></div>
+</a>
+{% endif %}
 
 {{ content }}
 

@@ -116,6 +116,7 @@ input[type="range"]::-moz-range-thumb {
     right: var(--menu-margin);
     background: var(--white);
     border: var(--border2);
+    z-index: 1000;
 }
 
 #spaceControls h4, #menu h4 {
@@ -134,6 +135,10 @@ input[type="range"]::-moz-range-thumb {
     width: 20px;
 }
 
+.planetMarker:hover, .menuPlanetMarker:hover {
+    background: #87FB4D;
+}
+
 .planetMarker {
     transform: translate(-50%, -50%);
     display: none;
@@ -144,14 +149,14 @@ input[type="range"]::-moz-range-thumb {
     display: none;
     height: 100px;
     width: 20vw;
-    background: var(--lavender);
+    background: var(--lime);
     border: var(--border2);
     position: fixed;
     z-index: 10;
 }
 
 .planetMarker:hover + .planetDescription {
-    display: block; /* Show when the sibling hover-target is hovered */
+    display: block;
 }
 
 
@@ -166,6 +171,7 @@ input[type="range"]::-moz-range-thumb {
     left: var(--menu-margin);
     background: var(--white);
     border: var(--border2);
+    z-index: 1000;
 }
 
 #planets-menu {
@@ -173,4 +179,9 @@ input[type="range"]::-moz-range-thumb {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    z-index: 1000;
+}
+
+.hovered {
+    background: #87FB4D;
 }

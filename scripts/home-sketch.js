@@ -4,6 +4,7 @@ var domElements = document.getElementById("domElements")
 var randomPlanetDescription = document.getElementById("randomPlanetDescription")
 const menu = document.getElementById("planets-menu")
 var mouseOverDiamond = 0
+var links;
 
 var speed;
 
@@ -19,7 +20,9 @@ let cameraCoords = {
     x: spaceDimensions.x/2,
     y: spaceDimensions.y/2,
     z: 0
-  };
+};
+let targetZoom = cameraCoords.z;
+
 
 
 
@@ -35,13 +38,17 @@ function setup() {
       let rand = Math.floor(Math.random() * planets.length-1000) + 1000;
       planets[rand].link = articlePaths[i];
       let hoverContainer = document.createElement("div");
-      let menuPlanet = document.createElement("div");
-      menuPlanet.classList.add('menuPlanetMarker')
-      menu.appendChild(menuPlanet);
+      let menuLink = document.createElement("a");
+      menuLink.href = articlePaths[i];
+      planets[rand].menuPlanet = document.createElement("div");
+      planets[rand].menuPlanet.classList.add('linked', "object"+i, 'menuPlanetMarker')
+      menuLink.appendChild(planets[rand].menuPlanet)
+      menu.appendChild(menuLink);
       planets[rand].description = document.createElement("div");
       planets[rand].description.innerHTML = planets[rand].link
       domElements.appendChild(hoverContainer);
       planets[rand].mark = document.createElement("div");
+      planets[rand].mark.classList.add('linked',"object"+i);
       let x = random()*spaceDimensions.x*2 - spaceDimensions.y*1
       let y = random()*spaceDimensions.y*2 - spaceDimensions.y*1
       planets[rand].x = x
@@ -59,6 +66,7 @@ let isAnyPlanetHovered = false;
 
 function draw() {
     isAnyPlanetHovered = 0;
+    cameraCoords.z = lerp(cameraCoords.z, targetZoom, 0.1);
     background(color('#E6FFFF'))
     fill('#E6FFFF')
     stroke(color('#0000E9'))
@@ -84,10 +92,27 @@ function draw() {
 const slider = document.getElementById('mySlider');
 
 slider.oninput = function() {
-    cameraCoords.z = map(this.value, 1, 100, 0, spaceDimensions.z-visibleDist)
+    targetZoom = map(this.value, 1, 100, 0, spaceDimensions.z-visibleDist)
 }
 
 
+
+// make hovered planet be highlighted in both menu and in space
+setTimeout(() => {
+  links = document.querySelectorAll('.linked');
+  links.forEach(link => {
+    link.addEventListener('mouseover', () => {
+      document.querySelectorAll('.' + link.classList[1]).forEach(pairDiv => {
+        pairDiv.classList.add('hovered');
+      });
+    });
+    link.addEventListener('mouseout', () => {
+      document.querySelectorAll('.' + link.classList[1]).forEach(pairDiv => {
+        pairDiv.classList.remove('hovered');
+      });
+    });
+  });
+}, 500);
 
 
 

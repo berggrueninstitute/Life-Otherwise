@@ -7,6 +7,7 @@ function Planet(depth, numPlanets) {
     this.pz = this.z;
     this.mark;
     this.markOffset;
+    this.menuPlanet;
     this.description;
     this.r;
     this.link;
@@ -33,10 +34,10 @@ function Planet(depth, numPlanets) {
                 this.mark.style.display = "block"
                 this.mark.style.left = sx+width/2+this.markOffset[0]*this.r + "px";
                 this.mark.style.top = sy+height/2+this.markOffset[1]*this.r + "px";
-                this.description.style.left = sx+width/2+10 + "px";
-                this.description.style.top = sy+height/2+10 + "px";
+                this.description.style.left = sx+width/2+this.markOffset[0]*this.r +10 + "px";
+                this.description.style.top = sy+height/2+this.markOffset[1]*this.r +10 + "px";
             }
-            if (isMouseOverDiamond(sx + width / 2, sy + height / 2, this.r)) {
+            if (isMouseOverDiamond(sx + width / 2, sy + height / 2, this.r) && !this.mark) {
                 randomPlanetDescription.style.display = "block";
                 randomPlanetDescription.style.left = sx+width/2+this.r*.8+5 + "px";
                 randomPlanetDescription.style.top = sy+height/2 + "px";
