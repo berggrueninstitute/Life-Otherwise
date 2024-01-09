@@ -43,10 +43,9 @@ function setup() {
     for (let i = 0; i < articlePaths.length; i++) {
       let rand = Math.floor(Math.random() * planets.length-1000) + 1000;
       planets[rand].link = articlePaths[i];
-      let hoverContainer = document.createElement("a");
-      hoverContainer.href = articlePaths[i][0];
-      let menuLink = document.createElement("a");
-      menuLink.href = articlePaths[i][0];
+      let hoverContainer = document.createElement("div");
+      let menuLink = document.createElement("div");
+      // menuLink.href = articlePaths[i][0];
       planets[rand].menuPlanet = document.createElement("div");
       planets[rand].menuPlanet.classList.add('linked', "object"+i, 'menuPlanetMarker')
       menuLink.appendChild(planets[rand].menuPlanet)
@@ -56,8 +55,14 @@ function setup() {
       domElements.appendChild(hoverContainer);
       planets[rand].mark = document.createElement("div");
       planets[rand].mark.classList.add('linked',"object"+i);
-      let x = random()*spaceDimensions.x*2 - spaceDimensions.y*1
-      let y = random()*spaceDimensions.y*2 - spaceDimensions.y*1
+      let x,y
+      if (width < 600) {
+        x = random()*spaceDimensions.x*1 - spaceDimensions.x*.5
+        y = random()*spaceDimensions.y*2 - spaceDimensions.y*1
+      } else {
+        x = random()*spaceDimensions.x*2 - spaceDimensions.x*1
+        y = random()*spaceDimensions.y*2 - spaceDimensions.y*1
+      }
       planets[rand].x = x
       planets[rand].y = y
       planets[rand].mark.classList.add("planetMarker");
@@ -68,39 +73,117 @@ function setup() {
 
 
 
-      planets[rand].mark.addEventListener('mouseover', () => {
-        planets[rand].menuPlanet.classList.add("hovered")
-        planets[rand].mark.classList.add("hovered")
-        // planets[rand].description.style.display = "block"
-        planets[rand].showDescription = 1
-      });
+      function isMobileLayout() {
+        return window.innerWidth < 600; // Example breakpoint for mobile layout
+      }
+      
+      let tappedOnce = false;
+  
+      if (isMobileLayout()) {
+          // Mobile layout logic
+          planets[rand].mark.addEventListener('touchstart', function(event) {
+            if (!tappedOnce) {
+                // First tap
+                event.preventDefault();
+                planets[rand].menuPlanet.classList.add("hovered")
+                planets[rand].mark.classList.add("hovered")
+                planets[rand].description.style.display = "block"
+                planets[rand].showDescription = 1
+                tappedOnce = true;
+                console.log("1st click", tappedOnce)
+            } else {
+                // Second tap
+                console.log("2nd click", tappedOnce)
+                window.location.href = articlePaths[i][0];
+            }
+          });
 
-      planets[rand].mark.addEventListener('mouseout', () => {
-        planets[rand].menuPlanet.classList.remove("hovered")
-        planets[rand].mark.classList.remove("hovered")
-        planets[rand].description.style.display = "none"
-        planets[rand].showDescription = 0
-      });
+          planets[rand].menuPlanet.addEventListener('touchstart', function(event) {
+              if (!tappedOnce) {
+                  // First tap
+                  event.preventDefault();
+                  planets[rand].menuPlanet.classList.add("hovered")
+                  planets[rand].mark.classList.add("hovered")
+                  planets[rand].description.style.display = "block"
+                  planets[rand].showDescription = 1
+                  tappedOnce = true;
+                  targetZoom = planets[rand].z - 150000;
+                  slider.value = map(targetZoom, 0, spaceDimensions.z, 1, 100)
+                  window.scrollTo(0, map(targetZoom, 0, spaceDimensions.z, 0, window.innerHeight));
+                  console.log("1st click", tappedOnce)
+              } else {
+                  // Second tap
+                  console.log("2nd click", tappedOnce)
+                  window.location.href = articlePaths[i][0];
+              }
+          });
+          document.addEventListener('touchstart', function(event) {
+              if (!planets[rand].menuPlanet.contains(event.target)&& !planets[rand].mark.contains(event.target) && tappedOnce) {
+                  planets[rand].menuPlanet.classList.remove("hovered")
+                  planets[rand].mark.classList.remove("hovered")
+                  planets[rand].description.style.display = "none"
+                  planets[rand].showDescription = 0
+                  tappedOnce = false;
+              }
+          });
+      } else {
+        planets[rand].mark.addEventListener('mouseover', () => {
+          planets[rand].menuPlanet.classList.add("hovered")
+          planets[rand].mark.classList.add("hovered")
+          // planets[rand].description.style.display = "block"
+          planets[rand].showDescription = 1
+        });
 
-      planets[rand].menuPlanet.addEventListener('mouseover', () => {
-        planets[rand].menuPlanet.classList.add("hovered")
-        planets[rand].mark.classList.add("hovered")
-        planets[rand].description.style.display = "block"
-        planets[rand].showDescription = 1
-      });
+        planets[rand].mark.addEventListener('click', () => {
+          window.location.href = articlePaths[i][0];
+        });
+  
+        planets[rand].mark.addEventListener('mouseout', () => {
+          planets[rand].menuPlanet.classList.remove("hovered")
+          planets[rand].mark.classList.remove("hovered")
+          planets[rand].description.style.display = "none"
+          planets[rand].showDescription = 0
+        });
+  
+        planets[rand].menuPlanet.addEventListener('mouseover', () => {
+          planets[rand].menuPlanet.classList.add("hovered")
+          planets[rand].mark.classList.add("hovered")
+          planets[rand].description.style.display = "block"
+          planets[rand].showDescription = 1
+        });
 
-      planets[rand].menuPlanet.addEventListener('mouseout', () => {
-        planets[rand].menuPlanet.classList.remove("hovered")
-        planets[rand].mark.classList.remove("hovered")
-        planets[rand].description.style.display = "none"
-        planets[rand].showDescription = 0
-      });
+        planets[rand].menuPlanet.addEventListener('click', () => {
+          window.location.href = articlePaths[i][0];
+        });
+      
+        planets[rand].menuPlanet.addEventListener('mouseout', () => {
+          planets[rand].menuPlanet.classList.remove("hovered")
+          planets[rand].mark.classList.remove("hovered")
+          planets[rand].description.style.display = "none"
+          planets[rand].showDescription = 0
+        });
+  
+        // hovering over a story in the menu brings you to it in space
+        planets[rand].menuPlanet.addEventListener('mouseenter', () => {
+          targetZoom = planets[rand].z - 150000;
+          console.log(planets[rand].z)
+          // console.log(targetZoom, map(targetZoom, -150000, spaceDimensions.z-150000, -150000, spaceDimensions.z-150000))
+          slider.value = map(targetZoom, 0, spaceDimensions.z, 1, 100)
+          window.scrollTo(0, map(targetZoom, -150000, spaceDimensions.z-150000, 0, window.innerHeight)); //this is the line in question
 
-      // hovering over a story in the menu brings you to it in space
-      planets[rand].menuPlanet.addEventListener('mouseenter', () => {
-        targetZoom = planets[rand].z - 150000;
-        slider.value = map(targetZoom, 0, spaceDimensions.z, 1, 100)
-      });
+        });
+      }
+      
+      function openDescription() {
+          // Logic to open the description
+      }
+      
+      function closeDescription() {
+          // Logic to close the description
+      }
+
+      
+  
     }
   
     rectMode(CENTER); // Draw the rectangle from its center
@@ -136,6 +219,8 @@ const slider = document.getElementById('mySlider');
 
 slider.oninput = function() {
     targetZoom = map(this.value, 1, 100, 0, spaceDimensions.z-visibleDist)
+    window.scrollTo(0, map(this.value, 1, 100, 0, window.innerHeight));
+    console.log(map(this.value, 1, 100, 0, window.innerHeight))
 }
 
 
