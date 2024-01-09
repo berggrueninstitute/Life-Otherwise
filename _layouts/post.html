@@ -4,9 +4,12 @@ layout: default
 
 
 {%- include menu.html -%}
-
-{{ content }}
-
+<div id="article-outline"></div>
+<div id="article-container">
+    <h1 class="article-title">{{ page.full-title }}</h1>
+    <h2 class="article-author">{{ page.author }}</h2>
+    {{ content }}
+</div>
 <script src='{{ "/scripts/populate-menu.js" | relative_url }}'></script>
 <!-- <script src='/scripts/populate-menu.js'></script> -->
 

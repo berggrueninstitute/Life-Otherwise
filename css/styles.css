@@ -9,7 +9,8 @@
   }
 
 body {
-    color: var(--main-blue);
+    background-color: var(--main-bg-color);
+    color: var(--main-blue)
 }
 
 
@@ -44,9 +45,15 @@ body {
     width: 100vw;
 }
 
-#myCanvasContainer {
+#scrollMeasure {
     position: sticky;
     top: 0;
+}
+
+#myCanvasContainer {
+    position: fixed;
+    top: 0px;
+    left: 0px;
 }
 
 #sliderContainer {
@@ -147,11 +154,14 @@ input[type="range"]::-moz-range-thumb {
 
 .planetDescription {
     display: none;
-    height: 100px;
-    width: 20vw;
+    min-height: 10px;
+    /* width: 20vw; */
+    min-width: 20px;
+    max-width: 300px;
     background: var(--lime);
     border: var(--border2);
     position: fixed;
+    padding: 5px;
     z-index: 10;
 }
 
@@ -159,10 +169,15 @@ input[type="range"]::-moz-range-thumb {
     display: block;
 }
 
+#randomPlanetDescription {
+    background: var(--lavender);
+}
+
 
 
 #domElements {
     height: 100lvh;
+    position: fixed;
 }
 
 #menu {
@@ -184,4 +199,72 @@ input[type="range"]::-moz-range-thumb {
 
 .hovered {
     background: #87FB4D;
+}
+
+
+
+
+
+#article-container {
+    background: var(--main-bg-color);
+    margin-top: 80px;
+    margin-left: 200px;
+    margin-bottom: 50lvh;
+    width: 40%;
+}
+
+#article-outline {
+    border: var(--border2);
+    position: fixed;
+    top: 40px;
+    left: 65px;
+    width: 80vw;
+    height: calc(100lvh - 40px - 40px);
+    pointer-events: none;
+}
+
+hr {
+    border-top: var(--border2);
+    width: 30%;
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+h1.article-title {
+s
+}
+
+h2.article-author {
+    margin-bottom: 30lvh;
+}
+
+img.basic-image {
+    width: 40vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    #spaceControls {
+        background: none;
+        border: none;
+    }
+
+    #sliderLabels, #spaceControls h4 {
+        display: none;
+    }
+
+    #planets-menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
