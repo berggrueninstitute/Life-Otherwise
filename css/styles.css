@@ -40,6 +40,10 @@ body {
     width: 12px;
 }
 
+p {
+    font-size: 22px;
+}
+
 #scrollContainer {
     height: 200lvh;
     width: 100vw;
@@ -205,20 +209,10 @@ input[type="range"]::-moz-range-thumb {
 
 
 
-#article-container {
-    background: var(--main-bg-color);
-    margin-top: 80px;
-    margin-left: 200px;
-    margin-bottom: 50lvh;
-    width: 40%;
-}
 
 #article-outline {
     border: var(--border2);
     position: fixed;
-    top: 40px;
-    left: 65px;
-    width: 80vw;
     height: calc(100lvh - 40px - 40px);
     pointer-events: none;
 }
@@ -231,7 +225,7 @@ hr {
 }
 
 h1.article-title {
-s
+
 }
 
 h2.article-author {
@@ -242,6 +236,21 @@ img.basic-image {
     width: 40vw;
 }
 
+#cloud-holder-container {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    pointer-events: none;
+}
+
+#cloud-holder {
+   position: relative;
+   width: 50vw;
+   height: 100vh;
+   margin-bottom: 50lvh;
+   overflow-y: scroll;
+   overflow-x: hidden;
+}
 
 
 
@@ -250,6 +259,21 @@ img.basic-image {
 
 
 
+@media only screen and (min-width: 601px) {
+    #article-container {
+        margin-top: 80px;
+        margin-left: 200px;
+        margin-bottom: 50lvh;
+        width: 48%;
+    }
+
+    #article-outline {
+        top: 40px;
+        left: 65px;
+        width: 80vw;
+        height: calc(100lvh - 40px - 40px);
+    }
+}
 
 
 
@@ -266,5 +290,20 @@ img.basic-image {
     #planets-menu {
         flex-direction: row;
         flex-wrap: wrap;
+    }
+
+    #article-container {
+        margin: 20px, 10px, 200px, 10px;
+        margin-top: 100px;
+        margin-left: 48px;
+        margin-right: 32px;
+        margin-bottom: 400px;
+    }
+
+    #article-outline {
+        top: 40px;
+        left: 18px;
+        right: 10px;
+        bottom: 40px;
     }
 }

@@ -43,11 +43,24 @@ function Planet(depth, numPlanets) {
             }
             if (isMouseOverDiamond(sx + width / 2, sy + height / 2, this.r) && !this.mark) {
                 randomPlanetDescription.style.display = "block";
-                randomPlanetDescription.style.left = sx+width/2+this.r*.8+5 + "px";
-                randomPlanetDescription.style.top = sy+height/2 + "px";
                 randomPlanetDescription.innerHTML = random(aiDescriptions)
                 isAnyPlanetHovered +=1;
-                fill("#E7D5FF")
+                fill("#E7D5FF");
+                if (sx+width/2 > width-randomPlanetDescription.clientWidth-10) {
+                    randomPlanetDescription.style.left = "auto"
+                    randomPlanetDescription.style.right = width - (sx+width/2) + this.r*.8+5 + "px";
+                } else {
+                    randomPlanetDescription.style.left = sx+width/2+this.r*.8+5 + "px";
+                    randomPlanetDescription.style.right = "auto"
+                }
+                if (sy+height/2 > height-randomPlanetDescription.clientHeight-10) {
+                    randomPlanetDescription.style.top = "auto";
+                    randomPlanetDescription.style.bottom = 5 +"px";
+                } else {
+                    randomPlanetDescription.style.top = sy+height/2 + "px";
+                    randomPlanetDescription.style.bottom = "auto";
+
+                }
             }
             drawDiamond(sx, sy, this.r);
 
@@ -82,8 +95,9 @@ function drawDiamond(x, y, size) {
 
 
 function isMouseOverDiamond(x, y, size) {
-    let diamondSize = size * sqrt(2);
-    return mouseX > x - diamondSize / 2 && mouseX < x + diamondSize / 2 &&
-           mouseY > y - diamondSize / 2 && mouseY < y + diamondSize / 2;
-
+    if (Math.abs(targetZoom - cameraCoords.z) <= 500) { // prevent descriptions from showing while 'traveling'
+        let diamondSize = size * sqrt(2);
+        return mouseX > x - diamondSize / 2 && mouseX < x + diamondSize / 2 &&
+            mouseY > y - diamondSize / 2 && mouseY < y + diamondSize / 2;
+    }
 }
