@@ -4,12 +4,41 @@ layout: default
 
 
 {%- include menu.html -%}
-<div id="article-outline"></div>
-<div id="article-container">
-    <h1 class="article-title">{{ page.full-title }}</h1>
-    <h2 class="article-author">{{ page.author }}</h2>
-    {{ content }}
+
+
+<div> <!-- sticky container -->
+    <div id="article-outline"></div>
+    <div id="top-mask"></div>
+    <div id="btm-mask"></div>
+    <div id="article-container">
+        <h1 class="article-title">{{ page.full-title }}</h1>
+        <h2 class="article-author" href="#" id="openPopup">{{ page.author }}</h2>
+        {{ content }}
+        <div id="dropdown-container">
+            <div id="exegesis">
+                {{ page.exegesis | markdownify }}
+            </div>
+            <div id="footnotes">
+                {{ page.endnotes | markdownify }}
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="closePopup" class="close">&times;</span>
+            <p>{{ page.author }}</p>
+            <p>{{ page.bio | markdownify }}</p>
+        </div>
+    </div>
+
+
 </div>
+
+{%- include footer.html -%}
+
 
 
 <script src='{{ "/scripts/populate-menu.js" | relative_url }}'></script>
@@ -18,3 +47,76 @@ layout: default
 
 
 
+<script>
+    document.getElementById('openPopup').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('popup').style.display = 'flex';
+});
+
+document.getElementById('closePopup').addEventListener('click', function() {
+    document.getElementById('popup').style.display = 'none';
+});
+
+window.addEventListener('click', function(event) {
+    if (event.target == document.getElementById('popup')) {
+        document.getElementById('popup').style.display = 'none';
+    }
+});
+
+
+
+// js for dropdowns
+document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('dropdown-container');
+    
+    // Add the content containers
+    const exegesisContent = document.getElementById('exegesis');
+    const footnotesContent = document.getElementById('footnotes');
+
+    // Add the buttons
+    if (exegesisContent) {
+        const exegesisWrapper = createWrapper('Exegesis', 'exegesis', exegesisContent);
+        container.appendChild(exegesisWrapper);
+    }
+
+    if (footnotesContent) {
+        const footnotesWrapper = createWrapper('Endnotes', 'footnotes', footnotesContent);
+        container.appendChild(footnotesWrapper);
+    }
+});
+
+function createWrapper(buttonText, targetId, contentElement) {
+    const wrapper = document.createElement('div');
+    wrapper.classList = "dropdown-subcontainer"
+    const button = createButton(buttonText, targetId);
+
+    wrapper.appendChild(button);
+    wrapper.appendChild(contentElement);
+    contentElement.className = 'dropdown-content';
+    
+    return wrapper;
+}
+
+function createButton(text, targetId) {
+    const button = document.createElement('button');
+    button.className = 'dropbtn';
+    button.textContent = text;
+    
+    const caret = document.createElement('span');
+    caret.className = 'caret';
+    caret.textContent = 'v'; // Unicode character for caret
+    button.appendChild(caret);
+    
+    button.onclick = () => toggleDropdown(targetId, button);
+    return button;
+}
+
+function toggleDropdown(id, button) {
+    const content = document.getElementById(id);
+    const isOpen = content.style.display === 'block';
+    content.style.display = isOpen ? 'none' : 'block';
+    button.classList.toggle('open', !isOpen);
+    footerScoot()
+}
+
+</script>

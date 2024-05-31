@@ -1,0 +1,61 @@
+<footer class="footer">
+    <div class="footer-column">
+        <p>Creator & Editor: Claire Isabel Webb</p>
+        <p>Editor: Lois Rosson</p>
+        <p>Managing Editor: Ulysses Yarber</p>
+        <p>Design & Art Direction: Public/Official</p>
+        <p>Developed: Cotton design</p>
+    </div>
+    <div class="footer-column">
+        <p>All rights reserved. No part of this website may be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the written permission of the Berggruen Institute.</p>
+        <p>© 2024 Berggruen Institute</p>
+    </div>
+    <div class="footer-column">
+        <p>Berggruen Institute</p>
+        <p>304 S. Broadway, Suite 500</p>
+        <p>Los Angeles, CA 90013</p>
+        <p><a href="http://www.berggruen.org">www.berggruen.org</a></p>
+    </div>
+    <div class="footer-column">
+        <p>Future Humans</p>
+        <p>Berggruen Institute</p>
+        <img src="path/to/logo.png" alt="Berggruen Institute Logo">
+    </div>
+</footer>
+
+
+<script>
+    
+    function footerScoot() {
+    const footer = document.querySelector('footer');
+    const topMask = document.getElementById('top-mask');
+    const bottomMask = document.getElementById('btm-mask');
+    const menu = document.getElementById('menu');
+    const articleOutline = document.getElementById('article-outline');
+
+    if (footer) {
+        const footerRect = footer.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        const offset = windowHeight - footerRect.top;
+
+        if (offset > 0) {
+            const elements = [topMask, bottomMask, menu, articleOutline];
+            elements.forEach(element => {
+                if (element) {
+                    element.style.transform = `translateY(-${offset}px)`;
+                }
+            });
+        } else {
+            const elements = [topMask, bottomMask, menu, articleOutline];
+            elements.forEach(element => {
+                if (element) {
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        }
+    }
+}
+
+    window.addEventListener('scroll', footerScoot)
+
+</script>

@@ -41,27 +41,27 @@ function Planet(depth, numPlanets) {
                     this.description.style.display = "block";
                 }
             }
-            if (isMouseOverDiamond(sx + width / 2, sy + height / 2, this.r) && !this.mark) {
-                randomPlanetDescription.style.display = "block";
-                randomPlanetDescription.innerHTML = random(aiDescriptions)
-                isAnyPlanetHovered +=1;
-                fill("#E7D5FF");
-                if (sx+width/2 > width-randomPlanetDescription.clientWidth-10) {
-                    randomPlanetDescription.style.left = "auto"
-                    randomPlanetDescription.style.right = width - (sx+width/2) + this.r*.8+5 + "px";
-                } else {
-                    randomPlanetDescription.style.left = sx+width/2+this.r*.8+5 + "px";
-                    randomPlanetDescription.style.right = "auto"
-                }
-                if (sy+height/2 > height-randomPlanetDescription.clientHeight-10) {
-                    randomPlanetDescription.style.top = "auto";
-                    randomPlanetDescription.style.bottom = 5 +"px";
-                } else {
-                    randomPlanetDescription.style.top = sy+height/2 + "px";
-                    randomPlanetDescription.style.bottom = "auto";
+            // if (isMouseOverDiamond(sx + width / 2, sy + height / 2, this.r) && !this.mark) {
+            //     randomPlanetDescription.style.display = "block";
+            //     // randomPlanetDescription.innerHTML = random(aiDescriptions)
+            //     isAnyPlanetHovered +=1;
+            //     fill("#E7D5FF");
+            //     if (sx+width/2 > width-randomPlanetDescription.clientWidth-10) {
+            //         randomPlanetDescription.style.left = "auto"
+            //         randomPlanetDescription.style.right = width - (sx+width/2) + this.r*.8+5 + "px";
+            //     } else {
+            //         randomPlanetDescription.style.left = sx+width/2+this.r*.8+5 + "px";
+            //         randomPlanetDescription.style.right = "auto"
+            //     }
+            //     if (sy+height/2 > height-randomPlanetDescription.clientHeight-10) {
+            //         randomPlanetDescription.style.top = "auto";
+            //         randomPlanetDescription.style.bottom = 5 +"px";
+            //     } else {
+            //         randomPlanetDescription.style.top = sy+height/2 + "px";
+            //         randomPlanetDescription.style.bottom = "auto";
 
-                }
-            }
+            //     }
+            // }
             drawDiamond(sx, sy, this.r);
 
         } else {

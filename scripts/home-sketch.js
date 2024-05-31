@@ -1,16 +1,12 @@
-var aiDescriptions = [`<h4>ZAARA</h4>
-  <p>A lush and vibrant planet with floating islands amidst colorful clouds.</p>
-  </p>Primarily composed of a dense atmosphere rich in oxygen and nitrogen, resulting in the colorful clouds that blanket its sky. The floating islands – a combination of lightweight minerals and gases – are held aloft by the planet's gravitational anomalies. A variety of exotic flora and fauna thrive on these islands, creating an ever-changing and enchanting landscape. The planet's atmosphere is conducive to soft breezes and gentle rustling sounds, giving rise to a harmonious symphony of nature.</p>
-  <p>(AI Generated)</p>`
-];
 
 var planets = [];
 var numStories = 16;
 var domElements = document.getElementById("domElements")
-var randomPlanetDescription = document.getElementById("randomPlanetDescription")
-const menu = document.getElementById("planets-menu")
+// var randomPlanetDescription = document.getElementById("randomPlanetDescription")
+var menu = document.getElementById("planets-menu")
 var mouseOverDiamond = 0
 var links;
+let spaceOpacity = 0
 
 var speed;
 
@@ -33,6 +29,8 @@ let targetZoom = cameraCoords.z;
 
 
 function setup() {
+    document.getElementById('menu').style.position = 'absolute'
+    console.log(menu.style.position)
     let canvas = createCanvas(windowWidth, windowHeight);
     canvas.parent('myCanvasContainer');
     angleMode(DEGREES);
@@ -45,13 +43,21 @@ function setup() {
       planets[rand].link = articlePaths[i];
       let hoverContainer = document.createElement("div");
       let menuLink = document.createElement("div");
-      // menuLink.href = articlePaths[i][0];
-      planets[rand].menuPlanet = document.createElement("div");
-      planets[rand].menuPlanet.classList.add('linked', "object"+i, 'menuPlanetMarker')
-      menuLink.appendChild(planets[rand].menuPlanet)
+      menuLink.classList.add("menuLink")
+      // planets[rand].menuPlanet = document.createElement("div");
+      planets[rand].menuPlanet = menuLink;
+      planets[rand].menuPlanet.classList.add('linked', "object"+i)
+      let menuPlanetDot = document.createElement("div");
+      menuPlanetDot.classList.add("menuPlanetDot")
+      planets[rand].menuPlanetDot = menuPlanetDot;
+      menuLink.appendChild(menuPlanetDot)
+      // menuLink.appendChild(planets[rand].menuPlanet)
+      let linkText = document.createTextNode(planets[rand].link[1]);
+      menuLink.appendChild(linkText)
+      menuLink.href = articlePaths[i][0];
       menu.appendChild(menuLink);
       planets[rand].description = document.createElement("div");
-      planets[rand].description.innerHTML = planets[rand].link[1]+"<br> —"+planets[rand].link[2]
+      planets[rand].description.innerHTML = planets[rand].link[3]+"<br>"+planets[rand].link[4]+"<br>"+planets[rand].link[5]
       domElements.appendChild(hoverContainer);
       planets[rand].mark = document.createElement("div");
       planets[rand].mark.classList.add('linked',"object"+i);
@@ -85,7 +91,7 @@ function setup() {
             if (!tappedOnce) {
                 // First tap
                 event.preventDefault();
-                planets[rand].menuPlanet.classList.add("hovered")
+                planets[rand].menuPlanetDot.classList.add("hovered")
                 planets[rand].mark.classList.add("hovered")
                 planets[rand].description.style.display = "block"
                 planets[rand].showDescription = 1
@@ -102,14 +108,14 @@ function setup() {
               if (!tappedOnce) {
                   // First tap
                   event.preventDefault();
-                  planets[rand].menuPlanet.classList.add("hovered")
+                  planets[rand].menuPlanetDot.classList.add("hovered")
                   planets[rand].mark.classList.add("hovered")
                   planets[rand].description.style.display = "block"
                   planets[rand].showDescription = 1
                   tappedOnce = true;
                   targetZoom = planets[rand].z - 150000;
                   slider.value = map(targetZoom, 0, spaceDimensions.z, 1, 100)
-                  window.scrollTo(0, map(targetZoom, 0, spaceDimensions.z, 0, window.innerHeight));
+                  window.scrollTo(0, map(targetZoom, 0, spaceDimensions.z, window.innerHeight, document.documentElement.scrollHeight));
                   console.log("1st click", tappedOnce)
               } else {
                   // Second tap
@@ -119,7 +125,7 @@ function setup() {
           });
           document.addEventListener('touchstart', function(event) {
               if (!planets[rand].menuPlanet.contains(event.target)&& !planets[rand].mark.contains(event.target) && tappedOnce) {
-                  planets[rand].menuPlanet.classList.remove("hovered")
+                  planets[rand].menuPlanetDot.classList.remove("hovered")
                   planets[rand].mark.classList.remove("hovered")
                   planets[rand].description.style.display = "none"
                   planets[rand].showDescription = 0
@@ -128,7 +134,7 @@ function setup() {
           });
       } else {
         planets[rand].mark.addEventListener('mouseover', () => {
-          planets[rand].menuPlanet.classList.add("hovered")
+          planets[rand].menuPlanetDot.classList.add("hovered")
           planets[rand].mark.classList.add("hovered")
           // planets[rand].description.style.display = "block"
           planets[rand].showDescription = 1
@@ -139,14 +145,14 @@ function setup() {
         });
   
         planets[rand].mark.addEventListener('mouseout', () => {
-          planets[rand].menuPlanet.classList.remove("hovered")
+          planets[rand].menuPlanetDot.classList.remove("hovered")
           planets[rand].mark.classList.remove("hovered")
           planets[rand].description.style.display = "none"
           planets[rand].showDescription = 0
         });
   
         planets[rand].menuPlanet.addEventListener('mouseover', () => {
-          planets[rand].menuPlanet.classList.add("hovered")
+          planets[rand].menuPlanetDot.classList.add("hovered")
           planets[rand].mark.classList.add("hovered")
           planets[rand].description.style.display = "block"
           planets[rand].showDescription = 1
@@ -157,7 +163,7 @@ function setup() {
         });
       
         planets[rand].menuPlanet.addEventListener('mouseout', () => {
-          planets[rand].menuPlanet.classList.remove("hovered")
+          planets[rand].menuPlanetDot.classList.remove("hovered")
           planets[rand].mark.classList.remove("hovered")
           planets[rand].description.style.display = "none"
           planets[rand].showDescription = 0
@@ -169,7 +175,7 @@ function setup() {
           console.log(planets[rand].z)
           // console.log(targetZoom, map(targetZoom, -150000, spaceDimensions.z-150000, -150000, spaceDimensions.z-150000))
           slider.value = map(targetZoom, 0, spaceDimensions.z, 1, 100)
-          window.scrollTo(0, map(targetZoom, -150000, spaceDimensions.z-150000, 0, window.innerHeight)); //this is the line in question
+          window.scrollTo(0, map(targetZoom, -150000, spaceDimensions.z-150000, window.innerHeight, document.documentElement.scrollHeight));
 
         });
       }
@@ -193,9 +199,9 @@ let isAnyPlanetHovered = false;
 function draw() {
     isAnyPlanetHovered = 0;
     cameraCoords.z = lerp(cameraCoords.z, targetZoom, 0.1);
-    background(color('#E6FFFF'))
+    background('#0000E9')
     fill('#E6FFFF')
-    stroke(color('#0000E9'))
+    stroke(0,0,233,spaceOpacity) //'#0000E9'
 
     translate(width / 2, height / 2);
     // rotate(45); // Rotate by 45 degrees
@@ -204,9 +210,21 @@ function draw() {
       planets[i].show();
     }
     if (!isAnyPlanetHovered) {
-      document.getElementById("randomPlanetDescription").style.display = "none";
+      // document.getElementById("randomPlanetDescription").style.display = "none";
+    }
+
+    if (window.scrollY > window.innerHeight-20) {
+      spaceOpacity  = min(spaceOpacity + 15, 255)
+    } else {
+      spaceOpacity  = max(spaceOpacity -15, 0)
+    }
+    if (spaceOpacity >=250) {
+      hidden = false
+    } else {
+      hidden = true 
     }
 }
+
 
 
 
@@ -219,8 +237,8 @@ const slider = document.getElementById('mySlider');
 
 slider.oninput = function() {
     targetZoom = map(this.value, 1, 100, 0, spaceDimensions.z-visibleDist)
-    window.scrollTo(0, map(this.value, 1, 100, 0, window.innerHeight));
-    console.log(map(this.value, 1, 100, 0, window.innerHeight))
+    window.scrollTo(0, map(this.value, 1, 100, window.innerHeight, document.documentElement.scrollHeight));
+    console.log(map(this.value, 1, 100, window.innerHeight, document.documentElement.scrollHeight))
 }
 
 
@@ -231,13 +249,107 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-window.addEventListener("scroll", function() {
-  // Assuming the height of your div is 200vh
-  const divHeight = window.innerHeight;
-  const totalScrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+
+
+
+// document.getElementById('menu').style.opacity = 0;
+// let fadeElements = document.querySelectorAll('#menu, #spaceControls'); // Select both elements
+// fadeElements.forEach(el => {
+//   el.style.opacity = 0;
+// });
+
+
+
+
+
+
+
+
+
+const scrollContainer = document.getElementById('scrollContainer');
+let prevScroll = 0
+let isScrolling = false;
+
+document.addEventListener('scroll', () => {
+  const div = document.getElementById('scrollContainer');
+
+  const windowHeight = window.innerHeight;
+  const divTop = div.offsetTop;
+  const divHeight = div.offsetHeight;
+
+  // Get the current scroll position of the window
   const scrollPosition = window.scrollY;
-  const scrollPercentage = Math.min(Math.max((scrollPosition / divHeight) * 100, 1), 100);
+
+  // Calculate when the top of the div aligns with the top of the window
+  const divTopVisible = scrollPosition - divTop;
+
+  // Calculate when the bottom of the div aligns with the bottom of the window
+  const divBottomVisible = (scrollPosition + windowHeight) - (divTop + divHeight);
+
+  scrollProgress = window.scrollY-div.offsetTop
+  lowestScrollValue = div.clientHeight-window.innerHeight
+  scrollPercentage = Math.max(0,(scrollProgress / lowestScrollValue) * 100);
+
   targetZoom = map(scrollPercentage, 1, 100, 0, spaceDimensions.z-visibleDist);
   slider.value = scrollPercentage;
-});
 
+
+  // --- space opacity
+  // let fadeElements = document.querySelectorAll('#menu, #spaceControls, #domElements');
+  let fadeElements = document.querySelectorAll('#domElements');
+  const targetScrollY = window.innerHeight -200; // Scroll position at which elements should be visible
+  const isVisible = window.scrollY >= targetScrollY;
+
+  // Apply styles based on visibility
+  fadeElements.forEach(el => {
+    if (isVisible) {
+      el.style.display = 'block'; // Show the element
+      setTimeout(() => el.style.opacity = 1, 10);
+      // el.style.opacity = 1 // Delay opacity to ensure display is processed
+    } else {
+      el.style.opacity = 0; // Hide the element
+      // Use a timeout to delay setting display none until after the opacity transition
+      setTimeout(() => el.style.display = 'none', 500); // Match transition time
+    }
+  });
+
+  // --- scroll jump for hero
+  const hero = document.getElementById('home-hero');
+  const heroHeight = hero.offsetHeight;
+
+  if (scrollPosition < heroHeight && scrollPosition > prevScroll && !isScrolling) {
+    isScrolling = true;
+      window.scrollTo({
+          top: heroHeight,
+          behavior: 'smooth'
+      });
+      console.log("detected")
+      setTimeout(() => {
+        isScrolling = false;
+      }, 800);
+  }
+  else if (scrollPosition < heroHeight && !isScrolling) {
+    isScrolling = true;
+      window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+      });
+      setTimeout(() => {
+        isScrolling = false;
+      }, 800);
+  }
+  prevScroll = scrollY
+
+
+  // --- prevent from scrolling into hero/intro unless youre fully zoomed out
+  const conditionMet = (cameraCoords.z <= 0);
+  const heroBtm = hero.getBoundingClientRect().height;
+  // console.log(heroBtm)
+  if (window.scrollY < heroBtm && !conditionMet) {
+    window.scrollTo({
+      top: heroBtm,
+      // behavior: 'smooth'
+    });
+  }
+});

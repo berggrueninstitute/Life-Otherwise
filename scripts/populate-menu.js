@@ -8,6 +8,7 @@ const menu = document.getElementById("planets-menu")
 for (let i = 0; i < articlePaths.length; i++) {
     let menuLink = document.createElement("a");
     menuLink.href = articlePaths[i][0];
+    menuLink.classList.add("menuLink")
     
     let menuPlanet = document.createElement("div");
     menuPlanet.classList.add('menuPlanetMarker')
@@ -16,7 +17,7 @@ for (let i = 0; i < articlePaths.length; i++) {
     let titleDiv = document.createElement("div");
     titleDiv.classList.add('planetDescription');
     titleDiv.innerHTML = articlePaths[i][1]+"<br> —"+articlePaths[i][2]; // Assuming this is the title
-    titleDiv.style.display = 'none';
+    // titleDiv.style.display = 'none';
     menuLink.appendChild(titleDiv);
 
     menuLink.addEventListener('mouseover', function() {

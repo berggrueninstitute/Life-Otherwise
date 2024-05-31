@@ -5,31 +5,41 @@ layout: default
 
 
     <body>
+        <div id="home-hero">
+            <h4>The Berggruen Institute presents</h4>
+            <h1>Future Histories</h1>
+            <p class="hero-p">Scroll through spacetime to explore how life might be otherwise in the universe. Your journey begins in Los Angeles, California, Earth the near-future.</p>
+        </div>
         <div id="scrollContainer">
+
             <div id="scrollMeasure"></div>
-        </div>
-        <div id="myCanvasContainer"></div>
-        <div id="domElements">
-            <div id="randomPlanetDescription" class="planetDescription"></div>
-            {%- include menu.html -%}
-            <div id="spaceControls">
-                <h4>Distance From Earth</h4>
-                <div id="sliderContainer">
-                    <div id="sliderLabels">
-                        <div>1 Light Hour —</div>
-                        <div>1 Light Day —</div>
-                        <div>1 Light Week —</div>
-                        <div>1 Light Year —</div>
-                        <div>10 Light Years —</div>
-                        <div>100 Light Years —</div>
-                        <div>1 000 Light Years —</div>
-                        <div>10 000 Light Years —</div>
-                        <div>100 000 Light Years —</div>
-                    </div>
-                    <input type="range" id="mySlider" min="1" max="100" value="1" step="0.01">
+            <div id="myCanvasContainer">
+                <div id="domElements">
+                    <div id="randomPlanetDescription" class="planetDescription"></div>
                 </div>
+                {%- include menu.html -%}
+                <div id="spaceControls">
+                    <h4>Distance From Earth</h4>
+                    <div id="sliderContainer">
+                        <div id="sliderLabels">
+                            <div>0 —</div>
+                            <div>1 Light Hour —</div>
+                            <div>1 Light Day —</div>
+                            <div>1 Light Week —</div>
+                            <div>1 Light Year —</div>
+                            <div>10 Light Years —</div>
+                            <div>100 Light Years —</div>
+                            <div>1 000 Light Years —</div>
+                            <div>10 000 Light Years —</div>
+                        </div>
+                        <input type="range" id="mySlider" min="1" max="100" value="1" step="0.01">
+                    </div>
+                </div>
+
             </div>
+            
         </div>
+
             <!-- <p>Value: <span id="sliderValue">50</span></p> -->
 
         

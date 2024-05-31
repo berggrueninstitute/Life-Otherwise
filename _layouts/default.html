@@ -9,6 +9,14 @@
 </a>
 {% endif %}
 
+
+{% if page.url == "/" %}
+<img id="berggruen-logo" src='{{ "/assets/logos/berggruen.svg" | relative_url }}'>
+{% else %}
+<img id="berggruen-logo" src='{{ "/assets/logos/berggruen-dark.svg" | relative_url }}'>
+{% endif %}
+
+
 {{ content }}
 
 </html>

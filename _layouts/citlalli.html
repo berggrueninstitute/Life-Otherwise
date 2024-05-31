@@ -1,0 +1,64 @@
+---
+layout: post
+---
+
+
+{{ content }}
+<!-- <img id="image0" class="citlalli-side-img" src="/images/citlalli/citlalli-illo-0.png">
+<img id="image1" class="citlalli-side-img" src="/images/citlalli/citlalli-illo-1.png">
+<img id="image2" class="citlalli-side-img" src="/images/citlalli/citlalli-illo-2.png"> -->
+
+<img class="citlalli-bottom-img" src="/images/citlalli/citlalli-bottom-illo.png">
+
+<div id = "fullHeightDiv" class="citlalli-image"></div>
+
+
+<script>
+    // fullheight gif
+    
+    function setFullHeight() {
+        const fullHeightDiv = document.getElementById('fullHeightDiv');
+        if (window.innerWidth > 900) {
+            const footer = document.querySelector('.footer');
+            const footerHeight = footer.offsetHeight;
+            fullHeightDiv.style.height = (document.documentElement.scrollHeight - footerHeight) + 'px';
+            fullHeightDiv.style.display = "block";
+        } else {
+            fullHeightDiv.style.display = "none";
+        }
+    }
+    window.addEventListener('load', setFullHeight);
+    window.addEventListener('resize', setFullHeight);
+
+
+    // left images
+    function positionImages() {
+        // const images = [
+        //     { id: 'image0', position: 0.1 },
+        //     { id: 'image1', position: 0.2 },
+        //     { id: 'image2', position: 0.3 }
+        // ];
+
+        // images.forEach(img => {
+        //     const imageElement = document.getElementById(img.id);
+        //     imageElement.style.top = (document.documentElement.scrollHeight * img.position) + 'px';
+        // });
+        let sideImages = document.querySelectorAll(".citlalli-side-img")
+
+        if (window.innerWidth > 600) {
+            for (i=0; i<sideImages.length; i++) {
+                sideImages[i].style.position = "absolute"
+                sideImages[i].style.left = "80px"
+                sideImages[i].style.top = ((i+1)*.1)*document.documentElement.scrollHeight+ "px"
+            }
+        }
+    }
+
+    window.addEventListener('load', positionImages);
+    window.addEventListener('resize', positionImages);
+
+
+
+
+
+</script>
