@@ -6,29 +6,110 @@ layout: post
 {{ content }}
 
 <style>
-    .bluePlanetImg {
+    .marsImg {
         max-width: 70vw;
-        max-height: 50vh;
+        max-height: 1200px;
         /* min-height: 800px; */
         z-index: 50;
     }
 
 
     @media screen and (min-width: 1200px) {
-        #gas {
+        #lunokhod {
             width: 17vw;
+            /* z-index: 1; */
         }
-        #mol {
-            width: 15vw;
+        #lunokhod2 {
+            width: 17vw;
+            /* z-index: 1; */
         }
-        #lumps {
-            width: 5vw;
+        #lunokhod3 {
+            width: 17vw;
+            /* z-index: 1; */
         }
-        #bumps {
-            width: 11vw;
-            z-index: 51;
+        #tehnika {
+            width: 17vw;
+            /* z-index: 1; */
+        }
+        #stamp {
+            width: 17vw;
+            /* z-index: 1; */
+        }
+        #mipa {
+            width: 17vw;
+            /* z-index: 1; */
+        }
+        #building {
+            width: 17vw;
+            /* z-index: 1; */
+        }
+        #red {
+            width: 17vw;
+            /* z-index: 1; */
+        }
+        #Alexander {
+            width: 17vw;
+            /* z-index: 1; */
+        }
+        #three-dMars {
+            width: 17vw;
+            /* z-index: 1; */
+        }
+        #Secret_History {
+            width: 17vw;
+            /* z-index: 1; */
+        }
+        #Onward_to_mars {
+            width: 17vw;
+            /* z-index: 1; */
+        }
+        #ruda {
+            width: 17vw;
+            /* z-index: 1; */
+        }
+        #Mars_1_NASA {
+            width: 17vw;
+            /* z-index: 1; */
+        }
+        #countdown_2 {
+            width: 17vw;
+            transform: rotate(90deg)
+            /* z-index: 1; */
+        }
+        #Austraunaut {
+            width: 17vw;
+            /* z-index: 1; */
+        }
+        #static {
+            width: 17vw;
+            /* z-index: 1; */
+        }
+        #December {
+            width: 17vw;
+            /* z-index: 1; */
+        }
+        #red_ring {
+            width: 17vw;
+            /* z-index: 1; */
+        }
+        #Cabin {
+            width: 17vw;
+            /* z-index: 1; */
+        }
+        #Zander {
+            width: 17vw;
+            /* z-index: 1; */
+        }
+        #rover {
+            width: 17vw;
+            /* z-index: 1; */
+        }
+        #pehwene {
+            width: 17vw;
+            /* z-index: 1; */
         }
     }
+    
 </style>
 
 
@@ -43,16 +124,22 @@ function moveImagesOnScroll(images) {
             const viewportHeight = window.innerHeight;
             const scrollY = window.scrollY;
 
-            images.forEach(({ img, start, end, right, height }) => {
+            images.forEach(({ img, start, end, right, height, heightS, z, width }) => {
                 const imgHeight = img.clientHeight;
                 const imgStart = start * document.body.scrollHeight;
                 const imgEnd = end * document.body.scrollHeight;
                 let heightStop = height || 1
+                let heightStart = heightS || 0
 
                 // if (scrollY + viewportHeight >= imgStart && scrollY <= imgEnd) {
-                    const progress = (scrollY + viewportHeight - imgStart) / (imgEnd - imgStart);
-                    const easedProgress = Math.min(easeInOutCubic(progress),1) * heightStop;
-                    let top = (viewportHeight+imgHeight) * ((1 - easedProgress)) - imgHeight;
+                    let progress = ((scrollY - imgStart) / (imgEnd - imgStart))   + heightStart;
+                    if(heightStop<1){
+                        console.log("before",progress)
+                        progress = Math.min(progress, heightStop)
+                        console.log(heightStop)
+                    }
+                    // const easedProgress = Math.min(easeInOutCubic(progress),1) * heightStop;
+                    let top = (viewportHeight+imgHeight) * ((1 - progress)) - imgHeight;
 
                     // if (height) {
                     //     const stopPosition = viewportHeight * height - imgHeight;
@@ -64,6 +151,8 @@ function moveImagesOnScroll(images) {
                     img.style.position = 'fixed';
                     img.style.top = `${top}px`;
                     img.style.right = `${right * 100}vw`;
+                    img.style.width = width+"vw"
+                    if(z) {img.style.zIndex = z}
                 // } else {
                 //     img.style.position = 'absolute';
                 //     img.style.top = scrollY + viewportHeight >= imgStart ? `${imgEnd - imgHeight}px` : `${imgStart + viewportHeight}px`;
@@ -74,35 +163,218 @@ function moveImagesOnScroll(images) {
 }
 
 
-let gas = {
-    img: document.getElementById("gas"),
-    start: 0.1,
-    end: .5,
-    right: .12,
-    height: .6
-}
-let bumps = {
-    img: document.getElementById("bumps"),
-    start: .2,
-    end: .8,
-    right: .2,
-    height: 1.02
-}
-let lumps = {
-    img: document.getElementById("lumps"),
-    start: .4,
-    end: .7,
-    right: .05,
-    height: .95
-}
-let mol = {
-    img: document.getElementById("mol"),
-    start: .43,
-    end: .9,
-    right: .15,
-    height: .2
-}
-let imgs = [gas, bumps,  lumps, mol];
+let Austraunaut = {
+    img: document.getElementById("Austraunaut"),
+    start: 0,
+    end: 0.3,
+    right: 0.08,
+    width: 22,
+    heightS: .65
+};
+
+let static = {
+    img: document.getElementById("static"),
+    start: 0,
+    end: .16,
+    right: 0.02 ,
+    width: 27,
+    heightS: .15
+};
+
+let rover = {
+    img: document.getElementById("rover"),
+    start: 0,
+    end: 0.2,
+    right: 0.07,
+    width: 15,
+    z: 51,
+    heightS: .45
+};
+
+let pehwene = {
+    img: document.getElementById("pehwene"),
+    start: 0.05,
+    end: 0.2,
+    right: 0,
+    width: 32
+};
+
+let Secret_History = {
+    img: document.getElementById("Secret_History"),
+    start: 0.13,
+    end: 0.32,
+    right: 0.18,
+    width: 2
+};
+
+
+let stamp = {
+    img: document.getElementById("stamp"),
+    start: 0.15,
+    end: 0.4,
+    right: 0.17,
+    width: 10,
+    z: 55
+};
+
+let Mars_1_NASA = {
+    img: document.getElementById("Mars_1_NASA"),
+    start: 0.2,
+    end: 0.4,
+    right: 0.02,
+    width: 17
+};
+
+let December = {
+    img: document.getElementById("December"),
+    start: 0.05,
+    end: 0.19,
+    right: 0.12,
+    width: 14,
+    z: 52
+};
+
+let Onward_to_mars = {
+    img: document.getElementById("Onward_to_mars"),
+    start: 0.27,
+    end: 0.5,
+    right: 0.10,
+    width: 17,
+    z: 56
+};
+
+
+
+let Zander = {
+    img: document.getElementById("Zander"),
+    start: 0.29,
+    end: 0.52,
+    right: .17,
+    width: 15
+};
+
+let countdown_2 = {
+    img: document.getElementById("countdown_2"),
+    start: 0.39,
+    end: 0.52,
+    right: 0.07,
+    width: 17,
+    z: 53
+};
+
+let mipa = {
+    img: document.getElementById("mipa"),
+    start: 0.3,
+    end: 0.5,
+    right: 0.045,
+    width: 11
+};
+
+let Alexander = {
+    img: document.getElementById("Alexander"),
+    start: 0.45,
+    end: 0.63,
+    right: 0.18,
+    width: 10,
+    z: 55
+};
+
+let ruda = {
+    img: document.getElementById("ruda"),
+    start: 0.4,
+    end: 0.65,
+    right: 0.05,
+    width: 18
+};
+
+let building = {
+    img: document.getElementById("building"),
+    start: 0.5,
+    end: 0.7,
+    right: 0.12,
+    width: 17
+};
+
+let Cabin = {
+    img: document.getElementById("Cabin"),
+    start: 0.6,
+    end: 0.71,
+    right: 0.1,
+    width: 17
+};
+
+let d_mars = {
+    img: document.getElementById("three-dMars"),
+    start: 0.62,
+    end: 0.68,
+    right: 0.03,
+    width: 17
+};
+
+let red = {
+    img: document.getElementById("red"),
+    start: 0.65,
+    end: 0.78,
+    right: 0.2,
+    width: 7
+};
+
+
+let tehnika = {
+    img: document.getElementById("tehnika"),
+    start: .66,
+    end: 0.74,
+    right: 0.05,
+    width: 17
+};
+
+let lunokhod = {
+    img: document.getElementById("lunokhod"),
+    start: 0.7,
+    end: 0.8,
+    right: 0.12,
+    width: 17,
+    z: 55
+};
+
+let lunokhod2 = {
+    img: document.getElementById("lunokhod2"),
+    start: 0.68,
+    end: 0.82,
+    right: 0.12,
+    width: 17
+};
+
+
+
+let red_ring = {
+    img: document.getElementById("red_ring"),
+    start: 0.75,
+    end: 0.89,
+    right: 0.087,
+    width: 5,
+    z: 55,
+    height: .48
+};
+
+
+let lunokhod3 = {
+    img: document.getElementById("lunokhod3"),
+    start: .73,
+    end: 0.82,
+    right: 0.04,
+    width: 27,
+    height: .5
+};
+
+
+
+let imgs = [lunokhod, lunokhod2, lunokhod3, tehnika, stamp, mipa, building, red, Alexander, d_mars, Secret_History, Onward_to_mars, ruda, Mars_1_NASA, countdown_2, Austraunaut, static, December, red_ring, Cabin, Zander, rover, pehwene];
+
+
+
+
+
 
 moveImagesOnScroll(imgs);
 
