@@ -320,43 +320,43 @@ document.addEventListener('scroll', () => {
   });
 
   // --- scroll jump for hero
-  const hero = document.getElementById('home-hero');
-  const heroHeight = hero.offsetHeight;
+  // const hero = document.getElementById('home-hero');
+  // const heroHeight = hero.offsetHeight;
 
-  if (scrollPosition < heroHeight && scrollPosition > prevScroll && !isScrolling) {
-    isScrolling = true;
-      window.scrollTo({
-          top: heroHeight,
-          behavior: 'smooth'
-      });
-      console.log("detected")
-      setTimeout(() => {
-        isScrolling = false;
-      }, 800);
-  }
-  else if (scrollPosition < heroHeight && !isScrolling) {
-    isScrolling = true;
-      window.scrollTo({
-          top: 0,
-          behavior: 'smooth'
-      });
-      setTimeout(() => {
-        isScrolling = false;
-      }, 800);
-  }
-  prevScroll = scrollY
+  // if (scrollPosition < heroHeight && scrollPosition > prevScroll && !isScrolling) {
+  //   isScrolling = true;
+  //     window.scrollTo({
+  //         top: heroHeight,
+  //         behavior: 'smooth'
+  //     });
+  //     console.log("detected")
+  //     setTimeout(() => {
+  //       isScrolling = false;
+  //     }, 800);
+  // }
+  // else if (scrollPosition < heroHeight && !isScrolling) {
+  //   isScrolling = true;
+  //     window.scrollTo({
+  //         top: 0,
+  //         behavior: 'smooth'
+  //     });
+  //     setTimeout(() => {
+  //       isScrolling = false;
+  //     }, 800);
+  // }
+  // prevScroll = scrollY
 
 
-  // --- prevent from scrolling into hero/intro unless youre fully zoomed out
-  const conditionMet = (cameraCoords.z <= 0);
-  const heroBtm = hero.getBoundingClientRect().height;
-  // console.log(heroBtm)
-  if (window.scrollY < heroBtm && !conditionMet) {
-    window.scrollTo({
-      top: heroBtm,
-      // behavior: 'smooth'
-    });
-  }
+  // // --- prevent from scrolling into hero/intro unless youre fully zoomed out
+  // const conditionMet = (cameraCoords.z <= 0);
+  // const heroBtm = hero.getBoundingClientRect().height;
+  // // console.log(heroBtm)
+  // if (window.scrollY < heroBtm && !conditionMet) {
+  //   window.scrollTo({
+  //     top: heroBtm,
+  //     // behavior: 'smooth'
+  //   });
+  // }
 });
 
 
