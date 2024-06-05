@@ -82,6 +82,8 @@ function setup() {
       function isMobileLayout() {
         return window.innerWidth < 600; // Example breakpoint for mobile layout
       }
+
+    
       
       let tappedOnce = false;
   
@@ -199,9 +201,12 @@ let isAnyPlanetHovered = false;
 function draw() {
     isAnyPlanetHovered = 0;
     cameraCoords.z = lerp(cameraCoords.z, targetZoom, 0.1);
-    background('#0000E9')
-    fill('#E6FFFF')
+    background('#E6FFFF')
+    background("#0000E9")
+    fill(0,0,233)
     stroke(0,0,233,spaceOpacity) //'#0000E9'
+    // stroke(0,0,233,spaceOpacity)
+
 
     translate(width / 2, height / 2);
     // rotate(45); // Rotate by 45 degrees
@@ -353,3 +358,31 @@ document.addEventListener('scroll', () => {
     });
   }
 });
+
+
+
+// this also exists in populate-menu.js
+
+let mobileMenu = document.getElementById("mobile-menu")
+
+function populateMobileMenu() {
+  for (let i = 0; i < articlePaths.length; i++) {
+      let menuLink = document.createElement("a");
+      menuLink.href = articlePaths[i][0];
+      menuLink.classList.add("menuLink")
+      
+      let menuPlanetDot = document.createElement("div");
+      menuPlanetDot.classList.add("menuPlanetDot")
+      menuLink.appendChild(menuPlanetDot);
+
+      let linkText = document.createTextNode(articlePaths[i][1]);
+      menuLink.appendChild(linkText)
+
+      mobileMenu.appendChild(menuLink);
+  }
+}
+populateMobileMenu()  
+
+
+
+document.body.appendChild(mobileMenu)

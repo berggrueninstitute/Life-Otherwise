@@ -1,6 +1,6 @@
 ---
 # layout: parallax
-layout: post
+layout: bluePlanet
 title: The Blue Planet Event
 author: Dana Burton and Valerie Olson
 bio: "Dr. Dana Burton is a Faculty Fellow at XE. She is an anthropologist whose research sits at the intersection of the anthropology of outer space, feminist science and technology studies, and multispecies scholarship. She earned her PhD from George Washington University. Burton’s work is informed by ethnographic fieldwork that began at NASA Ames Research Center in California and expanded to include a multi-sited network of NASA centers across the United States and many academic, scientific, and commercial communities and nonhuman entities connected to life detection efforts. <br><br>Prof. Valerie Olson is an assistant professor of anthropology at the University of California, Irvine. Olson is an environmental anthropologist who researches sociocultural dimensions of large-scale ecosystem science and governance in North America. Her projects focus on how remote and largely unpopulated environments, like outer space and ocean subsurfaces, become important sites in the production of new ecological knowledge, technologies, and politics. Olson is the author of _Into the Extreme:\ U.S. Environmental Systems and Politics Beyond Earth_ (2018)."
@@ -8,6 +8,27 @@ full-title: "The Blue Planet Event"
 location: Acidalia Planitia
 planet: Mars
 year: 3.8–3.5 Billion years ago
+exegesis:   |
+    What is life from the perspective of multiplicity? Of life_s_ rather than life? This piece is a speculative, playful rendering of scientific concepts about biological life, survival, growth through the lens of pluribiological entities who recognize that life is not something that takes place on a site, but is an assemblage across space and time.  This piece proceeds by simply bypassing the idea of a singular biology and the basic underpinnings of astrobiological ontology.
+
+    Deliberately, we seek to create a world where singularity was never assumed or refuted, where ecological ethos is the enveloping framework, and ecology itself becomes blurred between life/other-than-life. As artists, researchers of science, and anthropologists, we are seeking to bridge the social scientific, creative, and scientific by opening up the possibility of what biology/s could be.
+
+    Throughout our conversations over the years, we have played with the many ideas of what the consequences could be of living in a world where it is recognized that multiple biologies exist. Through this collaborative writing, we are troubling the very singularity of life. How would we think of ourselves, on Earth? In many ways, it is not an altogether strange concept. Although we may identify ourselves as “human” we are made up of millions of microorganisms that live in our guts, on our skin. Every breath we take is a symphony of lives persisting, coordinating in a weird and unwieldy way. Our story aligns with efforts made by many multispecies and science and technology scholars who draw our attention to our entangled realities, and the ways our interactions with living and nonliving entities allow “our-selves” to come into being. 
+
+    To create a pluribiological sensibility that is fundamentally otherwise, we played with three astrobiological assumptions about what life needs to be and survive: _energy, a solvent, and nutrients_. The Axioms we include in the story are reimaginings of these three aspects from a pluribiological perspective. We’ve come up with the below charting so that the relationship between current scientific parameters and what we are speculating becomes clear. 
+
+    _Axiom 1_ Rethinks energy: We play with the emergence of life. Instead of thinking of it as bounded, and the individual thing needing energy, we offer a concept of aliveness. Aliveness is similar to Giles Deleuze’s idea of pure capacity. It is the _capacity_ for emergence and development, and this energetic force of capacity is present in anything—crystal, dust, etc.
+
+    In the story, the creatures aren’t looking for the beginning of life, but aliveness, which to them is not “energy”  but the convergence of molecular communities. Aliveness is the capacity for nonlife to become an enmeshed, moving, colliding, dynamic multiplicity.
+
+    _Axiom 2_ Rethinks nutrients: We move away from distinct categories of “this is a nutrient” and “this is not.” Rather, we focus on nurturance as a mutual process of sustenance and transformation. In the piece, the creatures are looking at nurturance, as a relational dynamic where the “nutrients” are becoming with the entity, a transformation of and with, similar to what Karen Barad conceptualizes as intra-action. It thinks with an assemblage—or interconnected, affective network—as well as an ecological framework.
+
+    _Axiom 3_ Rethinks solvent: This speaks against the inertness of water. It asks us to think of it as a co-molecular lively entity that engages with molecules. Together they mutually deconstruct and construct, reorganizing form. It is a mutually lively process that never reaches completion or full coherence. Like all ecologies, there are things produced, there is waste… there are parts of us that become "not us" and so there is a more co-constitutive, dynamic logic to solvent exchange. Everything has integrity and is also interchanging. This can occur in liquid space and also free space, such as asteroids. It is a process, a kind of becoming (as Donna Haraway or Anna Tsing perhaps would say), as bodies become (with) assemblages.
+
+    Beyond rethinking the axioms, we are also contributing to a longstanding conversation across disciplines about ecology. A very simple definition of an ecology is a system of living organisms and the environments that support them. What becomes of ecology on an interplanetary scale? How can we scale the transformative quality, power, and force of ecology if we lean into its contingent, dynamic, and becoming aspects—as we see them on Earth, and as scientists describe them as occurring on other planets, such as Mars or exoplanets of the Trappist system? We deliberately set this story on an ancient Mars to do this work. By moving the story away from Earth, where many science fiction imaginaries are set or directly imposed onto other planetary-scapes (think _Star Wars_), then what does that do to our definition of ecology? How does decentering Earth and Earthly-ness provide a different set of relations to become possible, especially in a pluribiological reality? Thus, we take inspiration from Mars’ geographies, scientific papers about its atmosphere, and images taken by satellites to craft the world the creatures of this story move through and live in. We follow them and their frameworks in an effort, we hope, to realize and re-meet a young Earth. 
+
+    And ourselves.
+
 
 ---
 
@@ -58,7 +79,8 @@ You know, your mention of memories sparked mine. There was that first time we we
 
 _Message from ₻ to ₯:_ Scared? No way! We were thrilled. And even more so now. We remember the feeling of anticipation during advanced training. The day we learned, without a doubt, that molecular communities on Blue may have been connecting, but the axioms of aliveness, as we perceive it, weren’t yet in concert. The need to ally wasn’t there yet, although teachers always got a little vague about why that was…We remember the explanations, do you? Like: “Encounters among molecules never seemed to spark the commitment to sharing difference.” The whole thing about how, for ecogenesis to happen, molecules on Blue weren’t yet_…[message interference]…_enough to tend toward cooperating outside their fields. Then protobacterial clumps could form, and then they could merge into sharing-based communities…the teachers would go on and on. There were so many contingencies! Even today we find the process beguiling—the genesis of ecology, when singular molecular linearities converge into diversities that continue? It’s hard to imagine that reeling, animated dis-coordinations! But perhaps we will be witnessing it now.  
 
- 
+ ![Image description](/images/bluePlanet/bumps.jpg){: #bumps .bluePlanetImg }
+
 
 _Message from ₯ to ₻:_ Yes, perhaps it is. We feel a bit nervous about it at the same time we feel this thrill, as you say. There is this old Elder song, somehow this stanza feels like the right thing to send back to you:
 
@@ -128,7 +150,8 @@ _Message from ₻ to ₯:_ We come! This is such a validation of what we’re tr
 
 > _Sharing pluripotencies_
 
- 
+  ![Image description](/images/bluePlanet/01_mol.gif){: #mol .bluePlanetImg }
+
 
 _Message from ₯ to ₻:_ _ _Wait! Sharing…we just had a thought about nurturance beginnings. But it is still forming, what do you think? Just now, we were sweeping over a spot on the ocean floor, intense heat from below warming our insides. As usual, we greeted the deep silent Shifter communities, who converted the heat so that we may be warmed and moved by it. Then we saw small flares at the very bottom that light up the depths, Lighters working below in masses. We realized they don’t feel the messages as we do, their lives so tightly coupled with the chemical exchanges of their rock partners. But when we swim closer, we can feel bursts of energy, energy we needed to replenish the heat output of our swim. There is something important to learn in these moments of mutual constitution and dispersal. Remember the old song?
 
@@ -177,6 +200,7 @@ It’s interesting to feel the need to drift with the current but also to move t
 
 How is the water so shallow already? We are a ways off, but we are unsure how close we can come. Is that you on the shore?
 
+ ![Image description](/images/bluePlanet/lumps.jpg){: #lumps .bluePlanetImg }
 
 _Message from ₻ to ₯:_ We see you! Swim as close to the shore as you can. The Severed Rock is farther from the water than we remember. It was once entirely surrounded! From our vantage, we see that it is still deep on that far side. It’s been a while since we last swam, but we’ll jump in the water with you there. 
 
@@ -209,6 +233,7 @@ The crunch of gravel resounded in the small cleft. The sky is a narrow strip abo
 Rocks that had not been disturbed in millennia vibrate as the wheels of Perseverance rover wends its way forward, turning a sharp corner around a jagged rock face, maneuvering around a pile of larger boulders. Silver glints under a fine layer of dust, though the images it sends are still clear. It was 8:19 p.m. for the scientists in Pasadena, California, Earth. The eyes of the rover alongside data signals from an orbiting imager had been the predominant resource the scientists were using to model  Perseverance’s path. All part of the mission from the Blue Planet to seek signs of life or its conditions on the Red Planet.
 
  
+ ![Image description](/images/bluePlanet/02_gas.gif){: #gas .bluePlanetImg }
 
 Despite the close confines of the rocks, the journey to the next sampling spot is relatively straightforward. Perseverance continues forward. This part of the Martian topography, located in the northern hemisphere of the red planet was well imaged by Mariner V. Ahead, the onboard camera “recognized” the mineral beveled rock formation from satellite images. A shallow dip, easily navigable with the wide treads of the rover’s wheels, brings it directly to the formation’s side. It rises over six meters high, a scoured surface of obsidian. Perseverance’s camera is already snapping photos, rolling around the formation, reconnecting with its tracks after a few hours of careful documentation. Unlike the cliffs it had spent the better part of a month traversing, this formation has rounded edges. But not from wind, for the sheen of the formation betrayed a metallic component that was not present in the mineral composition of Mars. Perseverance’s camera swivels to capture the base, of where formation meets surface. Ripples from where they had melted into each other pockmarks the ground for almost a meter. (Several scientists, upon receiving the images 29 minutes later, exclaim about this feature.) There is a gradient of sediment as if a portion of it had been underwater.
 

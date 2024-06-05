@@ -9,18 +9,26 @@ layout: default
 <div> <!-- sticky container -->
     <div id="article-outline"></div>
     <div id="top-mask"></div>
+    <div id="left-mask"></div>
+    <div id="right-mask"></div>
     <div id="btm-mask"></div>
     <div id="article-container">
-        <h1 class="article-title">{{ page.full-title }}</h1>
-        <h2 class="article-author" href="#" id="openPopup">{{ page.author }}</h2>
+        <div id="moving-header" >
+            <h1 class="article-title">{{ page.full-title }}</h1>
+            <h2 class="article-author" href="#" id="openPopup">{{ page.author }}</h2>
+        </div>
         {{ content }}
         <div id="dropdown-container">
+            {% if page.exegesis %}
             <div id="exegesis">
                 {{ page.exegesis | markdownify }}
             </div>
+            {% endif %}
+            {% if page.endnotes %}
             <div id="footnotes">
                 {{ page.endnotes | markdownify }}
             </div>
+            {% endif %}
         </div>
     </div>
 
@@ -118,5 +126,26 @@ function toggleDropdown(id, button) {
     button.classList.toggle('open', !isOpen);
     footerScoot()
 }
+
+
+
+//js for header motion
+        window.addEventListener('scroll', function() {
+            let scrollPosition = window.scrollY;
+            let header = document.getElementById('moving-header');
+
+            if (scrollPosition <= 500) {
+                let translateX = (scrollPosition / 500) * 100;
+                header.style.transform = `translateX(${-translateX}vw) translateY(${scrollPosition}px)`;
+            } else {
+                header.style.transform = `translateX(-100vw) translateY(300px)`; // Move off screen after 300px
+            }
+        });
+
+
+
+    //for right-mask
+    document.getElementById('right-mask').style.width = `${window.innerWidth - document.getElementById('article-outline').getBoundingClientRect().right}px`;
+
 
 </script>

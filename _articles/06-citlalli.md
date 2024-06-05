@@ -7,11 +7,22 @@ full-title: "Citlalli in the Sky with Cnidaria"
 location: Low Orbit
 planet: Earth
 year: 2029
+exegesis:  |
+    My goal was to explore the defamiliarization of outer space through ancient Mesoamerican cosmologies. In particular, I wanted to highlight what I’ve come to appreciate over the years as a type of indigenous Mesoamerican cosmological humility.  
+
+    I first encountered this concept in graduate school as I contemplated the hieroglyphic text inscribed on the stone tablet in Temple XIV of the Classic Mayan archaeological site of Palenque in Chiapas, Mexico. In it, the _k’uhulajaw_ (or “ruler” of Palenque), K’inich Kan B’ahlam, is described as re-enacting a ceremony performed by a ‘deity’ in primordial times. It was not uncommon in such inscriptions for ancient paramounts to have appealed for legitimacy through association with Creator deities, but something else caught my attention: the earlier event recorded on the tablet occurred 931,000 years before Kan B’ahlam’s own event in the 8<sup>th</sup> century AD. Various other Classic Maya inscriptions describe the mythological ‘creation’ events that led to humanity’s population of the Earth as occurring circa 3,000 BC, so Kan B’ahlam’s inscription suggests that the practices and relationships that Classic Mayan communities engaged were developed and maintained in the universe long before humans were even a hint in any primordial deity’s imagination.
+
+    This tablet’s contents, alongside countless other cases in historical and archaeological records—as well as my experiences with members of contemporary indigenous communities—have led me to theorize an alternative conceptualization of indigenous Mayan leadership. Mutually beneficial relationships were established in the cosmos eons ago, and humans were charged with entering into them as collaborators in ways that actively maintained a healthy balance. Such a cosmological humility stands in opposition to the idea that a singular, hierarchically superior being—i.e., humanity—is ordained by an all-powerful deity to use earthly resources without regard for greater impacts.
+
+    As this piece developed, I began to contemplate how we, modern humans, might re-encounter a sense of cosmological humility. What might it mean for an extraterrestrial species to be not only technologically but also morally superior to humans? It occurred to me that this might not result from greater intellect, but perhaps simply from an evolutionary accident. By analogy, we might consider what would happen if dolphins had evolved to grow primate-like hands. Would they have presented humans with challenges to societal development that encouraged a sense of responsibility to and collaboration with other species as opposed to ideologies that emphasized exceptionalism? To bring these ideas together in the piece, I leaned heavily on Octavia E. Butler’s fiction to create an alternative historical future in which humans have not yet interacted with extraterrestrials simply because they have been avoiding us on moral grounds. 
+
+    The piece ultimately asks the reader to ponder whether a rediscovery of cosmological humility inspired by ancient Mayan cultures might change how we interact with other residents of our planet, and perhaps even enable first contact.
+
 ---
 
 
 
-
+![alt text](/images/citlalli/declassified.png){: .citlalli-declassified }
 TOP SECRET
 
 _Transcript of Internal Briefing_
@@ -165,6 +176,7 @@ _Professor Ruiz:_ Mmm… Memo worked at one time with an indigenous elder who us
 _Mr. Guthrie:_ Well, it wasn’t the psychedelics that killed him. From what we’ve been able to put together, it looks like one day he used a new connection for some LSD—which was unusual really for two reasons:  because he mainly avoided synthetics, and because he always used his one trusted connection. Turned out this LSD was laced with fentanyl.
 
 [Inaudible]
+
 ![Image description](/images/citlalli/citlalli-illo-2.png){: .citlalli-side-img }
 
 

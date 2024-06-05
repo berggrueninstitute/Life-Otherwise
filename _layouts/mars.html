@@ -1,0 +1,112 @@
+---
+layout: post
+---
+
+
+{{ content }}
+
+<style>
+    .bluePlanetImg {
+        max-width: 70vw;
+        max-height: 50vh;
+        /* min-height: 800px; */
+        z-index: 50;
+    }
+
+
+    @media screen and (min-width: 1200px) {
+        #gas {
+            width: 17vw;
+        }
+        #mol {
+            width: 15vw;
+        }
+        #lumps {
+            width: 5vw;
+        }
+        #bumps {
+            width: 11vw;
+            z-index: 51;
+        }
+    }
+</style>
+
+
+<script>
+function easeInOutCubic(t) {
+    return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+}
+
+function moveImagesOnScroll(images) {
+    if (window.innerWidth > 1200) {
+        window.addEventListener('scroll', () => {
+            const viewportHeight = window.innerHeight;
+            const scrollY = window.scrollY;
+
+            images.forEach(({ img, start, end, right, height }) => {
+                const imgHeight = img.clientHeight;
+                const imgStart = start * document.body.scrollHeight;
+                const imgEnd = end * document.body.scrollHeight;
+                let heightStop = height || 1
+
+                // if (scrollY + viewportHeight >= imgStart && scrollY <= imgEnd) {
+                    const progress = (scrollY + viewportHeight - imgStart) / (imgEnd - imgStart);
+                    const easedProgress = Math.min(easeInOutCubic(progress),1) * heightStop;
+                    let top = (viewportHeight+imgHeight) * ((1 - easedProgress)) - imgHeight;
+
+                    // if (height) {
+                    //     const stopPosition = viewportHeight * height - imgHeight;
+                    //     if (top <= stopPosition) {
+                    //         top = stopPosition;
+                    //     }
+                    // }
+
+                    img.style.position = 'fixed';
+                    img.style.top = `${top}px`;
+                    img.style.right = `${right * 100}vw`;
+                // } else {
+                //     img.style.position = 'absolute';
+                //     img.style.top = scrollY + viewportHeight >= imgStart ? `${imgEnd - imgHeight}px` : `${imgStart + viewportHeight}px`;
+                // }
+            });
+        });
+    }
+}
+
+
+let gas = {
+    img: document.getElementById("gas"),
+    start: 0.1,
+    end: .5,
+    right: .12,
+    height: .6
+}
+let bumps = {
+    img: document.getElementById("bumps"),
+    start: .2,
+    end: .8,
+    right: .2,
+    height: 1.02
+}
+let lumps = {
+    img: document.getElementById("lumps"),
+    start: .4,
+    end: .7,
+    right: .05,
+    height: .95
+}
+let mol = {
+    img: document.getElementById("mol"),
+    start: .43,
+    end: .9,
+    right: .15,
+    height: .2
+}
+let imgs = [gas, bumps,  lumps, mol];
+
+moveImagesOnScroll(imgs);
+
+
+
+
+</script>

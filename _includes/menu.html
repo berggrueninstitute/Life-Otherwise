@@ -3,3 +3,24 @@
     <h4>Future Histories</h4>
     <div id="planets-menu"></div>
 </div>
+
+<div id="mobile-menu" class="hidden">
+    <h4 id="mobileMenuHeader">Future Histories</h4>
+    <div id="mobileMenuRule"></div>
+    <button id="close-menu">×</button>
+    <!-- Menu content here -->
+</div>
+
+
+<script>
+    document.getElementById('hamburger-container').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.add('visible');
+    document.body.classList.add('modal-open');
+});
+
+document.getElementById('close-menu').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.remove('visible');
+    document.body.classList.remove('modal-open');
+});
+
+</script>

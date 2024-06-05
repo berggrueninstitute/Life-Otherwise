@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: mars
 title: Haunted on Mars
 author: Asif Siddiqi
 bio: "Prof. Asif Siddiqi is a Bangladeshi American space historian and a Guggenheim Fellowship winner. He is a professor of history at Fordham University. He specializes in the history of science and technology and modern Russian history. Siddiqi has written several books on the history of space exploration, including _Soyuz 1:\ The Death of Vladimir Komarov_ (2020), _Beyond Earth:\ A Chronicle of Deep Space Exploration, 1958-2016_ (2018), and _The Red Rockets' Glare:\ Spaceflight and the Russian Imagination, 1857-1957_ (2010)."
@@ -7,6 +7,50 @@ full-title: "Haunted on Mars"
 location: Newton Crater
 planet: Mars
 year: 2036
+exegesis:   |
+    “Haunted on Mars” is a secret history in three parts, drawing from real-world events. But like the dreams of the protagonists of each act’s stories, it also offers speculation about the future derived from accreted histories of the past. Each vignette—of Bogdanov, Tsander, and Babakin—represents a moment when the push for exploration of space seemed impossible to stop but then lost its way or disappeared; stray fragments then drift forward as haunted fragments and reconstituted in previously illegible forms. Netti speaks as one both haunted by the foreclosed past and one who herself will haunt our open future, inviting us to imagine a new and better world out there.
+
+    The garbled image from Mars-3—ambiguous, mysterious, unclear—perfectly embodies many of the deeper instabilities of this now-mostly-forgotten moment on Mars, the first time that something humans had built, and had made it all the way to the Martian surface in working order. Created in a factory outside of Moscow, this object, officially known as Mars-3, carried with it a possibility of a different future in space, one that was extinguished, much like an extraterrestrial dust storm, with the collapse of the Soviet Union and replaced, it seems now, with another seemingly monolithic vision of outer space, driven by billionaires picking at the distended remains of late-stage capitalism.
+
+    The Mars-3 landing, on December 2, 1971, its moment of success interrupted by its sudden moment of loss of contact, points to the kinds of irruptions immanent in the history and future of space exploration—the points at which certain possibilities are foreclosed, others opened, and sometimes closed off again. That the very first human-made object to make contact with Mars—made in a factory in the Moscow suburb of Khimki by workers whose cultural references, speculative worlds, and ideological sensibilities were completely at odds with our contemporary dominant narrative that links capitalism with space travel—presents an odd form of incongruency, like a piece of a puzzle that doesn’t quite fit. The narrative of Mars in the popular imagination, at least in the West, has emerged from the promises of classic science pulp fiction in the early 20th century with a detour through the kitsch of B-movies of the 1950s. More than any other planet, Mars occupied a central place in the Western cosmic imagination—either as a graveyard for past life or as a stage for a screenplay of the future—that is a colorful symbol of aspiration whose power rested on its adaptability to the vicissitudes of the human imagination. In the 2020s, these had seemingly coalesced into the garish vision of a Tesla car hurled into space to fly past the red planet.<sup>1</sup> The future of humans on Mars, we are told, will be a merger of Bay Area techno-libertarianism driven by dreams of massive terraforming.
+
+    The late writer and critic Mark Fisher famously opined that we are stuck in a form of “capitalist realism”—the pervasive feeling produced by capitalism that there is no “real” alternative to capitalism, one that limits the possibilities for both theory and praxis, but most insidiously constricts even dreams of alternatives, allowing instead minimal gestures that fix the edges while leaving the center unchanged.<sup>2</sup> Our collective dreams of exploring space too seem to have arrived at a moment when it appears impossible to imagine alternatives. Already, SpaceX has launched nearly 5,000 of its own Starlink satellites into orbit as of this writing with a total of 42,000 supposedly still-to-be launched by the time the system is completed. What kind of alternative can we imagine when the entire night sky that humans have been gazed at for millennia will be held hostage to the whims of a boy-child whose horizon is as limited as his imagination?
+
+    Alternatives to the official future have always existed. The Mars-3 moment reveals an abandoned world in the history—and the future—of space exploration. To appropriate the term made popular by Greil Marcus, the path both backwards and forwards from Mars presents a “secret history” of space travel in the 20th century, one that connects a seemingly disconnected “tradition of shared utopias, solitary refusals, impossible demands, and unexplained disappearances.” In his _Lipstick Traces: A Secret History of the Twentieth Century_, Marcus offers a provocation:
+
+    Is history simply a matter of events that leave behind those things that can be weighed and measured—new institutions, new maps, new rulers, new winners and losers—or is it also the result of moments that seem to leave nothing behind, nothing but the mystery of spectral connections between people long separated by place and time, but somehow speaking the same language?<sup>3</sup>
+
+    These moments, that “seem to leave nothing” behind are the molecules of the story I present here, which offer a refusal, in narrative form, to the dominant narrative of Mars.<sup>4</sup> These molecules haunt the life of our protagonist, Netti, who lives and works on Mars in the year 2036 when other futures seem no longer possible or at least deeply compromised by the monopolizing decay of late-stage capitalism.
+
+    In revisiting the notion of “hauntology,” the late writer and critic Mark Fisher asks us to consider the persistence of things that continue to resonate without actually existing. Fisher’s admonition that “[e]verything that exists is possible only on the basis of a whole series of absences, which precede and surround it, allowing it to possess such consistency and intelligibility that it does,” haunts our received stories about Mars.<sup>5</sup> The picture sent back by Mars-3 perfectly embodies this hauntological aesthetic, both in the strange melancholia it embodies but also in the “noise” in the image. Such noise, like the “surface noise made by vinyl … makes us aware that we are listening to a time that is out of joint.”<sup>6</sup>
+endnotes:   |
+    1. Richard Stites, “Alexander Bogdanov and the Origins of Bolshevik Science Fiction” in Alexander Bogdanov, _Red Star: The First Bolshevik Utopia_, eds. Loren R. Graham and Richard Stites (Bloomington: Indiana University Press, 1984), 1-16.
+    2. Stites, “Alexander Bogdanov and the Origins of Bolshevik Science Fiction,” 5-6.
+    3. This point is made by Loren R. Graham in “Bogdanov’s Inner Message” in Alexander Bogdanov, _Red Star: The First Bolshevik Utopia_, 241-55. The literature on Bogdanov is vast, and also includes: Mark B. Adams, “ ‘Red Star’ Another Look at Aleksandr Bogdanov,” _Slavic Review_ 48, no. 1 (1989): 1-15; Giovanni Maniscalco Basile, “The Utopia of Rebirth: Aleksandr Bogdanov’s _Krasnaia Zvezda_,” _Canadian-American Slavic Studies_ 18, nos. 1-2 (1984): 54-62; Arran Gare, “Aleksandr Bogdanov’s History, Sociology and Philosophy of Science,” _Studies in the History and Philosophy of Science_ 31, no. 2 (2000): 231-48.
+    4. Alexandra Kollontai, “Sexual Relations and the Class Struggle” in _Selected Writings of Alexandra Kollontai_, ed. Alix Holt (New York, NY: W.W. Norton & Company, 1980), 237-60.
+    5. Iaroslav Golovanov, _Marsianin: opyt biografii_ [_The Martian: An Experimental Biography_] (Moscow: Molodaia gvardiia, 1985), 3.
+    6. Golovanov, _Marsianin_, 5.
+    7. Astra Tsander, “Chelovek, operedivshiii vremia” [“A Man Ahead of His Time”], _Ogonek_ 40 (October 3-10, 1987): 2-3.
+    8. “Doklad inzhener F. A. Tsandera o svoem izobretenii” [“The Report of Engineer F. A. Tsander on His Invention”] (April 1923) in F. A. Tsander,_ Iz nauchnogo naslediia_ [_From a Scientific Heritage_], ed. A. F. Tsander (Moscow: Nauka, 1967), 10-14.
+    9. “Doklad inzhenera F. A. Tsandera o svoem izobretenii.”
+    10. “Doklad inzhenera F. A. Tsandera o svoem izobretenii.”
+    11. F. A. Tsander, “Perelety na drugie planety” [“Flights to Other Planets”] _Tekhnika i zhizn’_ no. 12 (1924): 15-16.
+    12. For selected published works of Tsander, see F. A. Teters, ed., _Fridrikh Tsander: sobranie trudov_ [_Fridrikh Tsander: Collected Works_] (Riga: Zinatne, 1977); V. P. Mishin, ed. _F. A. Tsander i sovremennaia kosmonavtika_ [_F. A. Tsander and Modern Cosmonautics_] (Moscow: Nauka, 1976).
+    13. B. Pavlov and G. Il’in, _Na khimkinskoi zemle_ [_On Khimki Land_] (Moscow: Moskovskii rabochii, 1990).
+    14. B. Konovalov and B. Mikhailov, “Georgii Nikolaevich Babakin,” _Izvestiia_, November 12, 1984, 3.
+    15. M. Borisov and A. Nemov, “Pokorenie beskonechnosti” [“Conquering Infinity”], _Sovetskaia rossiia_, November 11, 1984, 4.
+    16. For descriptions of these probes, see V. G. Perminov, _The Difficult Road to Mars: A Brief History of Mars Exploration in the Soviet Union_ (Washington, DC: NASA, 1999), 34-60.
+    17. Asif A. Siddiqi, _Beyond Earth: A Chronicle of Deep Space Exploration, 1958-2016_ (Washington, DC: NASA, 2018), 100-103.
+    18. Perminov, _The Difficult Road to Mars_, 58.
+    19. For a biography, see N. G. Babakin, A. N. Banketov, and V. N. Smorkalov, _G. N. Babakin: zhizn’ i deitel’nost’ _[_G. N. Babakin: Life and Work_] (Moscow: Adamant, 1996).
+    20. In 2018, SpaceX launched a fully functional Tesla automobile into heliocentric orbit whose aphelion (furthest point beyond the Sun) exceeded the Martian orbit.
+    21. United States Geological Survey, Gazetteer of Planetary Nomenclature. _Ptolemaeus_, November 17, 2010.
+    22. Matthew Shindell, _For the Love of Mars: A Human History of the Red Planet_ (Chicago, IL: University of Chicago Press, 2023).
+    23. Mark Fisher, _Capitalist Realism: Is There No Alternative?_ (Winchester, UK: Zero Books, 2010).
+    24. Greil Marcus, _Lipstick Traces: A Secret History of the Twentieth Century_ (Cambridge, MA: Harvard University Press, 1989), 4.
+    25. Shindell, _For the Love of Mars._
+    26. Mark Fisher, _Ghosts of My Life: Writings on Depression, Hauntology, and Lost Futures_ (Winchester, UK: Zero Books, 2014), 15.
+    27. Fisher, _Ghosts of My Life_, 18.
 ---
 
 

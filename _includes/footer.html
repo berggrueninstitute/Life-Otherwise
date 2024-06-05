@@ -1,25 +1,23 @@
 <footer class="footer">
     <div class="footer-column">
-        <p>Creator & Editor: Claire Isabel Webb</p>
-        <p>Editor: Lois Rosson</p>
-        <p>Managing Editor: Ulysses Yarber</p>
-        <p>Design & Art Direction: Public/Official</p>
-        <p>Developed: Cotton design</p>
+        <p>Creator & Editor: Claire Isabel Webb<br>
+        Editor: Lois Rosson<br>
+        Managing Editor: Ulysses Yarber<br>
+        Design & Art Direction: Public/Official<br>
+        Developed: Cotton design</p>
     </div>
     <div class="footer-column">
         <p>All rights reserved. No part of this website may be reproduced, stored in a retrieval system, or transmitted, in any form or by any means, electronic, mechanical, photocopying, recording, or otherwise, without the written permission of the Berggruen Institute.</p>
         <p>© 2024 Berggruen Institute</p>
     </div>
     <div class="footer-column">
-        <p>Berggruen Institute</p>
-        <p>304 S. Broadway, Suite 500</p>
-        <p>Los Angeles, CA 90013</p>
-        <p><a href="http://www.berggruen.org">www.berggruen.org</a></p>
+        <p>Berggruen Institute<br>
+        304 S. Broadway, Suite 500<br>
+        Los Angeles, CA 90013<br>
+        <a href="http://www.berggruen.org">www.berggruen.org</a></p>
     </div>
     <div class="footer-column">
-        <p>Future Humans</p>
-        <p>Berggruen Institute</p>
-        <img src="path/to/logo.png" alt="Berggruen Institute Logo">
+        <img id="footer-logo" src="/assets/logos/future-humans-berg-logo.svg" alt="Berggruen Institute Logo">
     </div>
 </footer>
 
@@ -29,8 +27,11 @@
     function footerScoot() {
     const footer = document.querySelector('footer');
     const topMask = document.getElementById('top-mask');
+    const leftMask = document.getElementById('left-mask');
+    const rightMask = document.getElementById('right-mask');
     const bottomMask = document.getElementById('btm-mask');
     const menu = document.getElementById('menu');
+    const mobileMenu = document.getElementById('hamburger-container');
     const articleOutline = document.getElementById('article-outline');
 
     if (footer) {
@@ -39,14 +40,14 @@
         const offset = windowHeight - footerRect.top;
 
         if (offset > 0) {
-            const elements = [topMask, bottomMask, menu, articleOutline];
+            const elements = [topMask, leftMask, rightMask, bottomMask, menu, mobileMenu, articleOutline];
             elements.forEach(element => {
                 if (element) {
                     element.style.transform = `translateY(-${offset}px)`;
                 }
             });
         } else {
-            const elements = [topMask, bottomMask, menu, articleOutline];
+            const elements = [topMask, leftMask, rightMask, bottomMask, menu, mobileMenu, articleOutline];
             elements.forEach(element => {
                 if (element) {
                     element.style.transform = 'translateY(0)';

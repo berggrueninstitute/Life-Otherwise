@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: otherwise
 title: What if life were otherwise?
 author: Claire Isabel Webb & Lois Rosson
 bio: "Dr. Claire Isabel Webb directs the Berggruen Institute’s Future Humans program that investigates the histories and futures of life, mind, and outer space. Webb earned her Ph.D. from MIT’s History, Anthropology, and Science, Technology, and Society (HASTS) program in 2020. Her book project, _Reflexive Alienation_, explores how scientists since the Space Age, despite alien life forms' perpetual and perhaps permanent unknowability, have designed sophisticated experiments of expectation that anticipate Other biologies and intelligences.<br><br> Dr. Lois Rosson is a continuing Berggruen Institute Fellow. She received her Ph.D. from the History Department at U.C. Berkeley in 2022, where she specialized in the History of Science. Her current book project, _How to Paint Space:\ Image and Authority in the American Space Age_, examines the impact of mid-century astronomical illustration on perceptions of space landscapes in both the popular and scientific imaginaries. Rosson was previously a Guggenheim Fellow at the Smithsonian’s National Air and Space Museum, a research associate at Lawrence Livermore National Lab, and holds the 2023 – 2024 Octavia E. Butler Fellowship at the Huntington Library."
@@ -7,6 +7,15 @@ full-title: "“What if Life were Otherwise?”"
 location: Los Angeles
 planet: Earth
 year: 2024
+endnotes:   |
+    1. Robert Crowley, _What If? Eminent Historians Imagine What Might Have Been_ (New York: G.P. Putnam’s Sons, 2001), 397.
+    2. Nicole Yorkin, “L.A. 2013,” Los Angeles _Times_, March 8, 2013.
+    3. “The Militant Left’s Plan to Disrupt the 2020 Presidential Election,” A Judicial Watch Election Bulletin, Judicial Watch Inc., September 21, 2020: 4.
+    4. Judicial Watch Inc.
+    5. Peter Sessions to Rosa Brooks, March 21, 2024, in Scribd, Inc., ed. Libby Emmons.
+    6. Cowley, xiv.
+    7. Roni Caryn Rabin and Azeen Ghorayshi, “Alabama Rules Frozen Embryos Are Children, Raising Questions about Fertility Care,” The New York _Times_, February 21, 2024.
+    8. Marina Koren, “Imagine Giving Birth in Space,” The _Atlantic_, January 2, 2019.
 ---
 
 

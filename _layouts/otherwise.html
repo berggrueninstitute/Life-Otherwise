@@ -1,0 +1,109 @@
+---
+layout: post
+---
+
+
+{{ content }}
+
+<div id="bloom-container"></div>
+<div id="bloom-container2"></div>
+<script>
+    const gifs = ["Take_1_1.gif","Take_1_2.gif","Take_3.gif","Take_2_1.gif","Take_2_2.gif","Take_2_3.gif","Take_3_1.gif","Take_3_2.gif","Take_3.gif","Take_4_1.gif","Take_4_2.gif","Take_5_1.gif","Take_5_2.gif","Take_6_1.gif","Take_6_2.gif","Take_7_1.gif","Take_7_2.gif","Take_8.gif"];
+
+    const body = document.body;
+
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+    }
+
+    function createGifElement(src) {
+        const img = document.createElement('img');
+        img.src = src;
+        const container = document.createElement('div');
+        container.className = 'gif-container';
+        container.appendChild(img);
+        return container;
+    }
+
+    function placeRandomGifs() {
+        gifs.forEach(src => {
+            const gifElement = createGifElement("/images/otherwise/"+src);
+            let bloomContainer = document.getElementById("bloom-container")
+            let bloomContainer2 = document.getElementById("bloom-container2")
+            let bcRect = bloomContainer.getBoundingClientRect();
+            let a = getRandomInt(2)
+            if (a == 0) {
+                bloomContainer.appendChild(gifElement);
+            } else {
+                bloomContainer2.appendChild(gifElement);
+            }
+            const xPos = getRandomInt(bcRect.right - 100);
+            const yPos = getRandomInt(bcRect.bottom);
+            gifElement.style.left = `${xPos}px`;
+            gifElement.style.top = `${yPos}px`;
+            const start = getRandomInt(document.documentElement.scrollHeight);
+            const stop = getRandomInt(document.documentElement.scrollHeight - start) + start;
+            gifElement.setAttribute('start', start);
+            gifElement.setAttribute('stop', stop);
+        });
+    }
+
+    function showGifsOnScroll() {
+        const gifContainers = document.querySelectorAll('.gif-container');
+        gifContainers.forEach(container => {
+            let start = container.getAttribute('start')
+            let stop = container.getAttribute('stop')
+            console.log(start)
+            if (scrollY > start && scrollY < stop) {
+                container.style.opacity = '1';
+            } else {
+                container.style.opacity = '0';
+            }
+        });
+    }
+
+    window.addEventListener('scroll', showGifsOnScroll);
+    window.addEventListener('load', () => {
+        placeRandomGifs();
+        // showGifsOnScroll();
+    });
+</script>
+
+
+
+
+
+<style>
+    body {
+        position: relative;
+    }
+    .gif-container {
+        position: absolute;
+        display: block;
+        opacity: 0;
+        transition: 2s;
+    }
+    .gif-container > img{
+        mix-blend-mode: multiply;
+        opacity: .7;
+    }
+
+    #bloom-container, #bloom-container2 {
+        position: fixed;
+        height: 100dvh;
+        width: 100dvw;
+        top: 0px;
+        left: 0px;
+        pointer-events: none;
+        z-index: 100;
+    }
+    #bloom-container {
+        z-index: 100;
+    }
+
+    #bloom-container2 {
+        z-index: -10;
+    }
+
+
+</style>
