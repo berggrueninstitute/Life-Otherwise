@@ -42,8 +42,30 @@ html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
-  
+    font-size:16px;
 }
+
+@media screen and (min-width: 600px){
+   html {
+            font-size: 18px;
+    }
+}
+@media screen and (min-width: 1400px){
+    html {
+            font-size: 20px;
+    }
+}
+@media screen and (min-width: 1600px){
+    html {
+            font-size: 22px;
+    }
+}
+@media screen and (min-width: 2000px){
+    html {
+            font-size: 26px;
+    }
+}
+
 
 body {
     background-color: var(--main-bg-color);
@@ -106,18 +128,18 @@ a {
 
 
 p, .menuLink {
-    font-size: 22px;
+    font-size: 1rem;
     line-height: 135%;
 }
 .menuLink{
     line-height: 110%;
 }
 
-@media screen and (max-width: 1600px){
-    p,.menuLink {
-        font-size: 20px;
-    }
-}
+// @media screen and (max-width: 1600px){
+//     p,.menuLink {
+//         font-size: 20px;
+//     }
+// }
 
 #scrollContainer {
     height: 300dvh;
@@ -307,7 +329,8 @@ input[type="range"]::-moz-range-thumb {
     /* to center align items with dot */
     /* check that this doesn't break anything responsively */
     align-items: center; 
-    font-size: 18px;
+    // font-size: 18px;
+    font-size: 1rem;
 }
 
 #planets-menu {
@@ -461,8 +484,19 @@ hr {
 
 h1.article-title {
     font-weight: 400;
-    font-size: 48px;
+    font-size: 45px;
     margin-top: 10rem;
+}
+@media screen and (min-width: 1600px){
+    h1.article-title {
+     font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 2000px){
+    h1.article-title {
+     font-size: 62px;
+    }
 }
 
 h2.article-author {
@@ -472,6 +506,7 @@ h2.article-author {
     font-size: 1rem;
     cursor: pointer;
 }
+
 
 img.basic-image {
     width: 40vw;
@@ -525,10 +560,11 @@ img.basic-image {
     background-color: var(--lavender); /* Light purple background */
     padding: 20px;
     /* border-radius: 10px; */
-    width: 60%;
-    max-width: 600px;
+    width: 100%;
+    // max-width: 600px;
     border: var(--border2);
     position: relative;
+    max-width: 30rem;
 }
 
 .close {
@@ -768,7 +804,7 @@ img.basic-image {
     }
 
     #article-container p, .menuLink {
-        font-size: 26px;
+        // font-size: 26px;
     }
     
 }
@@ -812,7 +848,7 @@ img.basic-image {
     }
 
     p {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     #home-hero > h4 {
@@ -913,7 +949,6 @@ img.basic-image {
     }
 
     .menuLink {
-        font-size: 26px;
         padding-bottom: 20px;
         min-height: 60px;
         /* align-items: center; */
@@ -962,20 +997,15 @@ img.basic-image {
 
 
 @media only screen and (min-width: 600px) and (max-width: 1400px) {
-    :root {
-        font-size: 18px;
-    }
-
     p  {
-        font-size: 18px;
         margin-block-start: 2px !important;
     }
 }
 
 
 
-@media only screen and (min-width: 1201px) {
-    :root {
-        font-size: 24px;
-    }
-}
+// @media only screen and (min-width: 1201px) {
+//     // :root {
+//     //     font-size: 24px;
+//     // }
+// }
