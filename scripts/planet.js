@@ -1,6 +1,6 @@
 
 
-function Planet(depth, numPlanets, earth=false) {
+function Planet(depth, numPlanets, earth=false, hide=false) {
     this.x = random(-spaceDimensions.x*10, spaceDimensions.x*10);
     this.y = random(-spaceDimensions.y*10, spaceDimensions.y*10);
     this.z = map(depth, numPlanets, 0, 0, spaceDimensions.z);
@@ -13,10 +13,18 @@ function Planet(depth, numPlanets, earth=false) {
     this.r;
     this.links = [];
     this.earth = earth
+    this.hide = hide
+
+    if(hide) {
+        this.x = 300
+        this.y = -140 
+        console.log(this.z, this.x, this.y)
+    }
 
     if(earth) {
         this.x = 300
         this.y = -140
+        console.log("earth",this.z, this.x, this.y)
     }
   
     // this.update = function() {
@@ -68,7 +76,7 @@ function Planet(depth, numPlanets, earth=false) {
 
             //     }
             // }
-            drawDiamond(sx, sy, this.r, this.earth);
+            drawDiamond(sx, sy, this.r, this.earth, this.hide);
 
         } else {
             if (this.mark) {
@@ -80,7 +88,7 @@ function Planet(depth, numPlanets, earth=false) {
 
 
 
-function drawDiamond(x, y, size, earth) {
+function drawDiamond(x, y, size, earth, hide) {
     let diamondSize = size * sqrt(2); // Increase size to match the area of the square
     fill("#E6FFFF")
 
@@ -93,14 +101,15 @@ function drawDiamond(x, y, size, earth) {
     let bottom = createVector(x, y + diamondSize / 2);
     let left = createVector(x - diamondSize / 2, y);
 
-    // Draw the diamond
-    beginShape();
-    vertex(top.x, top.y);
-    vertex(right.x, right.y);
-    vertex(bottom.x, bottom.y);
-    vertex(left.x, left.y);
-    endShape(CLOSE);
-
+    if(!hide) {
+        // Draw the diamond
+        beginShape();
+        vertex(top.x, top.y);
+        vertex(right.x, right.y);
+        vertex(bottom.x, bottom.y);
+        vertex(left.x, left.y);
+        endShape(CLOSE);
+    }
 
 }
 
