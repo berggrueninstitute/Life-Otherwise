@@ -11,12 +11,12 @@ function Planet(depth, numPlanets, earth=false) {
     this.description;
     this.showDescription;
     this.r;
-    this.link;
+    this.links = [];
     this.earth = earth
 
     if(earth) {
-        this.x = 0
-        this.y = 0
+        this.x = 300
+        this.y = -140
     }
   
     // this.update = function() {
@@ -68,23 +68,24 @@ function Planet(depth, numPlanets, earth=false) {
 
             //     }
             // }
-            drawDiamond(sx, sy, this.r);
+            drawDiamond(sx, sy, this.r, this.earth);
 
         } else {
             if (this.mark) {
                 this.mark.style.display = "none"
                 this.description.style.display = "none";}
-            
         }
     }
 }
 
 
 
-function drawDiamond(x, y, size) {
+function drawDiamond(x, y, size, earth) {
     let diamondSize = size * sqrt(2); // Increase size to match the area of the square
-    if(this.earth) {
-        diamondSize*=400000;
+    fill("#E6FFFF")
+
+    if(earth) {
+        diamondSize*=4;
     }
     // Calculate the diamond's four corner points
     let top = createVector(x, y - diamondSize / 2);

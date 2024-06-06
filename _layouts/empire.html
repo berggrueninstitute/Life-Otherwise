@@ -22,7 +22,7 @@ layout: post
         height: 100%;
         backface-visibility: hidden;
         transform-origin: left;
-        transition: .7s ease;
+        transition: transform .6s ease, opacity .2s ease;
     }
 
     #page24 {
@@ -247,11 +247,13 @@ function turnPage(from, to) {
     console.log(next)
 
     if(from < to) {
-        let randX = Math.random()*-15 - 10
-        let randR = Math.random()*100 - 50
+        let randX = Math.random()*-20 - 100
+        let randR = Math.random()*30 - 15
         // current.classList.add('flipped');
-        current.style.transform = `translateX(${randX}vw) rotate(${randR}deg)`;
-        current.style.opacity = 0;
+        current.style.transform = `rotate(${randR}deg) translateX(${randX}%)`;
+        setTimeout(function(){        
+            current.style.opacity = 0;
+        }, 200)
     } else {
         // next.classList.remove('flipped');
         next.style.transform = "translateX(0vw) rotate(0deg)";

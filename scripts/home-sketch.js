@@ -1,5 +1,6 @@
 
 var planets = [];
+var numPlanets = 6000
 var numStories = 16;
 var domElements = document.getElementById("domElements")
 // var randomPlanetDescription = document.getElementById("randomPlanetDescription")
@@ -28,6 +29,15 @@ let targetZoom = cameraCoords.z;
 
 let scrollPause = 600;
 
+let storyPlanets = [ // distances based on numPlanets being 6000
+  {dist: 0, article: 0, earth: true},
+  {dist: 0.00000000247, article: 5, earth: true},
+  {dist: 0.00127, article: 1, earth: false},
+  {dist: 0.00127, article: 4, earth: false},
+  {dist: 0.00420, article: 2, earth: false},
+  {dist: 3180, article: 3, earth: false}
+]
+
 
 
 function setup() {
@@ -36,50 +46,65 @@ function setup() {
     let canvas = createCanvas(windowWidth, windowHeight);
     canvas.parent('myCanvasContainer');
     angleMode(DEGREES);
-    for (var i = 0; i < 6000; i++) {
-        planets[i] = new Planet(i, 6000);
+    for (var i = 0; i < numPlanets; i++) {
+        planets[i] = new Planet(i, numPlanets);
     }
     // create big earth
-    planets.push(new Planet(3000, 6000, true))
+    planets.push(new Planet(180, numPlanets, true))
     // place stories on random planets
-    for (let i = 0; i < articlePaths.length; i++) {
-      let rand = Math.floor(Math.random() * planets.length-1000) + 1000;
-      planets[rand].link = articlePaths[i];
-      let hoverContainer = document.createElement("div");
-      let menuLink = document.createElement("div");
-      menuLink.classList.add("menuLink")
-      // planets[rand].menuPlanet = document.createElement("div");
-      planets[rand].menuPlanet = menuLink;
-      planets[rand].menuPlanet.classList.add('linked', "object"+i)
-      let menuPlanetDot = document.createElement("div");
-      menuPlanetDot.classList.add("menuPlanetDot")
-      planets[rand].menuPlanetDot = menuPlanetDot;
-      menuLink.appendChild(menuPlanetDot)
-      // menuLink.appendChild(planets[rand].menuPlanet)
-      let linkText = document.createTextNode(planets[rand].link[1]);
-      menuLink.appendChild(linkText)
-      menuLink.href = articlePaths[i][0];
-      menu.appendChild(menuLink);
-      planets[rand].description = document.createElement("div");
-      planets[rand].description.innerHTML = planets[rand].link[3]+"<br>"+planets[rand].link[4]+"<br>"+planets[rand].link[5]
-      domElements.appendChild(hoverContainer);
-      planets[rand].mark = document.createElement("div");
-      planets[rand].mark.classList.add('linked',"object"+i);
-      let x,y
-      if (width < 600) {
-        x = random()*spaceDimensions.x*1 - spaceDimensions.x*.5
-        y = random()*spaceDimensions.y*2 - spaceDimensions.y*1
-      } else {
-        x = random()*spaceDimensions.x*2 - spaceDimensions.x*1
-        y = random()*spaceDimensions.y*2 - spaceDimensions.y*1
+    for (let i = 0; i < storyPlanets.length; i++) {
+      if (storyPlanets[i].dist > .1) {
+        storyPlanets[i].dist*=10000
+        storyPlanets[i].dist+=180
       }
-      planets[rand].x = x
-      planets[rand].y = y
-      planets[rand].mark.classList.add("planetMarker");
-      planets[rand].description.classList.add("planetDescription")
-      hoverContainer.appendChild(planets[rand].mark);
-      hoverContainer.appendChild(planets[rand].description);
-      planets[rand].markOffset = [random()-.5, random()-.5];
+      let rand
+      if (storyPlanets[i].earth) {
+        rand = 0
+      } else {
+        planets.push(new Planet(storyPlanets[i].dist, numPlanets))
+        // let rand = Math.floor(Math.random() * planets.length-1000) + 1000;
+        rand = planets.length-1
+      }
+
+      planets[rand].links.push(articlePaths[storyPlanets[i].article]);
+
+      for (let i=0; i<planets[rand].links.length; i++) {
+        let hoverContainer = document.createElement("div");
+        let menuLink = document.createElement("div");
+        menuLink.classList.add("menuLink")
+        // planets[rand].menuPlanet = document.createElement("div");
+        planets[rand].menuPlanet = menuLink;
+        planets[rand].menuPlanet.classList.add('linked', "object"+i)
+        let menuPlanetDot = document.createElement("div");
+        menuPlanetDot.classList.add("menuPlanetDot")
+        planets[rand].menuPlanetDot = menuPlanetDot;
+        menuLink.appendChild(menuPlanetDot)
+        // menuLink.appendChild(planets[rand].menuPlanet)
+        let linkText = document.createTextNode(planets[rand].links[i][1]);
+        menuLink.appendChild(linkText)
+        menuLink.href = articlePaths[i][0];
+        menu.appendChild(menuLink);
+        planets[rand].description = document.createElement("div");
+        planets[rand].description.innerHTML = planets[rand].links[i][3]+"<br>"+planets[rand].links[i][4]+"<br>"+planets[rand].links[i][5]
+        domElements.appendChild(hoverContainer);
+        planets[rand].mark = document.createElement("div");
+        planets[rand].mark.classList.add('linked',"object"+i);
+        let x,y
+        if (width < 600) {
+          x = random()*spaceDimensions.x*1 - spaceDimensions.x*.5
+          y = random()*spaceDimensions.y*2 - spaceDimensions.y*1
+        } else {
+          x = random()*spaceDimensions.x*2 - spaceDimensions.x*1
+          y = random()*spaceDimensions.y*2 - spaceDimensions.y*1
+        }
+        planets[rand].x = x
+        planets[rand].y = y
+        planets[rand].mark.classList.add("planetMarker");
+        planets[rand].description.classList.add("planetDescription")
+        hoverContainer.appendChild(planets[rand].mark);
+        hoverContainer.appendChild(planets[rand].description);
+        planets[rand].markOffset = [random()-.5, random()-.5];
+      }
 
 
 

@@ -8,7 +8,7 @@ location: 588 Achilles
 planet: Jupiter Trojans
 year: 2084
 exegesis:  |
-    “On the pampa, Iberian horses and cattle have driven back the guanaco and rhea; in North America, speakers of Indo-European languages have overwhelmed speakers of Algonkin and Muskhogean and other Amerindian languages; in the antipodes, the dandelions and house cats of the Old World have marched forward, and kangaroo grass and kiwis have retreated. Why?** **Perhaps European humans have triumphed because of their superiority in arms, organization, and fanaticism, but what in heaven’s name is the reason that the sun never sets on the empire of the dandelion? Perhaps the success of European imperialism has a biological, an ecological, component.”
+    “On the pampa, Iberian horses and cattle have driven back the guanaco and rhea; in North America, speakers of Indo-European languages have overwhelmed speakers of Algonkin and Muskhogean and other Amerindian languages; in the antipodes, the dandelions and house cats of the Old World have marched forward, and kangaroo grass and kiwis have retreated. Why? Perhaps European humans have triumphed because of their superiority in arms, organization, and fanaticism, but what in heaven’s name is the reason that the sun never sets on the empire of the dandelion? Perhaps the success of European imperialism has a biological, an ecological, component.”
     
     Alfred Crosby, _Ecological Imperialism,_ 1986. Quoted nearly a century later by Dr. Bernice Cornwallis. “April 22, 2084,” personal journal entry, Project Dandelion, BCE280.02.2116, box 28, folder 7, Cornwallis Estate Papers, Syracuse, New York.
     
@@ -63,7 +63,7 @@ July 20<sup>th</sup>, Gregorian Calendar Year 2169<br>
 Mars Year 114/Ls 332.2<sup>1</sup><br>
 
 
-# **I. Excavating the Extraterrestrial**
+## I. Excavating the Extraterrestrial
 
 By the time the onboard emergency systems detected the pathogen, the thick rows of plant life cultivated by Project Dandelion had already begun to die. The devastation tore through the grow room so quickly that the team of botanists and bioengineers could only watch, helplessly, as the stink of death overwhelmed the space station’s ethanol processing systems, choking out the air necessary to sustain delicate human lungs.
 
@@ -80,7 +80,7 @@ In the harsh conditions of outer space—in microgravity, exposed to radiation�
 We tell the story of Project Dandelion chronologically to situate the reader in Cornwallis’s world before the disastrous evacuation of Vesta’s mining facility. Bioforming is the key scientific concept that accounts for Cornwallis’s innovative laboratory work on biology in outer space and is deeply informed by her research on theories of life in the 20th and early 21st centuries. But insofar as bioforming theorizes the biological alongside the social as an integrated apparatus of life in space, it also is an extraplanetary philosophy that counters the history of corporate extractivism that came to define the 21st century.  
 
 
-# **II. Vesta, Corporate Logics, and Space Habitability**
+## II. Vesta, Corporate Logics, and Space Habitability
 
 Vesta’s ethos, from the time of its incorporation in the 2030s, was that tapping the material wealth of the solar system would benefit all humankind. Not only would its mining projects expand human knowledge, but, according to Vesta’s then-CEO, “raise standards of Earthly living with the creation of new extraterrestrial markets.”<sup>4</sup> Vesta’s Achilles Missions, named for 588 Achilles, a large Trojan asteroid near Jupiter’s L4, set out to extract precious metals (extant on Earth but buried deep underground) essential for engineering and technology projects, including carbon sequestering. The asteroids’ abundant composition of ice would be perfect to continue a steady supply of water to sustain human miners and to hydrate the agricultural infrastructure. 
 
@@ -98,7 +98,7 @@ Vesta was faithful to O’Neill’s original vision in both the design and philo
 
 Contentedness was functionally guaranteed; once the structure of the colonies was fully replicable, any colonists unhappy with their community were free to begin a colony of their own, alleviating the social pressures that so aggravated political life on Earth. New Atherton represented the vast material wealth that could be extracted from the cosmos, promising an unparalleled flourishing of humanity. Vesta marketed to the people of Earth that the greatest cultural achievements of our species occurred during periods of leisure and affluence. Like O’Neill and Zubrin, the corporation narrated that settlers should not be ashamed to pursue this wealth, and any objections to this future could be characterized as an immoral transgression against posterity. 
 
-**III. Project Dandelion**
+## III. Project Dandelion
 
 In 2076, Vesta selected Dr. Bernice Cornwallis to lead a research stream on extraplanetary biologies in large part because of her background in the management of microbial populations in Earth hospitals. Because hospitals represent closed environments with high densities of immunocompromised or otherwise vulnerable patient populations, they are sites conducive to the emergence of new antibiotic and drug-resistant pathogens. Cornwallis’s experience managing sterile environments and isolating dangerous microorganisms was upheld as relevant expertise for the leader of a project charged with sustaining life in a closed environment. She was charged with assembling a team of botanists and bioengineers capable of tinkering with terrestrial life forms to better adapt them to the space environment, a task that posed two significant challenges: microgravity, so different from the rootedness of the plants’ places of origin, and radiation, high-energy particles that were known to cause genetic mutations after prolonged exposure. Cornwallis designed the spacecraft’s horticultural systems to maximize plant yields—research, Vesta anticipated, that would allow them to scale to a planned 10,000-inhabitant colony at L4. 
 
@@ -110,7 +110,7 @@ Privately, Cornwallis resisted Vesta’s narrative. In her journals, Cornwallis 
 
 We next explore the roots of Cornwallis’s original concept. 
 
-**IV. Bioforming**
+## IV. Bioforming
 
 Cornwallis’s private papers reveal that she was an amateur but astute historian of science, connecting past theories of life to describe bioforming as the overlapping, interconnected, mutability of life forms. 
 
@@ -120,7 +120,7 @@ Cornwallis was also inspired by the exobiologists’ goal to formulate a univers
 
 But Cornwallis seemed to be after more than mere inspiration from the exobiologists. Like them, and she was concerned with planetary protection. As early as 1959, in a Space Science Board Report, Lederberg flagged the potential hazards of unknown space biologies. Cornwallis called out this section: “We know of many unhappy examples of biological competition from the introduction of new organisms into fresh niches.”<sup>14  </sup>Unlike her predecessors, however, Cornwallis indicated that contamination might be a tool to open up new avenues of evolution, not just a catastrophe to be avoided. “Why competition? Why not symbiotic ecological collaboration?” she asked in the margins of the Report. “I wonder how bioforming could inspire a _controlled_ contamination, purposely mixing terrestrial and extraterrestrial material to see what new life might blossom. And how will extraterrestrial sources Vesta extracts bioform Earth in turn?” 
 
-**V. The Hanging Gardens of Dandelion**
+## V. The Hanging Gardens of Dandelion
 
 Under her stewardship, Project Dandelion was radically subversive for its time. It defied the logics of domination and control over nature that NASA staked out in the Space Age and that Vesta deployed for commercial purposes. Cornwallis and her team of botanists implemented Vesta’s mission objective—design a massive agricultural infrastructure for an expected human colony—but approached their experiments from an integrated ecological perspective. Although Project Dandelion successfully cultivated botanical specimens with an eye towards maximized yields, Cornwallis nudged life in novel evolutionary pathways. The scientist’s approach led to subtle but undeniable transformations of all beings, human and non-human alike, that occupied the _Dandelion_. In her experiments, non-human beings—ranging from microbes, mycelial networks, plants, to other companion species—integrated, influenced, and resisted their human caretakers. She even considered the corporate entity, Vesta, to be part of this ecosystem. 
 
@@ -130,7 +130,7 @@ Vesta also touted Project Dandelion’s horticultural infrastructure, proof that
 
 In any case, the edible plants grown on board became a much-welcomed fresh food source for those mining asteroids out of the Trojan orbital processing facility—and a marketing tool. (The fresh foods were not a critical component of the miner’s diets, which came primarily from shelf-stable animal protein pastes fortified with other necessary nutrients.) As Vesta’s CEO told the government, the public, and his company’s shareholders, “More importantly, the introduction of fresh food resulted in immediate improvements in the psychological wellbeing of miners, which had a measurable impact on output of labor. Vesta is creating sustainable projects far from Earth that will come to benefit all. You will not simply survive on New Atherton. You will thrive. You will feast.”<sup>15</sup> Project Dandelion’s plant yields quickly became an integral component of mining operations. Yet Cornwallis in her diary entries project doubt about the very systems she engineered. 
 
-**VI. Uncontrolled Contamination**
+## VI. Uncontrolled Contamination
 
 Project Dandelion continued successfully for six years, generating biofuels and fresh foods for those performing labor in Jupiter L4. But on September 1st of Gregorian Calendar Year 2084, a viral pathogen of unknown origin infected the plants, quickly spreading among the genetically homogeneous  plants supplying Project Dandelion’s ethanol processing systems. The virus modified the plants’ metabolism such that before they died, they produced large quantities of carbon monoxide gas, overwhelming chemisorption and scrubber systems. 
 
