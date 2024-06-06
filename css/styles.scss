@@ -1,3 +1,6 @@
+---
+---
+
 :root {
     --main-bg-color: #E6FFFF;
     --white: #ffffff;
@@ -9,6 +12,7 @@
   }
 
 
+  
 
 
 
@@ -386,9 +390,12 @@ input[type="range"]::-moz-range-thumb {
     line-height: 100%;
 }
 
-
-
-
+#home-hero{
+    h1, p{
+        font-size: 10vw;
+        // color: red;
+    }
+}
 
 
 #article-outline {
@@ -559,7 +566,6 @@ img.basic-image {
 .footer-column {
     display: flex;
     flex-direction: column;
-    max-width: 450px;
     /* justify-content: center; */
 }
 
@@ -765,7 +771,6 @@ img.basic-image {
 }
 
 
-
 @media only screen and (max-width: 600px) {
 
     :root {
@@ -807,9 +812,6 @@ img.basic-image {
         font-size: 16px;
     }
 
-    #home-hero > p, #home-hero > h1 {
-        font-size: 9vw;
-    }
     #home-hero > h4 {
         font-size: 1.4rem;
     }
@@ -840,6 +842,14 @@ img.basic-image {
 
     h1.article-title {
         font-size: 40px;
+    }
+}
+
+
+@media screen and ( -width: 800px){
+
+    #home-hero > p, #home-hero > h1 {
+        font-size: 7.2vw;
     }
 }
 
