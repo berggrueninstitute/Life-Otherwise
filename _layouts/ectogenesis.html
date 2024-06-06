@@ -386,7 +386,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 elements.forEach(element => {
                     const words = element.innerHTML.split(" ");
                     const totalWords = words.length;
-                    const numWordsToWrap = Math.floor(totalWords * 0.6);
+                    const numWordsToWrap = Math.floor(totalWords * 0.8);
 
                     let wrappedIndices = new Set();
                     while (wrappedIndices.size < numWordsToWrap) {

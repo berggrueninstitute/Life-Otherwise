@@ -41,6 +41,10 @@ let storyPlanets = [ // distances based on numPlanets being 6000 planets
 
 
 function setup() {
+  planets = []
+  menu.innerHTML = '';
+  domElements.innerHTML = '';
+
     document.getElementById('menu').style.position = 'absolute'
     console.log(menu.style.position)
     let canvas = createCanvas(windowWidth, windowHeight);
@@ -332,17 +336,17 @@ document.addEventListener('scroll', () => {
   const isVisible = window.scrollY >= targetScrollY;
 
   // Apply styles based on visibility
-  fadeElements.forEach(el => {
-    if (isVisible) {
-      el.style.display = 'block'; // Show the element
-      setTimeout(() => el.style.opacity = 1, 10);
-      // el.style.opacity = 1 // Delay opacity to ensure display is processed
-    } else {
-      el.style.opacity = 0; // Hide the element
-      // Use a timeout to delay setting display none until after the opacity transition
-      setTimeout(() => el.style.display = 'none', 500); // Match transition time
-    }
-  });
+  // fadeElements.forEach(el => {
+  //   if (isVisible) {
+  //     el.style.display = 'block'; // Show the element
+  //     setTimeout(() => el.style.opacity = 1, 10);
+  //     // el.style.opacity = 1 // Delay opacity to ensure display is processed
+  //   } else {
+  //     el.style.opacity = 0; // Hide the element
+  //     // Use a timeout to delay setting display none until after the opacity transition
+  //     setTimeout(() => el.style.display = 'none', 500); // Match transition time
+  //   }
+  // });
 
   // --- scroll jump for hero
   // const hero = document.getElementById('home-hero');
@@ -411,3 +415,13 @@ populateMobileMenu()
 
 
 document.body.appendChild(mobileMenu)
+
+
+let resizeTimeout;
+
+function windowResized() {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(() => {
+    setup();
+  }, 200);
+}
