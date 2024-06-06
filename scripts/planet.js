@@ -1,6 +1,6 @@
 
 
-function Planet(depth, numPlanets) {
+function Planet(depth, numPlanets, earth=false) {
     this.x = random(-spaceDimensions.x*10, spaceDimensions.x*10);
     this.y = random(-spaceDimensions.y*10, spaceDimensions.y*10);
     this.z = map(depth, numPlanets, 0, 0, spaceDimensions.z);
@@ -12,6 +12,12 @@ function Planet(depth, numPlanets) {
     this.showDescription;
     this.r;
     this.link;
+    this.earth = earth
+
+    if(earth) {
+        this.x = 0
+        this.y = 0
+    }
   
     // this.update = function() {
     //   this.z = this.z - speed;
@@ -77,7 +83,9 @@ function Planet(depth, numPlanets) {
 
 function drawDiamond(x, y, size) {
     let diamondSize = size * sqrt(2); // Increase size to match the area of the square
-
+    if(this.earth) {
+        diamondSize*=400000;
+    }
     // Calculate the diamond's four corner points
     let top = createVector(x, y - diamondSize / 2);
     let right = createVector(x + diamondSize / 2, y);
@@ -91,6 +99,8 @@ function drawDiamond(x, y, size) {
     vertex(bottom.x, bottom.y);
     vertex(left.x, left.y);
     endShape(CLOSE);
+
+
 }
 
 
