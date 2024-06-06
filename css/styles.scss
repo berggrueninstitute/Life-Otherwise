@@ -1,3 +1,6 @@
+---
+---
+
 :root {
     --main-bg-color: #E6FFFF;
     --white: #ffffff;
@@ -9,6 +12,7 @@
   }
 
 
+  
 
 
 
@@ -38,8 +42,30 @@ html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
-  
+    font-size:16px;
 }
+
+@media screen and (min-width: 600px){
+   html {
+            font-size: 18px;
+    }
+}
+@media screen and (min-width: 1400px){
+    html {
+            font-size: 20px;
+    }
+}
+@media screen and (min-width: 1600px){
+    html {
+            font-size: 22px;
+    }
+}
+@media screen and (min-width: 2000px){
+    html {
+            font-size: 26px;
+    }
+}
+
 
 body {
     background-color: var(--main-bg-color);
@@ -102,18 +128,18 @@ a {
 
 
 p, .menuLink {
-    font-size: 22px;
+    font-size: 1rem;
     line-height: 135%;
 }
 .menuLink{
     line-height: 110%;
 }
 
-@media screen and (max-width: 1600px){
-    p,.menuLink {
-        font-size: 20px;
-    }
-}
+// @media screen and (max-width: 1600px){
+//     p,.menuLink {
+//         font-size: 20px;
+//     }
+// }
 
 #scrollContainer {
     height: 300dvh;
@@ -136,15 +162,20 @@ p, .menuLink {
     display: flex;
     align-items: end;
     padding: 10px;
+    justify-content: flex-end;
+    height: calc(100% - 20px - 20px - 2px - 1rem); // container height minus padding, minus padding of the header element, minus border, minus height of header element
 }
 
 #sliderLabels {
     text-align: right;
-    height: 260px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 4px 0 4px 0;
+    font-size:1rem;
+}
+#sliderLabels div{
+    margin-bottom:0.5em;
 }
 
 #mySlider {
@@ -152,7 +183,9 @@ p, .menuLink {
     /* -webkit-appearance: slider-vertical; */
     writing-mode: vertical-lr;
     width: 8px;
-    height: 262px;
+    // height: 262px;
+    height: calc(100% - 20px);
+    transform:translateY(-10px) translateX(50%);
     /* margin: 10px; */
 }
 
@@ -201,7 +234,11 @@ input[type="range"]::-moz-range-thumb {
     border: var(--border2);
     z-index: 1000;
     transition: opacity 0.5s ease-in-out;
+    font-size: 18px;
+    width: 13.5rem;;
+    height: 20rem;
 }
+
 
 #spaceControls h4, #menu h4 {
     /* width: calc(100% - 10px); */
@@ -211,10 +248,12 @@ input[type="range"]::-moz-range-thumb {
     font-weight: normal;
     text-transform: uppercase;
     box-sizing: border-box;
+    font-size:1rem;
 }
 
 #spaceControls h4 {
     text-align: right;
+    font-size: 1rem;
 }
 
 .planetMarker, .menuPlanetDot {
@@ -280,16 +319,24 @@ input[type="range"]::-moz-range-thumb {
     border: var(--border2);
     z-index: 1000;
     transition: opacity 0.5s ease-in-out;
-    width: 230px;
+    width: 13.5rem;
     font-size: 18px;
+    height: 20rem;
+    
 }
-
 
 @media screen and (min-width: 1600px){
-    #menu{
-        width: 280px;
+    #menu, #spaceControls {
+        height: 18rem;
     }
 }
+
+@media screen and (min-width: 2000px){
+    #menu, #spaceControls {
+        height: 17rem;
+    }
+}
+
 
 
 
@@ -302,6 +349,7 @@ input[type="range"]::-moz-range-thumb {
     /* to center align items with dot */
     /* check that this doesn't break anything responsively */
     align-items: center; 
+    // font-size: 18px;
     font-size: 1rem;
 }
 
@@ -385,9 +433,14 @@ input[type="range"]::-moz-range-thumb {
     line-height: 100%;
 }
 
-
-
-
+#home-hero{
+    h1, p{
+        font-size: 5.3vw;
+        font-size: calc(3.5vw + 3.5vh);
+        line-height:1.1;
+        // color: red;
+    }
+}
 
 
 #article-outline {
@@ -451,8 +504,19 @@ hr {
 
 h1.article-title {
     font-weight: 400;
-    font-size: 48px;
+    font-size: 45px;
     margin-top: 10rem;
+}
+@media screen and (min-width: 1600px){
+    h1.article-title {
+     font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 2000px){
+    h1.article-title {
+     font-size: 62px;
+    }
 }
 
 h2.article-author {
@@ -462,6 +526,7 @@ h2.article-author {
     font-size: 1rem;
     cursor: pointer;
 }
+
 
 img.basic-image {
     width: 40vw;
@@ -515,10 +580,11 @@ img.basic-image {
     background-color: var(--lavender); /* Light purple background */
     padding: 20px;
     /* border-radius: 10px; */
-    width: 60%;
-    max-width: 600px;
+    width: 100%;
+    // max-width: 600px;
     border: var(--border2);
     position: relative;
+    max-width: 30rem;
 }
 
 .close {
@@ -559,7 +625,6 @@ img.basic-image {
 .footer-column {
     display: flex;
     flex-direction: column;
-    max-width: 450px;
     /* justify-content: center; */
 }
 
@@ -759,11 +824,10 @@ img.basic-image {
     }
 
     #article-container p, .menuLink {
-        font-size: 26px;
+        // font-size: 26px;
     }
     
 }
-
 
 
 @media only screen and (max-width: 600px) {
@@ -804,12 +868,9 @@ img.basic-image {
     }
 
     p {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
-    #home-hero > p, #home-hero > h1 {
-        font-size: 9vw;
-    }
     #home-hero > h4 {
         font-size: 1.4rem;
     }
@@ -840,6 +901,20 @@ img.basic-image {
 
     h1.article-title {
         font-size: 40px;
+    }
+}
+
+
+@media screen and ( max-width: 800px){
+
+    #home-hero > p, #home-hero > h1 {
+        font-size: 7.2vw;
+    }
+}
+@media screen and ( max-width: 1200px){
+
+    #home-hero > p, #home-hero > h1 {
+        font-size: 6vw;
     }
 }
 
@@ -894,7 +969,6 @@ img.basic-image {
     }
 
     .menuLink {
-        font-size: 26px;
         padding-bottom: 20px;
         min-height: 60px;
         /* align-items: center; */
@@ -943,20 +1017,15 @@ img.basic-image {
 
 
 @media only screen and (min-width: 600px) and (max-width: 1400px) {
-    :root {
-        font-size: 18px;
-    }
-
     p  {
-        font-size: 18px;
         margin-block-start: 2px !important;
     }
 }
 
 
 
-@media only screen and (min-width: 1201px) {
-    :root {
-        font-size: 24px;
-    }
-}
+// @media only screen and (min-width: 1201px) {
+//     // :root {
+//     //     font-size: 24px;
+//     // }
+// }
