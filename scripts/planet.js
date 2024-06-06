@@ -45,6 +45,14 @@ function Planet(depth, numPlanets, earth=false, hide=false) {
             var sx = map(this.x / dist, 0, 1, 0, spaceDimensions.x);
             var sy = map(this.y / dist, 0, 1, 0, spaceDimensions.y);
             this.r = map(dist, 0, visibleDist, 100, 4);
+            if (this.hide || this.earth) {
+                // earthStories *= .5
+                this.r*=(width/200)
+                sx = 0
+                sy = 0
+            }
+            let earthStories = 1
+            if (this.hide) {earthStories *= .5}
             if (this.mark) {
                 this.mark.style.display = "block"
                 this.mark.style.left = sx+width/2+this.markOffset[0]*this.r + "px";
@@ -54,7 +62,11 @@ function Planet(depth, numPlanets, earth=false, hide=false) {
                 if (this.showDescription) {
                     this.description.style.display = "block";
                 }
+
+
             }
+
+
             // if (isMouseOverDiamond(sx + width / 2, sy + height / 2, this.r) && !this.mark) {
             //     randomPlanetDescription.style.display = "block";
             //     // randomPlanetDescription.innerHTML = random(aiDescriptions)
@@ -93,7 +105,7 @@ function drawDiamond(x, y, size, earth, hide) {
     fill("#E6FFFF")
 
     if(earth) {
-        diamondSize*=4;
+        // diamondSize*=4;
     }
     // Calculate the diamond's four corner points
     let top = createVector(x, y - diamondSize / 2);

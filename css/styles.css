@@ -774,14 +774,14 @@ img.basic-image {
     }
 
 
-    #spaceControls {
+    /* #spaceControls {
         background: none;
         border: none;
     }
 
     #sliderLabels, #spaceControls h4 {
         display: none;
-    }
+    } */
 
     #planets-menu {
         flex-direction: row;
