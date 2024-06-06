@@ -202,7 +202,7 @@ function draw() {
     isAnyPlanetHovered = 0;
     cameraCoords.z = lerp(cameraCoords.z, targetZoom, 0.1);
     background('#E6FFFF')
-    background("#0000E9")
+    // background("#0000E9")
     fill(0,0,233)
     stroke(0,0,233,spaceOpacity) //'#0000E9'
     // stroke(0,0,233,spaceOpacity)
