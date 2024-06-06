@@ -393,6 +393,7 @@ input[type="range"]::-moz-range-thumb {
 #home-hero{
     h1, p{
         font-size: 5.3vw;
+        font-size: calc(3.5vw + 3.5vh);
         line-height:1.1;
         // color: red;
     }
@@ -848,10 +849,16 @@ img.basic-image {
 }
 
 
-@media screen and ( -width: 800px){
+@media screen and ( max-width: 800px){
 
     #home-hero > p, #home-hero > h1 {
         font-size: 7.2vw;
+    }
+}
+@media screen and ( max-width: 1200px){
+
+    #home-hero > p, #home-hero > h1 {
+        font-size: 6vw;
     }
 }
 
