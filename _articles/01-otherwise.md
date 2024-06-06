@@ -1,9 +1,9 @@
 ---
 layout: otherwise
-title: What if life were otherwise?
+title: What If Life Were Otherwise?
 author: Claire Isabel Webb & Lois Rosson
 bio: "Dr. Claire Isabel Webb directs the Berggruen Institute’s Future Humans program that investigates the histories and futures of life, mind, and outer space. Webb earned her Ph.D. from MIT’s History, Anthropology, and Science, Technology, and Society (HASTS) program in 2020. Her book project, _Reflexive Alienation_, explores how scientists since the Space Age, despite alien life forms' perpetual and perhaps permanent unknowability, have designed sophisticated experiments of expectation that anticipate Other biologies and intelligences.<br><br> Dr. Lois Rosson is a continuing Berggruen Institute Fellow. She received her Ph.D. from the History Department at U.C. Berkeley in 2022, where she specialized in the History of Science. Her current book project, _How to Paint Space:\ Image and Authority in the American Space Age_, examines the impact of mid-century astronomical illustration on perceptions of space landscapes in both the popular and scientific imaginaries. Rosson was previously a Guggenheim Fellow at the Smithsonian’s National Air and Space Museum, a research associate at Lawrence Livermore National Lab, and holds the 2023 – 2024 Octavia E. Butler Fellowship at the Huntington Library."
-full-title: "“What if life were otherwise?”"
+full-title: "“What If Life Were Otherwise?”"
 location: Los Angeles
 planet: Earth
 year: 2024
@@ -58,7 +58,7 @@ Infamously, Trump did just that. “I just want to find 11,780 votes, which is o
 
 The continuing uproar demonstrates just how potent futures exercises can be for self-reflexively living through history-in-the-making. 
 
-“_What If?”_
+_“What If?”_
 
 Conventional historians, too, are seduced by futures-making through experimentation with counterfactuals. Robert Cowley’s _What If?_ commissioned pithy essays in which military historians imagined what-might-have-beens if momentous events had zigged, not zagged. What if Alexander the Great had died in his youth?  The Persians’ worldview, not the Greeks’, would have dominated politics and religion. If the Sultan of the Ottoman Empire had lugged cannons to the 1529 siege of Vienna—in fact, a summer storm thwarted his plans— he would have changed the course of the Tudor dynasty and Habsburg Empire. The course of Western history would be an alien story. “What ifs can lead us to question long-held assumptions,” writes Cowley. “What ifs can define true turning points. They can show that small accidents or split-second decisions are likely to have [as] major repercussions as large ones.”<sup>5</sup> Historical contingencies are forks in the road. We’ll never know what lay ahead on the alternative path. 
 

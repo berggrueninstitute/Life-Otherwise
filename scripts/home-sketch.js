@@ -422,6 +422,6 @@ let resizeTimeout;
 function windowResized() {
   clearTimeout(resizeTimeout);
   resizeTimeout = setTimeout(() => {
-    setup();
+    location.reload();
   }, 200);
 }

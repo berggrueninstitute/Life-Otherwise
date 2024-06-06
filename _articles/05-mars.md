@@ -1,9 +1,9 @@
 ---
 layout: mars
-title: Haunted on Mars
+title: Haunted On Mars
 author: Asif Siddiqi
 bio: "Prof. Asif Siddiqi is a Bangladeshi American space historian and a Guggenheim Fellowship winner. He is a professor of history at Fordham University. He specializes in the history of science and technology and modern Russian history. Siddiqi has written several books on the history of space exploration, including _Soyuz 1:\ The Death of Vladimir Komarov_ (2020), _Beyond Earth:\ A Chronicle of Deep Space Exploration, 1958-2016_ (2018), and _The Red Rockets' Glare:\ Spaceflight and the Russian Imagination, 1857-1957_ (2010)."
-full-title: "Haunted on Mars"
+full-title: "Haunted On Mars"
 location: Newton Crater
 planet: Mars
 year: 2036

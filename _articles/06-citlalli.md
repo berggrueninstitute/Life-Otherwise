@@ -1,9 +1,9 @@
 ---
 layout: citlalli
-title: Citlalli in the Sky with Cnidaria
+title: Citlalli In The Sky With Cnidaria
 author: Gerardo Aldana
 bio: "Prof. Gerardo Aldana is a professor of Chicana/o Studies at UC Santa Barbara. He is the author of _Calculating Brilliance:\ An Intellectual History of Mayan Astronomy at Chich'en Itza_ (2022), and _The Apotheosis of Janaab Pakal:\ Science, History, and Religion at Classic Maya Palenque_ (2007), among other books and articles."
-full-title: "Citlalli in the Sky with Cnidaria"
+full-title: "Citlalli In The Sky With Cnidaria"
 location: Low Orbit
 planet: Earth
 year: 2029
