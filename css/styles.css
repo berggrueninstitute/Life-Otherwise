@@ -99,6 +99,12 @@ p {
     line-height: 130%;
 }
 
+@media screen and (max-width: 1600px){
+    p {
+        font-size: 20px;
+    }
+}
+
 #scrollContainer {
     height: 300dvh;
     width: 100vw;
@@ -651,7 +657,7 @@ img.basic-image {
     
     #article-container {
         margin-top: 80px;
-        margin-left: 265px;
+        margin-left: 288px;
         padding-bottom: 25lvh;
         margin-bottom: 15lvh;
         width: 48%;
@@ -679,17 +685,21 @@ img.basic-image {
 }
 
 
-@media only screen and (max-width: 1999px) {
+@media only screen and (max-width: 1999.9px) {
     .citlalli-image  {
         width: 20vw;
         background-size: 20vw auto; /* Change the width of the background image */
+    }
+    #article-container {
+        max-width:850px;
     }
 }
 
 @media only screen and (min-width: 2000px) {
 
     #article-container {
-        margin-left: 400px;
+        margin-left: 370px;
+        width: 1000px;
         font-size: 24px !important;
     }
 
