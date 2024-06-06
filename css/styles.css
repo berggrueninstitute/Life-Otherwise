@@ -100,7 +100,7 @@ p {
 }
 
 #scrollContainer {
-    height: 200lvh;
+    height: 300dvh;
     width: 100vw;
 }
 
@@ -794,6 +794,10 @@ img.basic-image {
     blockquote {
         margin-inline-start:25px;
         margin-inline-end:0px;
+    }
+
+    h1.article-title {
+        font-size: 40px;
     }
 }
 

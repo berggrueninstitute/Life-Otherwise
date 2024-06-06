@@ -21,10 +21,12 @@ let visibleDist = spaceDimensions.z * 0.05
 let cameraCoords = {
     x: spaceDimensions.x/2,
     y: spaceDimensions.y/2,
-    z: 0
+    // z: 0
+    z: spaceDimensions.z - 250000
 };
 let targetZoom = cameraCoords.z;
 
+let scrollPause = 600;
 
 
 
@@ -37,6 +39,8 @@ function setup() {
     for (var i = 0; i < 6000; i++) {
         planets[i] = new Planet(i, 6000);
     }
+    // create big earth
+    planets.push(new Planet(3000, 6000, true))
     // place stories on random planets
     for (let i = 0; i < articlePaths.length; i++) {
       let rand = Math.floor(Math.random() * planets.length-1000) + 1000;
@@ -181,6 +185,7 @@ function setup() {
 
         });
       }
+
       
       function openDescription() {
           // Logic to open the description
@@ -210,7 +215,6 @@ function draw() {
 
     translate(width / 2, height / 2);
     // rotate(45); // Rotate by 45 degrees
-
     for (var i = 0; i < planets.length; i++) {
       planets[i].show();
     }
@@ -241,9 +245,10 @@ function draw() {
 const slider = document.getElementById('mySlider');
 
 slider.oninput = function() {
-    targetZoom = map(this.value, 1, 100, 0, spaceDimensions.z-visibleDist)
-    window.scrollTo(0, map(this.value, 1, 100, window.innerHeight, document.documentElement.scrollHeight));
-    console.log(map(this.value, 1, 100, window.innerHeight, document.documentElement.scrollHeight))
+  // Invert the zoom direction
+  targetZoom = map(this.value, 1, 100, spaceDimensions.z - visibleDist, 0);
+  window.scrollTo(0, map(this.value, 1, 100, window.innerHeight, document.documentElement.scrollHeight));
+  console.log(map(this.value, 1, 100, window.innerHeight, document.documentElement.scrollHeight));
 }
 
 
@@ -292,11 +297,12 @@ document.addEventListener('scroll', () => {
   // Calculate when the bottom of the div aligns with the bottom of the window
   const divBottomVisible = (scrollPosition + windowHeight) - (divTop + divHeight);
 
-  scrollProgress = window.scrollY-div.offsetTop
-  lowestScrollValue = div.clientHeight-window.innerHeight
-  scrollPercentage = Math.max(0,(scrollProgress / lowestScrollValue) * 100);
+  scrollProgress = window.scrollY - div.offsetTop - scrollPause;
+  lowestScrollValue = div.clientHeight - window.innerHeight - scrollPause;
+  scrollPercentage = Math.max(0, (scrollProgress / lowestScrollValue) * 100);
 
-  targetZoom = map(scrollPercentage, 1, 100, 0, spaceDimensions.z-visibleDist);
+  // Invert the zoom direction
+  targetZoom = map(scrollPercentage, 1, 100, spaceDimensions.z - visibleDist, 0);
   slider.value = scrollPercentage;
 
 
