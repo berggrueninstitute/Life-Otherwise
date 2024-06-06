@@ -275,7 +275,9 @@ input[type="range"]::-moz-range-thumb {
     cursor:pointer;
     min-height: 34px;
     text-decoration: none;
-
+    /* to center align items with dot */
+    /* check that this doesn't break anything responsively */
+    align-items: center; 
 }
 
 #planets-menu {
