@@ -147,5 +147,10 @@ function toggleDropdown(id, button) {
     //for right-mask
     document.getElementById('right-mask').style.width = `${window.innerWidth - document.getElementById('article-outline').getBoundingClientRect().right}px`;
 
+    window.addEventListener("resize", function(){
+        document.getElementById('right-mask').style.width = `${window.innerWidth - document.getElementById('article-outline').getBoundingClientRect().right}px`;
+
+    })
+
 
 </script>
