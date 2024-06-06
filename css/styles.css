@@ -26,6 +26,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'PTMono';
+    src: url('/assets/fonts/PTMono.ttc') format('truetype-collection');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     margin: 0;
     -moz-osx-font-smoothing: grayscale;
@@ -709,8 +716,8 @@ img.basic-image {
         left: 1550px;
     }
 
-    p {
-        font-size: 26px !important;
+    #article-container p {
+        font-size: 26px;
     }
     
 }

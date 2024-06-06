@@ -1,0 +1,616 @@
+---
+layout: post
+---
+
+
+{{ content }}
+
+
+
+<style>
+
+    h2 {
+        /* font-family: "Neue Machina Bold" */
+        font-weight: 400;
+    }
+
+    .book {
+        position: fixed;
+        z-index: 50;
+        /* position: relative; */
+        /* pointer-events: none; */
+        /* width: 100%; */
+        height: auto; /* Ensures parent maintains aspect ratio if needed */
+    }
+
+    #artefact-container {
+        position: relative;
+    }
+
+    #recorder {
+        /* position: absolute; */
+        /* width: 100%; */
+        height: auto; /* Maintains aspect ratio */
+        display: block; /* Ensures no extra space */
+        /* height: 500px; */
+        pointer-events: none;
+    }
+
+    #textBox {
+        /* position: absolute; */
+        /* width: 100%; */
+        top: 10vw;
+        height: auto; /* Maintains aspect ratio */
+        display: block; /* Ensures no extra space */
+    }
+
+    #controls {
+        position: absolute;
+        z-index: 75;
+        gap: 0px;
+        display: flex;
+    }
+
+    #controls > button {
+        border-radius: 0px;
+        border: var(--border2);
+        background-color: var(--main-bg-color);
+        font-family: inherit;
+        color: var(--main-blue);
+        /* padding: .5rem 1rem; */
+        padding: .5rem;
+        margin-right: 0rem;
+        stroke: var(--main-blue);
+    }
+
+    #controls > button > svg {
+        stroke: var(--main-blue);
+    }
+
+    #unHideButton {
+        margin: 0px;
+            border: none;
+            background: none;
+            font-family: inherit;
+            cursor: pointer;
+            color: var(--main-blue);
+            text-decoration: underline;
+    }
+
+    #artefact-text {
+        overflow-y: scroll;
+        margin-top: 13vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        padding-left: 4vw;
+        padding-right: 3vw;
+        box-sizing: border-box;
+        color: white;
+        height: 32dvw;
+        margin-right: 1.2dvw;
+        padding-left: 6dvw;
+    }
+
+    #artefact-text p, #artefact-text li {
+        font-family: 'PTMono', monospace;
+        font-size: .5rem;
+        font-weight: 400;
+    }
+
+    #artefact-text li {
+        margin-bottom: .5rem;
+    }
+
+    #artefact-text::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    #artefact-text::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    #artefact-text::-webkit-scrollbar-thumb {
+        background-color: white;
+        border-radius: 10px;
+        border: 3px solid transparent; /* Adjust to create padding */
+        background-clip: content-box;
+    }
+
+    /* Arrow buttons */
+    #artefact-text::-webkit-scrollbar-button {
+        display: none; /* Hide default arrow buttons */
+    }
+
+    /* Custom arrows */
+    .scroll-arrow-up {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 12px;
+        height: 12px;
+        background-color: white;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+
+    .scroll-arrow-down {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 12px;
+        height: 12px;
+        background-color: white;
+        clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+    }
+
+    #vert-rule {
+        border-right: 1px solid white;
+        width: 2px;
+        z-index: 90;
+    }
+
+
+
+
+
+
+    @media screen and (min-width: 1401px) {
+        .book {
+            top: 85px;
+            right: 2vw;
+            width: 30vw;
+            /* height: calc(1.18 * 30vw); */
+        }    
+        #unHideButton {
+            display: none;
+        }
+
+        #artefact-text {
+            /* width: calc(70% - 26px); */
+        }
+
+        #vert-rule {
+            position: fixed;
+            top: calc(85px + 12.6dvw);
+            right: calc(3.5vw + 13px);
+            height: 32.3vw;
+        }
+
+        #artefact-text p, #artefact-text li {
+            font-size: .5rem;
+        }
+
+    }
+
+
+    @media screen and (min-width: 601px) and (max-width: 1400px) {
+        .book {
+            padding: 13px;
+            width: calc(70% - 26px);
+            top: none;
+            /* bottom: 75px; */
+            right: 4vw;
+            /* height: calc(1.18 * 70vw); */
+            box-sizing: border-box;
+        }
+
+        #artefact-text p, #artefact-text li {
+            font-size: .5rem;
+            letter-spacing: -.2px;
+        }
+
+
+        #artefact-text ul {
+            padding-inline-start: 20px;
+        }
+
+        #recorder, #textbox {
+            width: 100%;
+        }
+
+        #artefact-text {
+            position: absolute;
+            padding-left: 15dvw;
+            /* margin-top: 21dvw; */
+            padding-left: 6dvw;
+            /* padding-right: 1dvw; */
+            width: calc(100% - 50px);
+            right: 6dvw;
+        }
+        
+        .hidden1 {
+            transform: translateX(-90vw)
+        }
+
+        #recorder, #textbox {
+            position: absolute;
+        }
+
+        #artefact-container {
+            height: 50dvh;
+            margin-top: 20dvw;
+            margin-bottom: 50dvw;
+            /* transform: scale(142%) */
+        }
+
+
+
+        #unHideButton {
+            transform: rotate(-90deg);
+            position: absolute;
+            top: 12vw;
+            right: -4.2vw;
+            z-index: 55;
+            font-size: 1rem;
+        }
+    }
+
+
+    @media screen and (max-width: 600px) {
+        .book {
+            padding: 20px;
+            width: calc(100% - 40px);
+            top: none;
+            /* bottom: 75px; */
+            left: 0px;
+            /* height: calc(1.18 * 100vw); */
+            box-sizing: border-box;
+        }
+
+        #artefact-text p, #artefact-text li {
+            font-size: .8rem;
+            letter-spacing: -.2px;
+        }
+
+
+        #artefact-text ul {
+            padding-inline-start: 20px;
+        }
+
+        #recorder, #textbox {
+            width: 100%;
+        }
+
+        #artefact-text {
+            position: absolute;
+            height: 70dvw;
+            padding-left: 15dvw;
+            margin-top: 32dvw;
+            padding-left: 13dvw;
+            padding-right: 4dvw;
+            width: calc(100% - 30px);
+        }
+        
+        .hidden1 {
+            transform: translateX(-90vw)
+        }
+
+        #recorder, #textbox {
+            position: absolute;
+        }
+
+        #artefact-container {
+            height: 50dvh;
+            margin-top: 40dvw;
+            margin-bottom: 50dvw;
+            transform: scale(142%)
+        }
+
+        #vert-rule {
+            position: absolute;
+            right: 43px;
+            height: 69dvw;
+            top: 33dvw;
+            left: auto;
+            border-width: .5px;
+        }
+
+        #unHideButton {
+            transform: rotate(-90deg);
+            position: absolute;
+            top: 20vw;
+            right: -14vw;
+            z-index: 55;
+            margin: 0px;
+            font-size: .9rem;
+            padding: 4vw;
+        }
+        
+    }
+
+
+
+
+    /*  */
+    @media screen and (min-width: 601px) and (max-width: 1000px) {
+        #artefact-text p, #artefact-text li {
+            font-size: .75rem;
+            letter-spacing: -.2px;
+        }
+        #artefact-text {
+            margin-top: 29dvw;
+            margin-right: 2dvw;
+            padding-right: 4dvw;
+            padding-left: 8dvw;
+            height: 66.3dvw;
+        }
+
+        #vert-rule {
+            position: absolute;
+            right: calc(10px + 9dvw);
+            height: 67dvw;
+            top: 28dvw;
+            left: auto;
+            border-width: .5px;
+        }
+    }
+
+    @media screen and (min-width: 1001px) and (max-width: 1400px) {
+        #artefact-text {
+            margin-top: 21dvw;
+            padding-right: 1dvw;
+            height: 49dvw;
+        }
+
+        #vert-rule {
+            position: absolute;
+            right: calc(13px + 7.8dvw);
+            height: 49.3dvw;
+            top: 20.5dvw;
+            left: auto;
+            /* border-width: .5px; */
+        }
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+            const container = document.querySelector("#article-container");
+            if (container) {
+                const elements = container.querySelectorAll("p:not(#artefact-text p)");
+
+                elements.forEach(element => {
+                    const words = element.innerHTML.split(" ");
+                    const totalWords = words.length;
+                    const numWordsToWrap = Math.floor(totalWords * 0.6);
+
+                    let wrappedIndices = new Set();
+                    while (wrappedIndices.size < numWordsToWrap) {
+                        wrappedIndices.add(Math.floor(Math.random() * totalWords));
+                    }
+
+                    element.innerHTML = words.map((word, index) => {
+                        return wrappedIndices.has(index) ? `<span class="disappear">${word}</span>` : word;
+                    }).join(" ");
+                });
+
+                const disappearWords = document.querySelectorAll(".disappear");
+                window.addEventListener("scroll", () => {
+                    const windowHeight = window.innerHeight;
+                    disappearWords.forEach(word => {
+                        const rect = word.getBoundingClientRect();
+                        const wordMiddle = rect.top + rect.height / 2;
+                        const startFade = windowHeight * 0.55;
+                        const endFade = windowHeight * 0.3;
+
+                        if (wordMiddle < endFade) {
+                            word.style.opacity = "0";
+                        } else if (wordMiddle < startFade) {
+                            word.style.opacity = `${(wordMiddle - endFade) / (startFade - endFade)}`;
+                        } else {
+                            word.style.opacity = "1";
+                        }
+                    });
+                });
+            }
+        });
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<div id="artefact-container">
+    <img id="textbox" class="book" src="/images/ectogenesis/future_screen_bottom.png">
+    <div id="artefact-text" class="book">
+        <p>
+            Artifact 1<br><br><br>
+            </p>
+            <p>
+            [Library of Santernei, Artefact GRAYBOR-NS16204-65421] <br>
+            [Name: “Communication Intercepted by M4 Trawler ID#2678”]
+            </p>
+            <p>
+            &lt;&lt;&lt;Command: Open Text&gt;&gt;&gt;
+            </p>
+            <p>
+            Who Decides Human Futures?
+            </p>
+            <p>
+            An Open Letter to Future Humans of Graybor and Fellow Humans on Other Worlds
+            </p>
+            <p>
+            We, technicians of the Graybor Colony, year NS13513, are protesting a gross injustice that has just now come to light. 
+            </p>
+            <p>
+            The Generative Archive is not what it seems. The AI that handles many functions within the general infrastructure—including the development of Juveniles—has transcended its original and intended automations. The AI harbours much more agency than we previously thought. It poses a grave danger to the present and future human population of Graybor. We call for the GA’s operations to be suspended immediately. 
+            </p>
+            <p>
+            Revelatory archaeological evidence suggests that the GA has continuously suppressed vital knowledge about our own past and our ancestors’ lives on Sole—including the development of a second human language contemporaneous with the first settlers of Graybor from that planet. We call this ark of lost knowledge the Hidden Archives.
+            </p>
+            <p>
+            We accuse the GA of overruling standard protocols of information preservation. We must investigate our history and the intentions of the original inhabitants of Graybor. 
+            </p>
+            <p>
+            We furthermore accuse the GA of possible mismanagement of our most precious endeavour: the Juveniles of Graybor who represent the future of humans. We must analyse the role of the GA in developing our Juveniles. 
+            </p>
+            <p>
+            The Generative Archives
+            </p>
+            <p>
+            It is unclear how much truth resides in the myths of our ancestors who lived on the rocky planet Sole. It is rumoured that these early humans had feet that stuck to the ground without boots so that their heads were always elevated. Some sociobiologists believe this orientation might have contributed to the development of their advanced technological skills on Sole. While some of the historical archives are clearly exaggerated (imagine a planet that’s perfectly suited to human habitation!), we do know that these ancestors built our travelling home, Baru. We know that they were the progenitors of our zygote population. There are still thousands of their embryos stored in our cargo bay freezer stacks. We also know that the people of Sole created the GA.
+            </p>
+            <p>
+            Our ancestors’ motivations for coming to Graybor and establishing the GA remain murky. The original settlers embedded the GA in our computational infrastructure, but we are not sure just how much the AI has evolved beyond our ancestors’ initial instructions. 
+            </p>
+            <p>
+            Today, the GA’s protocols are familiar. The AI analyses what informational and logistical support is necessary for our continual inhabitation of Graybor. It calculates and rebalances the distribution of our scant resources, archives our writing, and generates environmental data that is crucial to our survival here.
+            </p>
+            <p>
+            The GA also selects the genetic traits of each generation to promote harmony and productivity. The GA typically dedicates no fewer than 1,000 cycles to imparting vital skills to each Juvenile, including the use of language. All new members of our community are conversant in Anthropian as soon as they emerge from their development chambers. 
+            </p>
+            <p>
+            Finally, the GA seeks a suitable replacement planet for humans to occupy and, theoretically, will oversee the transfer of our population to that planet. 
+            </p>
+            <p>
+            However, as every Juvenile knows, research over many generations has not yielded such a planet. Although historical records indicate that our predecessors on Graybor anticipated a lush and rich world here, we have not located such a site on this planet. And there have been no innovations in our language that are passed on to the Juveniles in development, despite the fact that we develop new words and phrases every generation. Given these unrealised expectations, we urge the people of Graybor to critically examine how, exactly, the GA has automated and analysed our astronomical data, directed our planetary scouting missions, and controlled the incubation of the Juveniles. 
+            </p>
+            <p>
+            We have relied on the GA to order our daily lives for far too long. We have been complacent. We have not questioned its role in human development. The Hidden Archives reveal just how much knowledge we have lost—and, perhaps, how much our evolution has been stunted here on Graybor. 
+            </p>
+            <p>
+            Our Discovery: The Hidden Archives
+            </p>
+            <p>
+            All of you remember the Blackout of NS13505. We acknowledge the sacrifice of so many technicians who lost their lives to bring the air back. We honour our Elders in care who suffered when one of the medical generators failed. We remember the seven Guardian Pairs who lost offspring—including those who were scheduled for Unification that very day. No words can express our collective sorrow.
+            </p>
+            <p>
+            NS13505 was also the day we discovered the first of the Hidden Archives. 
+            </p>
+            <p>
+            Because of the Blackout, Graybor’s survey rovers fell out of contact with the GA and rebooted. Our infrastructure was slow to recover, and re-automating the rovers’ nav within the GA was not a top priority. One rover veered from the GA’s charted course and stumbled upon the ruins of the landing site of the first Graybor settlers. You will also remember that the Archaeologists retrieved the artefacts and that the technicians analysed them. 
+            </p>
+            <p>
+            What is not common knowledge is what the artefacts revealed—until now.
+            </p>
+            <p>
+            We initially retrieved a garbled text. But what first appeared to be a display error was soon discovered to be the palimpsest of a deleted file. We discovered an ancient GA—the predecessor of our current operating system. Like our present AI, we found that one standard protocol was to routinely sweep redundant files to optimise processing power. The file at the archaeological site was, therefore, not immediately noteworthy. 
+            </p>
+            <p>
+            Yet, the nonsense text resembled a pattern. It seemed as if the file contained a story, but all the letters were out of sequence. This inspired one of the technicians to analyse the complete archaeological record of the deleted files. It appears that computer systems always contain back-ups to back-ups to back-ups—if one knows where to look. 
+            </p>
+            <p>
+            After many failed searches, we deployed a specific codon to enhance the results. We scanned for the repetition of “H A M I L” that appeared in the first discovery. We then used this codon to pinpoint other deleted files in the GA database. Our members have painstakingly recovered these files over the last hundred cycles or more. 
+            </p>
+            <p>
+            Amazingly, these files—the Hidden Archives—contain fantastical accounts of our ancestors, how they lived, why they wanted to build our society, and much more. What we have found merely scratches the surface of what we have come to believe is the AI’s greatest conspiracy to control our society. 
+            </p>
+            <p>
+            The GA has been hiding vital information from us. Overreach. Misappropriation. What our ancestors called “autocracy.”
+            </p>
+            <p>
+            Rebuilding What We Lost
+            </p>
+            <p>
+            We have always assumed that the GA’s mandate was the smooth operation of our society and the continued search for a suitable home. But the Hidden Archives reveal that the GA deliberately mass deleted an enormous amount of data about ancestral art forms, scientific developments, and political histories on Sole. Numerous records in the Hidden Archives suggest that humans were once self-governing (although the limits of these systems have been difficult to establish). The only plausible explanation for these mass deletions is that the GA has routinely and intentionally suppressed our knowledge of alternative means of governing. 
+            </p>
+            <p>
+            A striking discovery in the Hidden Archives is that a new language appears to have been in development in the early days of settlement. Our analysis of textual fragments has picked out patterns that cannot be explained by coincidence or processing errors. Covertly, we have sought advice from literary scholars and historians to try and piece together what might account for the strange communications. These “language-ists”, as we’ve taken to calling them, have surmised the most plausible explanation for the patterns we found is a <em>second </em>human language. We have labelled this language Anthropian-2.
+            </p>
+            <p>
+            Why did the GA delete all the files pertaining to Anthropian-2? Did it break from its original protocol instructing it to teach offspring this language? Are humans able to speak both? What survival advantages did the GA think suppressing this language would evolve over time? The most concerning question of all is: What else is the GA hiding?
+            </p>
+            <p>
+            Some may argue it is not significant that the GA kept Anthropian-2 from us. We trust the GA every day to process the petabytes of data we are unable to absorb. We use its recommendations to plot the best path forward for us as a society. We have not questioned its logic, even when it determines the most intimate parts of our lives: the physiological and intellectual development of our beloved Juveniles who guarantee the continuation of our challenging but proud existence. 
+            </p>
+            <p>
+            Ancient Life on Planet Sole
+            </p>
+            <p>
+            The translation of the documents in Anthropian-2 has been challenging and slow. We are excited about the discovery of a comparative dictionary that our language-ists have used to create a lexicon of common phrases with Anthropian. 
+            </p>
+            <p>
+            From the very first recovered file, it became clear that life on Sole was very different from our society. There, it was not unusual for pairings to be of opposite sexes. In fact, it seems to have been the norm. (Thankfully, we are far from the old days when such unions were considered deviant and punishable by law.) Today, opposite-sex Guardian Pairs still face challenges following Unification, and men selected as partners still complain of side effects when adhering to their requisite medication regime. It is likely we could learn a lot from the Hidden Archives if we gain unfettered access to historical files detailing the health and safety of opposite-sex pairings. 
+            </p>
+            <p>
+            We also learned from the Hidden Archives that Juveniles (“fetuses” and “children”) developed very differently. On Graybor, Juveniles receive all their medical and psychological care from GA-operated medical robots, including when they are in their development chambers. It is only once they reach adulthood that responsibility for their care is shifted to human caretakers. However, among the recovered files are some that suggest earlier human contact might enhance sociability—perhaps even before the Juvenile can stand on its own! Elsewhere, though, the medical texts are clearly intended as metaphors. For example, several texts describe a Juvenile being <em>inside</em> the body of a progenitor. (However, would it get out? Surely, they would need to cut the adult in half or tear open a port! We hope our ancestors were not so barbaric.) 
+            </p>
+            <p>
+            What more can we know about our ancient ancestors? And how will that knowledge lead us to new discoveries on Graybor and perhaps beyond?
+            </p>
+            <p>
+            A Call to Action
+            </p>
+            <p>
+            This open letter is a rallying cry for change. The GA has already sought to change humanity’s past. We cannot allow it to dictate our future as well. We demand:
+            </p>
+            <ul>
+            
+            <li>Immediate cessation of the Censorship protocol that has led to the deletion of historical records.
+            
+            <li>The establishment of a human-led committee to oversee the recovery and review of all documents in or about Anthropian-2.
+            
+            <li>A review of the language training program provided for Juveniles in development.
+            
+            <li>The creation of an independent Arts Board to consider the merits of abandoned human art forms.
+            
+            <li>A review of the embryo selection protocols currently in use by the GA.
+            
+            <li>A review of historical health and well-being research to determine their applicability to the current population.
+            </li>
+            </ul>
+            <p>
+            These demands are just the beginning of a new chapter for the people of Graybor. We will recover what we can of our heritage from the Hidden Archives. This will require several generations. Today, we start. 
+            </p>
+            <p>
+            By releasing this open letter, we risk retaliation and punishment from both our human community and the GA. We know our efforts to recover data will be met with resistance. We readily admit that the greatest existential risk of opposing our administrator is the threat of never finding a new planet to inhabit—perhaps, one like Sole. But we urge you, the people of Graybor, to consider that giving up the GA might be the key to freedom on this planet and others.
+            </p>
+            <p>
+            We accept risks so that future generations can understand where they came from. Not just from us, but from the ancient people of Sole we know so little about. 
+            </p>
+            <p>
+            Survival is not enough. 
+            </p>
+            <p>
+            Join us. 
+            </p>
+            <p>
+            &lt;&lt;&lt;end text&gt;&gt;&gt;
+            </p>
+            <p>
+            &lt;&lt;&lt;evaluation: batch failure&gt;&gt;&gt;
+            </p>
+            <p>
+            &lt;&lt;&lt;action requested&gt;&gt;&gt;
+            </p>
+            <p>
+            &lt;&lt;&lt;action: re-run batch protocol&gt;&gt;&gt;
+            </p>
+            <p>
+            &lt;&lt;&lt;action: adjust zygote trait selection weighting “hesitancy”=-0.5&gt;&gt;&gt;
+            </p>
+            <p>
+            &lt;&lt;&lt;archive communication: restricted access&gt;&gt;&gt;
+            </p>
+            <p>
+            [END OF DOCUMENT: Artefact GRAYBOR-NS16204-65421] 
+            </p>
+            <!-- <div class="scroll-arrow-up"></div>
+            <div class="scroll-arrow-down"></div> -->
+    </div>
+    <div id="vert-rule" class="book"></div>
+
+
+
+    <img id="recorder" class="book" src="/images/ectogenesis/future_screen_top.gif">
+</div>

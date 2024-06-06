@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: ectogenesis
 title: Extraterrestrial Ectogenesis
 author: Evie Kendal
 bio: "Dr. Evie Kendal is a bioethicist and public health scientist specializing in the ethics of emerging technologies. Her work focuses on reproductive biotechnologies, health communication and media, and space ethics. Kendal is a Senior Lecturer of Health Promotion at Swinburne University of Technology's Department of Health Sciences and Biostatistics and heads the Ethical, Legal and Social Implications of Emerging Technologies (ELSIET) research group, housed at the Iverson Health Innovation research institute."
@@ -116,7 +116,7 @@ That ectogenesis has only been available to the wealthy using private facilities
 
 
 
-## 5\. **_Artefact 3:_** **“FetEDU.”** 
+## 5\. _Artefact 3:_ “FetEDU.”
 
 _An Interactive 4D Image of a Fetus is shown developing in an Ectogenesis Chamber on Settlement M4._
 

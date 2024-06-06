@@ -114,54 +114,6 @@ layout: post
 
 
 <script>
-function easeInOutCubic(t) {
-    return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-}
-
-function moveImagesOnScroll(images) {
-    if (window.innerWidth > 1200) {
-        window.addEventListener('scroll', () => {
-            const viewportHeight = window.innerHeight;
-            const scrollY = window.scrollY;
-
-            images.forEach(({ img, start, end, right, height, heightS, z, width }) => {
-                const imgHeight = img.clientHeight;
-                const imgStart = start * document.body.scrollHeight;
-                const imgEnd = end * document.body.scrollHeight;
-                let heightStop = height || 1
-                let heightStart = heightS || 0
-
-                // if (scrollY + viewportHeight >= imgStart && scrollY <= imgEnd) {
-                    let progress = ((scrollY - imgStart) / (imgEnd - imgStart))   + heightStart;
-                    if(heightStop<1){
-                        console.log("before",progress)
-                        progress = Math.min(progress, heightStop)
-                        console.log(heightStop)
-                    }
-                    // const easedProgress = Math.min(easeInOutCubic(progress),1) * heightStop;
-                    let top = (viewportHeight+imgHeight) * ((1 - progress)) - imgHeight;
-
-                    // if (height) {
-                    //     const stopPosition = viewportHeight * height - imgHeight;
-                    //     if (top <= stopPosition) {
-                    //         top = stopPosition;
-                    //     }
-                    // }
-
-                    img.style.position = 'fixed';
-                    img.style.top = `${top}px`;
-                    img.style.right = `${right * 100}vw`;
-                    img.style.width = width+"vw"
-                    if(z) {img.style.zIndex = z}
-                // } else {
-                //     img.style.position = 'absolute';
-                //     img.style.top = scrollY + viewportHeight >= imgStart ? `${imgEnd - imgHeight}px` : `${imgStart + viewportHeight}px`;
-                // }
-            });
-        });
-    }
-}
-
 
 let Austraunaut = {
     img: document.getElementById("Austraunaut"),
@@ -376,7 +328,65 @@ let imgs = [lunokhod, lunokhod2, lunokhod3, tehnika, stamp, mipa, building, red,
 
 
 
-moveImagesOnScroll(imgs);
+function easeInOutCubic(t) {
+    return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+}
+
+function updatePositions() {
+if (window.innerWidth > 1200) {
+        const viewportHeight = window.innerHeight;
+        const scrollY = window.scrollY;
+        console.log(scrollY)
+
+        imgs.forEach(({ img, start, end, right, height, heightS, z, width }) => {
+            const imgHeight = img.clientHeight;
+            const imgStart = start * document.body.scrollHeight;
+            const imgEnd = end * document.body.scrollHeight;
+            let heightStop = height || 1
+            let heightStart = heightS || 0
+
+            // if (scrollY + viewportHeight >= imgStart && scrollY <= imgEnd) {
+                let progress = ((scrollY - imgStart) / (imgEnd - imgStart))   + heightStart;
+                if(heightStop<1){
+                    // console.log("before",progress)
+                    progress = Math.min(progress, heightStop)
+                    // console.log(heightStop)
+                }
+                // const easedProgress = Math.min(easeInOutCubic(progress),1) * heightStop;
+                let top = (viewportHeight+imgHeight) * ((1 - progress)) - imgHeight;
+
+                // if (height) {
+                //     const stopPosition = viewportHeight * height - imgHeight;
+                //     if (top <= stopPosition) {
+                //         top = stopPosition;
+                //     }
+                // }
+
+                img.style.position = 'fixed';
+                img.style.top = `${top}px`;
+                img.style.right = `${right * 100}vw`;
+                img.style.width = width+"vw"
+                if(z) {img.style.zIndex = z}
+            // } else {
+            //     img.style.position = 'absolute';
+            //     img.style.top = scrollY + viewportHeight >= imgStart ? `${imgEnd - imgHeight}px` : `${imgStart + viewportHeight}px`;
+            // }
+        });
+    }
+}
+
+
+if (window.innerWidth > 1200) {
+        window.addEventListener('load', updatePositions)
+        window.addEventListener('scroll', updatePositions)
+    }
+    
+window.addEventListener('resize', () => {
+    window.addEventListener('load', updatePositions)
+        window.addEventListener('scroll', updatePositions)
+});
+
+
 
 
 
