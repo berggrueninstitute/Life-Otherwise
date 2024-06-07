@@ -9,7 +9,7 @@ location: Acidalia Planitia
 planet: Mars
 year: 3.8–3.5 Billion years ago
 exegesis:   |
-    What is life from the perspective of multiplicity? Of life_s_ rather than life? This piece is a speculative, playful rendering of scientific concepts about biological life, survival, growth through the lens of pluribiological entities who recognize that life is not something that takes place on a site, but is an assemblage across space and time.  This piece proceeds by simply bypassing the idea of a singular biology and the basic underpinnings of astrobiological ontology.
+    What is life from the perspective of multiplicity? Of life**_s_** rather than life? This piece is a speculative, playful rendering of scientific concepts about biological life, survival, growth through the lens of pluribiological entities who recognize that life is not something that takes place on a site, but is an assemblage across space and time.  This piece proceeds by simply bypassing the idea of a singular biology and the basic underpinnings of astrobiological ontology.
 
     Deliberately, we seek to create a world where singularity was never assumed or refuted, where ecological ethos is the enveloping framework, and ecology itself becomes blurred between life/other-than-life. As artists, researchers of science, and anthropologists, we are seeking to bridge the social scientific, creative, and scientific by opening up the possibility of what biology/s could be.
 
@@ -69,7 +69,7 @@ _Message from ₻ to ₯:_ So true! Ahh, a cluster-kin has just reminded us…he
 > _When will we begin?_
 
 
-_Message from ₯ to ₻:_ That does make us laugh! If you could see all the bubbles around us, you’d be sure we’d turned into a geyser! Though more seriously, it too reminds us why we became a Seeker. As Seekers, we _seek _relations, a desire not to know completely, but rather, to resonate with the forces that make that connection and try to make it sense-able. When we attend to the connections of newly converged entities, the learning is more than just about the entity itself; we learn about ourselves and how we are resonantly made. Sharing that _feeling-knowing_, as we are now through our sensory messages, and along the gradient with our Clusters and beyond them, the Signalers…well, it transforms us all. To Seek is to choose to encounter and openly perceive…to receive entities that are entirely different. Forgive our vehemence, but the ripple also has our energy reeling! This signal we picked up feels like a warm unsettling and disequilibrium that makes alive our very being and reminds us that this work is bigger than us. Bigger than our planets and the asteroids that soar in the cosmos.
+_Message from ₯ to ₻:_ That does make us laugh! If you could see all the bubbles around us, you’d be sure we’d turned into a geyser! Though more seriously, it too reminds us why we became a Seeker. As Seekers, we _seek_ relations, a desire not to know completely, but rather, to resonate with the forces that make that connection and try to make it sense-able. When we attend to the connections of newly converged entities, the learning is more than just about the entity itself; we learn about ourselves and how we are resonantly made. Sharing that _feeling-knowing_, as we are now through our sensory messages, and along the gradient with our Clusters and beyond them, the Signalers…well, it transforms us all. To Seek is to choose to encounter and openly perceive…to receive entities that are entirely different. Forgive our vehemence, but the ripple also has our energy reeling! This signal we picked up feels like a warm unsettling and disequilibrium that makes alive our very being and reminds us that this work is bigger than us. Bigger than our planets and the asteroids that soar in the cosmos.
 
  
 
@@ -132,7 +132,7 @@ _Message from ₯ to ₻:_ That is a risk, but we don’t even know for sure tha
 
 _Message from ₻ to ₯:_ Home, you say. Is it a place? A time? A planet? Or is it something we feel so much more poignantly—our connection, to ourselves and the shared experience we all have—you, us, our cluster—of living? That is the core of being a Seeker. We attune to the sensorial gradient more intentionally and seek ways to commune with other entities. We know that it is scary, all this, happening all at once. But if there is any place that can heighten our connection to the Signalers enough to feel the messages more deeply, it would be there. And then, perhaps, we can see if Blue fits into our home too.
 
-_Message from ₯ to ₻:_ _[silence…] _Yes. You speak well and remind us that we are not alone…perhaps those on Blue are also feeling a shock. If there is convergence, entities on Blue may be experiencing a shift in their existence, their sense of being. But we have always been, even without sensing it, an ecological interplanetary community. Let us go and learn more about each other.
+_Message from ₯ to ₻: [silence…]_ Yes. You speak well and remind us that we are not alone…perhaps those on Blue are also feeling a shock. If there is convergence, entities on Blue may be experiencing a shift in their existence, their sense of being. But we have always been, even without sensing it, an ecological interplanetary community. Let us go and learn more about each other.
 
  
 
@@ -153,7 +153,7 @@ _Message from ₻ to ₯:_ We come! This is such a validation of what we’re tr
   ![Image description](/images/bluePlanet/01_mol.gif){: #mol .bluePlanetImg }
 
 
-_Message from ₯ to ₻:_ _ _Wait! Sharing…we just had a thought about nurturance beginnings. But it is still forming, what do you think? Just now, we were sweeping over a spot on the ocean floor, intense heat from below warming our insides. As usual, we greeted the deep silent Shifter communities, who converted the heat so that we may be warmed and moved by it. Then we saw small flares at the very bottom that light up the depths, Lighters working below in masses. We realized they don’t feel the messages as we do, their lives so tightly coupled with the chemical exchanges of their rock partners. But when we swim closer, we can feel bursts of energy, energy we needed to replenish the heat output of our swim. There is something important to learn in these moments of mutual constitution and dispersal. Remember the old song?
+_Message from ₯ to ₻:_ Wait! Sharing…we just had a thought about nurturance beginnings. But it is still forming, what do you think? Just now, we were sweeping over a spot on the ocean floor, intense heat from below warming our insides. As usual, we greeted the deep silent Shifter communities, who converted the heat so that we may be warmed and moved by it. Then we saw small flares at the very bottom that light up the depths, Lighters working below in masses. We realized they don’t feel the messages as we do, their lives so tightly coupled with the chemical exchanges of their rock partners. But when we swim closer, we can feel bursts of energy, energy we needed to replenish the heat output of our swim. There is something important to learn in these moments of mutual constitution and dispersal. Remember the old song?
 
 
 > _A piece of the whole_
@@ -188,7 +188,7 @@ Axiom 3: The Presence of Molecular Interchange:  Sustained aliveness requires th
 </p></div>
 
 
-_Message from ₯ to ₻:_ _ _Could you catch that last message? The Signalers must be beyond the curve of our planet. We won’t be able to hear them for some time. We will allow the current to move us onwards, we are getting fatigued. The bright above has dimmed. In the depths, the darkness leisurely begins to transform the brilliant blue of the waves into black. But you must see stars!
+_Message from ₯ to ₻:_ Could you catch that last message? The Signalers must be beyond the curve of our planet. We won’t be able to hear them for some time. We will allow the current to move us onwards, we are getting fatigued. The bright above has dimmed. In the depths, the darkness leisurely begins to transform the brilliant blue of the waves into black. But you must see stars!
 
  
 

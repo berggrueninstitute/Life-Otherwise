@@ -220,7 +220,7 @@ _President Jimenez:_ That’s enough, Sara.
 
 So, okay… why did Xiloj care what this physicist might be saying about Mayan math or mathematicians?
 
-_Mr. Guthrie:_ Circumstances. The report says that in the 1950s, a Yuri Knorosov—he apparently was a Russian linguist_—_he published “a tentative decipherment of much of the Dresden Codex”—and… oh, the Dresden Codex is a fourteenth-century manuscript written in Mayan hieroglyphs. The one that Feynman was talking about…containing records of Venus.
+_Mr. Guthrie:_ Circumstances. The report says that in the 1950s, a Yuri Knorosov—he apparently was a Russian linguist—he published “a tentative decipherment of much of the Dresden Codex”—and… oh, the Dresden Codex is a fourteenth-century manuscript written in Mayan hieroglyphs. The one that Feynman was talking about…containing records of Venus.
 
 _President Jimenez:_ I know what the Dresden Codex is.
 
@@ -231,7 +231,7 @@ _Mr. Guthrie:_ Right. Well, I most certainly did not. But hmm…so he, Knorosov,
 
 I don’t know anything about linguistics, but that sounds like a political response to me. In any case, then in 1960… right, Tatiana Proskouriakoff—another Russian… no… wait just a second… “a Mayanist of Russian descent,” but an American citizen—she cracked “a key historical thread within Mayan hieroglyphic inscriptions more broadly.”  
 
-_Professor Ruiz:_ Actually, Proskouriakoff’s work was really clever. You see, at the time, no one could actually read the hieroglyphic texts, but the calendric system was well understood and had been for decades. So Proskouriakoff went through a specific set of inscriptions from one archaeological site—Piedras Negras in Guatemala_—_and she noticed that the dates on the monuments were spaced out in time so that they might have corresponded to significant events in the lives of rulers within a dynasty. Births, accessions, deaths, that sort of thing. She hypothesized that the inscriptions might be filled with historical information—not impenetrable religion or astronomy as Thompson and others believed. And her colleagues did accept Proskouriakoff’s work—even Thompson. There actually are some great documentaries on this if people are interested.  
+_Professor Ruiz:_ Actually, Proskouriakoff’s work was really clever. You see, at the time, no one could actually read the hieroglyphic texts, but the calendric system was well understood and had been for decades. So Proskouriakoff went through a specific set of inscriptions from one archaeological site—Piedras Negras in Guatemala—and she noticed that the dates on the monuments were spaced out in time so that they might have corresponded to significant events in the lives of rulers within a dynasty. Births, accessions, deaths, that sort of thing. She hypothesized that the inscriptions might be filled with historical information—not impenetrable religion or astronomy as Thompson and others believed. And her colleagues did accept Proskouriakoff’s work—even Thompson. There actually are some great documentaries on this if people are interested.  
 
 _Mr. Guthrie:_ Getting back to the point: Knorosov, Proskouriakoff and now Feynman—in the late 60s and early 70s—supposedly reading hieroglyphs and maybe even connecting Mayan mathematics to quantum physics… well that’s what caught the attention of the Sindicato. This was just too much to overlook. So they sent Xiloj to investigate.  
 
@@ -268,7 +268,7 @@ _President Jimenez:_ Right. Go on with the translation.
 _Mr. Guthrie:_ 
 
 
-> Xiloj: “_17 May 1971. Caltech. Arrived at the talk early. Gustavo agreed to accompany me, which I was pleased with. El Sindicato said it was for security, but I’m beginning to enjoy his company. We kept to the back of the room_—_the audience was large, and everyone was talking, animated, excited. Most looked like older professors, but there were plenty of students, and interestingly many young women. I felt conspicuous, so we stayed in the back._
+> Xiloj: “_17 May 1971. Caltech. Arrived at the talk early. Gustavo agreed to accompany me, which I was pleased with. El Sindicato said it was for security, but I’m beginning to enjoy his company. We kept to the back of the roomthe audience was large, and everyone was talking, animated, excited. Most looked like older professors, but there were plenty of students, and interestingly many young women. I felt conspicuous, so we stayed in the back._
 
 
 > _“F[eynman] started talking about the scribes who wrote the Venus Table. ‘They didn’t understand the why’ —he says. It was a bit disappointing that such a powerful intellect had nothing new to say about the Dresden Codex. He talked about the tracking of Venus’s visibility, but Förstemann published that in the nineteenth century. He referred to corrections for long-term observations, but that was Teeple’s work in the 1930s. Gustavo says he’s just using our ancestors as a prop, so he elbowed me to get up and leave. But this was my chance to hear F lecture on modern physics, so I pulled Gustavo back down into his seat.”_
@@ -303,7 +303,7 @@ _Mr. Guthrie:_ Quoting Xiloj. Yes. This is from the same date, May 17th. Again, 
 Okay… redacted… redacted… and then:
 
 
-> _During his talk, an alternative thought occurred to me_—_something I’ve only had glances of in the corners of my mind. What if mathematics is just one language invented and used by humans_—_not a language of the universe like Galileo or Einstein thought. That brought to mind a dog I saw while I was walking to the lecture hall this morning. I remember seeing it playing on the lawn, catching a tennis ball. That dog wasn’t solving polynomial expressions in its brain to predict a projectile trajectory, but it caught the ball easily. Does a human brain solve polynomials to interact with projectiles? Or is math more like a secondary human tool_—_and other creatures have their own cognitive tools, even for performing similar actions. This might mean that math is part of a construct, part of human rationality, but that’s not a rationality that all creatures engage._
+> _During his talk, an alternative thought occurred to mesomething I’ve only had glances of in the corners of my mind. What if mathematics is just one language invented and used by humansnot a language of the universe like Galileo or Einstein thought. That brought to mind a dog I saw while I was walking to the lecture hall this morning. I remember seeing it playing on the lawn, catching a tennis ball. That dog wasn’t solving polynomial expressions in its brain to predict a projectile trajectory, but it caught the ball easily. Does a human brain solve polynomials to interact with projectiles? Or is math more like a secondary human tooland other creatures have their own cognitive tools, even for performing similar actions. This might mean that math is part of a construct, part of human rationality, but that’s not a rationality that all creatures engage._
 
 _Professor Ruiz:_ Honestly, that is incredible to hear. I have researched this history and I thought I understood what Xiloj was doing. But how she first started contemplating what Memo worked with? That is totally new…to me.
 
@@ -323,7 +323,7 @@ _Professor Ruiz:_ Right. In English we would translate that as ‘I am your serv
 
 _President Jimenez:_ That’s an odd example.
 
-_Professor Ruiz:_ Yes… I agree. But look. In English, we build this sentence in a noun-centered way.  Servant is a noun that is possessed by you, and I fill that position. “Am”_—_“to be” – is what defines the relationships between the nouns. In Yucatec, though, it is one word. The ‘a’ is a prefix and the ‘en’ is a suffix to the main root _‘winik_,’ which means person. But it is really not even that noun-ish because _winik_ personhood can be human, but it can also refer to members of other animate populations as well. So in Yucatec, ‘a’ refers to you and ‘en’ refers to me, so we might more strictly translate this as ‘your-person-me.’  Which is heavily conditional—juxtaposition and context. Is this making sense?
+_Professor Ruiz:_ Yes… I agree. But look. In English, we build this sentence in a noun-centered way.  Servant is a noun that is possessed by you, and I fill that position. “Am”“to be” – is what defines the relationships between the nouns. In Yucatec, though, it is one word. The ‘a’ is a prefix and the ‘en’ is a suffix to the main root _‘winik_,’ which means person. But it is really not even that noun-ish because _winik_ personhood can be human, but it can also refer to members of other animate populations as well. So in Yucatec, ‘a’ refers to you and ‘en’ refers to me, so we might more strictly translate this as ‘your-person-me.’  Which is heavily conditional—juxtaposition and context. Is this making sense?
 
 _President Jimenez:_ So it’s not at all transparent why we had eyes on her. On Xiloj. Great. Where’s Memo’s project in all of this?
 
@@ -342,10 +342,10 @@ _Professor Ruiz:_ Nice. So for their anthropological purposes, scholars understo
 _Mr. Guthrie:_ Here’s something on that, also from her diary. I quote:  
 
 
-> _What about_ k’uhulajaw_?_Aj-aw_, person who shouts._ K’uh-ul_, in a _k’uh_ way. Los academicos always refer to _k’uh_ as ‘god,’ but even the Popol Vuh tells us otherwise. The Hero Twins take their place as _k’uh_ after they’ve learned to nourish their family with food and shelter, after they’ve learned to vanquish their enemies, and after they’ve learned to heal themselves and their father. _K’uh_ is just an agency in nature, in the cosmos, that has the capacity to heal, to nourish and to poison. If it has those three capacities, it is_ k’uh_. Then _k’uho’ob_ have agency at all scales—from human to animal to plant to even the Earth itself, and a _k’uhulajaw_ would be charged with representing his or her human community as _k’uh_ relative to the other _k’uho’ob_ as a negotiator. And the _k’uhulajaw_ communicated with these other _k’uho’ob_ through ur-rationalities. The other entities out there—animal, plant or whatever—they already use ur-rationalities among themselves and across species. The _k’uhulajaw_ had to learn how to engage them and then include them in the politics of her or his city.   _
+> _What about_ k’uhulajaw? Aj-aw, _person who shouts._ K’uh-ul, _in a_ k’uh _way. Los academicos always refer to_ k’uh _as ‘god,’ but even the Popol Vuh tells us otherwise. The Hero Twins take their place as_ k’uh _after they’ve learned to nourish their family with food and shelter, after they’ve learned to vanquish their enemies, and after they’ve learned to heal themselves and their father._ K’uh _is just an agency in nature, in the cosmos, that has the capacity to heal, to nourish and to poison. If it has those three capacities, it is_ k’uh. _Then_ k’uho’ob _have agency at all scales—from human to animal to plant to even the Earth itself, and a_ k’uhulajaw _would be charged with representing his or her human community as_ k’uh _relative to the other_ k’uho’ob _as a negotiator. And the_ k’uhulajaw _communicated with these other_ k’uho’ob _through ur-rationalities. The other entities out there—animal, plant or whatever—they already use ur-rationalities among themselves and across species. The_ k’uhulajaw _had to learn how to engage them and then include them in the politics of her or his city._
 
 
-> _This makes me think of our trip to Copan _[that’s in Honduras] _last summer. Such a beautiful site, and so much has been archaeologically restored. Walking through the Great Plaza, seeing _Waxaklajun Ub’aah K’awiil_, the thirteenth_ k’uhulajaw_ of Copan, on those stelae, carved in the full round, larger than life. It makes me wonder, do they show him interacting ur-rationally with nature and with his ancestors? Maybe all of these stone images of him don’t reflect an inflated ego. Maybe he just intended them to show everyone the work that he was required to do?_
+> _This makes me think of our trip to Copan_ [that’s in Honduras] _last summer. Such a beautiful site, and so much has been archaeologically restored. Walking through the Great Plaza, seeing_ Waxaklajun Ub’aah K’awiil, _the thirteenth_ k’uhulajaw _of Copan, on those stelae, carved in the full round, larger than life. It makes me wonder, do they show him interacting ur-rationally with nature and with his ancestors? Maybe all of these stone images of him don’t reflect an inflated ego. Maybe he just intended them to show everyone the work that he was required to do?_
 
 
 > _Local environments are just as important as human needs for indigenous leadership._
@@ -354,13 +354,13 @@ That last sentence just kind of floats out there at the end of her entry for the
 
 _Professor Ruiz:_ But there it is: the origin of this notion of ur-rationalities. Wow.  
 
-You see, by combining her perspective on language with her perspective on math, Xiloj was provincializing math as part of one rationality– as one part of _human_ rationality. In other words, she was proposing a provincialization of rationality itself. That would mean that rationalities exist within all creatures_—_ they are just rationalities of different scales. She was replacing binary opposition with scale. It wasn’t that creatures_—_animals, plants, bacteria_—_were rational or not, but that all worked with their own forms of rationality. She dubbed these “ur-rationalities.” Not rational or irrational, but a spectrum of ur-rationalities.  
+You see, by combining her perspective on language with her perspective on math, Xiloj was provincializing math as part of one rationality– as one part of _human_ rationality. In other words, she was proposing a provincialization of rationality itself. That would mean that rationalities exist within all creatures—they are just rationalities of different scales. She was replacing binary opposition with scale. It wasn’t that creatures—animals, plants, bacteria—were rational or not, but that all worked with their own forms of rationality. She dubbed these “ur-rationalities.” Not rational or irrational, but a spectrum of ur-rationalities.  
 
 _President Jimenez:_ Got it. A Mayan worldview might have different species communicating through ur-rationalities.  
 
-But wait. Who was he_—_Memo_—_that he got to meet this Mayan elder? This member of a secret society?
+But wait. Who was heMemothat he got to meet this Mayan elder? This member of a secret society?
 
-_Mr. Guthrie:_ Kind of a mystery. He was nowhere on our radar. Seemed an unconventional vagabond type.  Engineering degree. No steady work. Took jobs to save money for traveling_—_mostly through Latin America. His early notes describe his wanderings as “weaving a cultural jacket,” so that he can “wear his memories for warmth” when he returns to the U.S. But here you go… from his travel journal. 
+_Mr. Guthrie:_ Kind of a mystery. He was nowhere on our radar. Seemed an unconventional vagabond type.  Engineering degree. No steady work. Took jobs to save money for travelingmostly through Latin America. His early notes describe his wanderings as “weaving a cultural jacket,” so that he can “wear his memories for warmth” when he returns to the U.S. But here you go… from his travel journal. 
 
 _Professor Ruiz:_ Wait…why do you have his journal?! His parents were looking desperately for that.
 
@@ -369,10 +369,10 @@ _Professor Ruiz:_ Wait…why do you have his journal?! His parents were looking 
 _Mr. Guthrie:_ This is from July 6, 2020.  
 
 
-> Memo: _“2020.7.6 _
+> Memo: _“2020.7.6_
 
 
-> _Caye Caulker. Wrote up more notes on this wild idea I had in class last Spring. Yes, Artificial Neural Networks_ _are extremely over-simplified models of neural networks in our brains. But even very simple ANNs can perform logical operations—they seem made for that. Arithmetic is also incredibly straightforward with very tiny networks. But it goes a lot further since large ANNs can operate as dynamical systems and in clusters they perform operations very much like mathematical functions. Back-propagation algorithms are like embodiments of minimization operations.  _
+> _Caye Caulker. Wrote up more notes on this wild idea I had in class last Spring. Yes, Artificial Neural Networks_ _are extremely over-simplified models of neural networks in our brains. But even very simple ANNs can perform logical operations—they seem made for that. Arithmetic is also incredibly straightforward with very tiny networks. But it goes a lot further since large ANNs can operate as dynamical systems and in clusters they perform operations very much like mathematical functions. Back-propagation algorithms are like embodiments of minimization operations._
 
 
 > _So might it be possible that mathematicians create and have created math as a language by a form of meditation on their own neural processes? Math as Meditation?  We can perceive and describe our emotions, which are just biochemical reactions…why wouldn’t we be able to perceive and describe our neural operations?_
@@ -395,19 +395,19 @@ _President Jimenez:_ I’m sorry but we are NOT having this conversation right n
 _Mr. Guthrie:_ Right… right… umm…Here’s one more unredacted section from a few days later. Again, I quote from July 9, 2020:
 
 
-> Memo:_“So if math isn’t just human invention. If math results from a form of meditation—not some universal language— and if rationalities take forms appropriate to the life-forms in which they are embedded, then doesn’t this fit with indigenous cosmologies built upon pantheism—God is in everything?  Is this what Xiloj is getting at?  _
+> Memo:_“So if math isn’t just human invention. If math results from a form of meditation—not some universal language— and if rationalities take forms appropriate to the life-forms in which they are embedded, then doesn’t this fit with indigenous cosmologies built upon pantheism—God is in everything?  Is this what Xiloj is getting at?_
 
 
-> _Today we talked about the ramifications all of this might have for modern notions of the nature of the universe. She thinks that what folks have been calling “pantheism” might be better translated today as starting with a field of agency which is just as fundamental as the strong or weak nuclear forces. A field of agency as fundamental as electromagnetism. Just pure agency. Not consciousness. The force of will. What if, she wonders, time as we think about it in a Western perspective is simply an oversimplification—a dimensional reduction—of this agency field?  Sure, it would be easy to model non-living objects with a single time dimension—a baseball has no agency of its own, so to model it, we strip down the agency field to the single dimension of time. But modeling living organisms would require the full multi-dimensional (5-tensor?) field of agency?  _
+> _Today we talked about the ramifications all of this might have for modern notions of the nature of the universe. She thinks that what folks have been calling “pantheism” might be better translated today as starting with a field of agency which is just as fundamental as the strong or weak nuclear forces. A field of agency as fundamental as electromagnetism. Just pure agency. Not consciousness. The force of will. What if, she wonders, time as we think about it in a Western perspective is simply an oversimplification—a dimensional reduction—of this agency field?  Sure, it would be easy to model non-living objects with a single time dimension—a baseball has no agency of its own, so to model it, we strip down the agency field to the single dimension of time. But modeling living organisms would require the full multi-dimensional (5-tensor?) field of agency?_
 
 
-> _Is this related to the Long Counts at Quirigua?  _
+> _Is this related to the Long Counts at Quirigua?_
 
 _President Jimenez:_ Okay. Now we’re in the woods. Let’s get back to how this relates to an extraterrestrial message?
 
 _Professor Ruiz:_ And so…
 
-_Dr. Magdaleno:_ Well, it’s actually the next step because that’s when they got into a fight_—_or a serious disagreement_—_and Memo came back to the States. Because Xiloj…
+_Dr. Magdaleno:_ Well, it’s actually the next step because that’s when they got into a fightor a serious disagreementand Memo came back to the States. Because Xiloj…
 
 Oh, I’m sorry, Professor. I didn’t mean to interrupt you.
 
@@ -415,15 +415,15 @@ _Professor Ruiz:_ No… please. Go ahead.
 
 [Delay]
 
-_Dr. Magdaleno:_ Okay, thanks. Right, well, they had a falling out because they had very different positions on which direction to go.  Xiloj apparently wanted to start from the beginning and re-derive the Standard Model of Physics using an agency field in place of time as a dimension. And Memo wanted to prove that ur-rationalities existed as something other than just an interesting metaphor. He thought they could form the basis of a new complex of experimental science. But obviously, Xiloj didn’t want to expose these indigenous theories to Western science. She thought they should be maintained in indigenous communities for indigenous needs. Memo thought it could be useful beyond that_—_for, like, saving the environment. That’s when he came back to the US to apply to graduate school.
+_Dr. Magdaleno:_ Okay, thanks. Right, well, they had a falling out because they had very different positions on which direction to go.  Xiloj apparently wanted to start from the beginning and re-derive the Standard Model of Physics using an agency field in place of time as a dimension. And Memo wanted to prove that ur-rationalities existed as something other than just an interesting metaphor. He thought they could form the basis of a new complex of experimental science. But obviously, Xiloj didn’t want to expose these indigenous theories to Western science. She thought they should be maintained in indigenous communities for indigenous needs. Memo thought it could be useful beyond thatfor, like, saving the environment. That’s when he came back to the US to apply to graduate school.
 
 _Professor Ruiz:_ And so—finally—that’s what brings us to our situation today. Memo decided against his first inclination, which was to attempt to create symbolic languages for ur-rational communication. He hoped instead to engineer visual or audio signals that would indicate that intentional ur-rational communication between non-human species was occurring. That’s what he was able to build in the lab.
 
 [Delay]
 
-_Dr. Magdaleno:_ Right. And very early on, the work was successful and he had plenty of grant money, so he recruited two other graduate students to work with him, along with me as a postdoc and pilot for the mission.  We continued the project, along with his original advisor. We launched the spacecraft_—_the _Ho’ Chan Ahaw X1—_on September 16, 2028.  
+_Dr. Magdaleno:_ Right. And very early on, the work was successful and he had plenty of grant money, so he recruited two other graduate students to work with him, along with me as a postdoc and pilot for the mission.  We continued the project, along with his original advisor. We launched the spacecraftthe _Ho’ Chan Ahaw X1_—on September 16, 2028.  
 
-And that was successful, really the whole operation was, but we didn’t get any attention in the press or even much on social media at the time. Even when everything went haywire_—_“the event”_—_ on October 31, 2028. Still it stayed quiet.  
+And that was successful, really the whole operation was, but we didn’t get any attention in the press or even much on social media at the time. Even when everything went haywire“the event” on October 31, 2028. Still it stayed quiet.  
 
 [Inaudible]
 
@@ -441,11 +441,11 @@ _President Jimenez:_ So now we’re there. The leaked memo.
 
 _Professor Ruiz:_ Almost. Because again, we didn’t know if it was a message or not. And it was not trivial.  From the very beginning, though, two factors became critical when we attempted to code the data. We concentrated on the following variables: the species of life-form, the biochemical mechanism for producing visible light, the segment of the light spectrum, and the period of the flashes of emitted light. Those were the key variables, although we included others.  
 
-We found out right away that our results were very sensitive to changes in species adjacency as well as the bin size for bioluminescent flashes_—_that is, how much of the EM spectrum we used for a bin. The first part… umm…ruffled some feathers in our group because what we take_—_I mean scientifically_—_what we take to be adjacent species taxonomically did not produce intelligible results. We only found interpretable results when we freed up the relationships and ran all possible adjacencies, independent of our taxonomic preconceptions.  
+We found out right away that our results were very sensitive to changes in species adjacency as well as the bin size for bioluminescent flashesthat is, how much of the EM spectrum we used for a bin. The first part… umm…ruffled some feathers in our group because what we takeI mean scientificallywhat we take to be adjacent species taxonomically did not produce intelligible results. We only found interpretable results when we freed up the relationships and ran all possible adjacencies, independent of our taxonomic preconceptions.  
 
 _President Jimenez:_ You ran these deep learning engines in your lab on campus? Guthrie, would that have been secure?
 
-_Professor Ruiz:_ Actually, NASA helped us out here. Given the extensive computation necessary, we needed access to a supercomputer. Fortunately, I have connections in Mexico, so through NASA, the Mexican government gave us unlimited use of one of theirs, Kan Balam. It’s an older model_—_not with the capacity of the latest supercomputers_—_but because we did not have to get in a queue and schedule our runs, it proved the best possible opportunity.
+_Professor Ruiz:_ Actually, NASA helped us out here. Given the extensive computation necessary, we needed access to a supercomputer. Fortunately, I have connections in Mexico, so through NASA, the Mexican government gave us unlimited use of one of theirs, Kan Balam. It’s an older modelnot with the capacity of the latest supercomputersbut because we did not have to get in a queue and schedule our runs, it proved the best possible opportunity.
 
 _President Jimenez:_ Mexico knows something about this?
 
@@ -457,13 +457,13 @@ _Professor Ruiz:_ And yes. That is what did it. We used this layering of data to
 
 Our first results were productive and generated a probability that the signals were non-random: 92%. Our second results suggested with 78% probability that the signals were regular and sufficiently patterned to constitute an expression in a language. That’s what we were comfortable with, and that is what we first reported back to NASA.
 
-But they came back with pressure to decipher what the expression might have been. For that, we were clear that the dataset was far too small to attempt a decipherment were it not in a known language. But they told us to try anyway. So with that caveat in mind, we ran our data through all known human languages_—_and we included constructed languages, like Sindarin and Klingon, to explore any and all possibilities. The results were surprising. And that is what was in the memo that now you’re telling me was leaked.
+But they came back with pressure to decipher what the expression might have been. For that, we were clear that the dataset was far too small to attempt a decipherment were it not in a known language. But they told us to try anyway. So with that caveat in mind, we ran our data through all known human languagesand we included constructed languages, like Sindarin and Klingon, to explore any and all possibilities. The results were surprising. And that is what was in the memo that now you’re telling me was leaked.
 
-You can see there that with a 48% probability, our AI came back with the identification of the song lyrics “strewn with time’s dead flowers, bereft in deathly bloom,” along with their musical accompaniment, and two phrases also in English: “nihilistic inspiration” and “narcissistic species individualism.” No other possibilities_—_even, for example, as images or sounds_—_came back with anything higher than 2% probability of being accurate and none could make sense of the entire data set.
+You can see there that with a 48% probability, our AI came back with the identification of the song lyrics “strewn with time’s dead flowers, bereft in deathly bloom,” along with their musical accompaniment, and two phrases also in English: “nihilistic inspiration” and “narcissistic species individualism.” No other possibilitieseven, for example, as images or soundscame back with anything higher than 2% probability of being accurate and none could make sense of the entire data set.
 
 So we reported these results in the memo and received silence. Well, silence and a gag order.
 
-_Ms. Lopez:_ I have to be missing something. You’re telling us that you’re worried that this system, this ecosystem, accidentally picked up a bunch of signals that have some_—_somewhat decent_—_chance of being interpreted as a message from extraterrestrials.  That’s what you’re concerned about?
+_Ms. Lopez:_ I have to be missing something. You’re telling us that you’re worried that this system, this ecosystem, accidentally picked up a bunch of signals that have somesomewhat decentchance of being interpreted as a message from extraterrestrials.  That’s what you’re concerned about?
 
 Sure, I remember all the excitement in 2021 when the Pentagon released Navy jet video recordings of UFOs.  But in this case, at the very least, we have plausible deniability about anything they might suggest about a conspiracy. To quote your political nemesis, Madam President: “it’s a nothing-burger.”
 
@@ -484,34 +484,34 @@ _President Jimenez:_ Dr. Magdaleno, do you have it there? To read for us?
 _Dr. Magdaleno:_ Yes, Madam President. Here it is:
 
 
-> _People of the planet you call Earth. We understand that you unintentionally intercepted a message sent by one of us. We would like to confirm that you have interpreted the message accurately. The message was part of a set of notes being transmitted by residents of our planet who had been observing your planet. We ask that you accept our confirmation as sufficient. We also ask that you do not seek to contact us.  _
+> _People of the planet you call Earth. We understand that you unintentionally intercepted a message sent by one of us. We would like to confirm that you have interpreted the message accurately. The message was part of a set of notes being transmitted by residents of our planet who had been observing your planet. We ask that you accept our confirmation as sufficient. We also ask that you do not seek to contact us._
 
 
-> _For centuries, we have avoided your planet after our leadership assessed it to be insufficiently mature for contact.  _
+> _For centuries, we have avoided your planet after our leadership assessed it to be insufficiently mature for contact._
 
 
-> _We observe that the most technologically proficient among you have singled out one species and privileged it abusively over all other life-forms and non-living residents of your planet.  _
+> _We observe that the most technologically proficient among you have singled out one species and privileged it abusively over all other life-forms and non-living residents of your planet._
 
 
-> _We have no interest in contact with such an approach to planetary management and request that you honor our perspective.  _
+> _We have no interest in contact with such an approach to planetary management and request that you honor our perspective._
 
 
 > _The message you received was accidental and you will encounter no others. A group of artists among us who transmitted the message were using a technology we all believed that you would not be able to detect. They had become fascinated by your species’ narcissism and the nihilism it embodies and sought inspiration for their own artwork from these observations. They understand that they are now to be satisfied with the data they have accumulated, and they have agreed to never return._
 
 
-> _With trepidation, we add here that there is a group among our leadership who speculate that mutually beneficial contact between our planets may be possible in the future.  _
+> _With trepidation, we add here that there is a group among our leadership who speculate that mutually beneficial contact between our planets may be possible in the future._
 
 
-> _In our observations, we have recognized a potentially important contrast. On our planet and on several others with whom we are in communication, multiple species evolved with comparable power—not just comparable intelligence, but comparable technological power. We understand these factors to have guided our evolution such that we have learned to work collaboratively with each other as well as with countless other species across our planets.  _
+> _In our observations, we have recognized a potentially important contrast. On our planet and on several others with whom we are in communication, multiple species evolved with comparable power—not just comparable intelligence, but comparable technological power. We understand these factors to have guided our evolution such that we have learned to work collaboratively with each other as well as with countless other species across our planets._
 
 
-> _On your planet, we observe that humans have taken advantage of tools and technologies asymmetrically, without the kinds of collaborative opportunities that we have had. This appears to have led you, even within your species, to abuse asymmetries of power rather than seek genuine collaboration. _
+> _On your planet, we observe that humans have taken advantage of tools and technologies asymmetrically, without the kinds of collaborative opportunities that we have had. This appears to have led you, even within your species, to abuse asymmetries of power rather than seek genuine collaboration._
 
 
-> _But that may have changed.  _
+> _But that may have changed._
 
 
-> _Some among us propose that your new AI technologies constitute the basis of a non-human species that may serve as a competing ur-rationality. We observe that you have given elements of this AI species access to all of your most asymmetrically powerful tools and technologies. You cannot now simply “turn it off,” nor can you assume that it won’t be maliciously developed and deployed if you were to attempt to destroy it. This suggests that you must learn to collaborate with—rather than conquer —this AI species in order to survive.  _
+> _Some among us propose that your new AI technologies constitute the basis of a non-human species that may serve as a competing ur-rationality. We observe that you have given elements of this AI species access to all of your most asymmetrically powerful tools and technologies. You cannot now simply “turn it off,” nor can you assume that it won’t be maliciously developed and deployed if you were to attempt to destroy it. This suggests that you must learn to collaborate with—rather than conquer —this AI species in order to survive._
 
 
 > _Some among us speculate that if humans can actually learn collaboration for mutual benefit with AI, that may lead to new relationships with other species on your planet. And if that becomes the case, then we may find alternate interest in reaching out to you._
