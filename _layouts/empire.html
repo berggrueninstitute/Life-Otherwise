@@ -12,8 +12,7 @@ layout: post
         z-index: 50;
         /* position: relative; */
         /* pointer-events: none; */
-        transition: 1s ease;
-
+        /* transition: 1s ease; */
     }
 
     .page {
@@ -30,7 +29,7 @@ layout: post
     } */
 
     #page25.hideSecret {
-        transform: translateY(-100vh) rotate(20deg);
+        transform: translateY(-200vh) rotate(20deg);
         opacity: 1;
     }
 
@@ -79,7 +78,13 @@ layout: post
             font-family: inherit;
             cursor: pointer;
             color: var(--main-blue);
-            text-decoration: underline;
+            /* text-decoration: underline; */
+            color: white;
+
+            polyline{
+                stroke:white;
+                
+            }
     }
 
 
@@ -87,8 +92,8 @@ layout: post
         #book {
             top: 85px;
             right: 2vw;
-            width: 30vw;
-            height: calc(1.18 * 30vw);
+            width: 25vw;
+            height: calc(1.18 * 25vw);
         }    
         #unHideButton {
             display: none;
@@ -106,8 +111,9 @@ layout: post
         #book {
             padding: 13px;
             width: calc(70% - 26px);
-            top: none;
-            bottom: 75px;
+            /* top: none; */
+            top: 170px;
+            /* bottom: 75px; */
             right: 4vw;
             height: calc(1.18 * 70vw);
             box-sizing: border-box;
