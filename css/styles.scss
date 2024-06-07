@@ -332,13 +332,13 @@ input[type="range"]::-moz-range-thumb {
 
 @media screen and (min-width: 1600px){
     #menu, #spaceControls {
-        height: 18rem;
+        height: 19rem;
     }
 }
 
 @media screen and (min-width: 2000px){
     #menu, #spaceControls {
-        height: 17rem;
+        height: 18rem;
     }
 }
 
@@ -766,6 +766,14 @@ img.basic-image {
     }
 
 }
+
+@media screen and (min-width: 1400px){
+
+    #article-container{
+        margin-left: 325px;
+    }
+}
+
 
 @media screen and (min-width: 1600px){
 

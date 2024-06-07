@@ -1,9 +1,9 @@
 ---
 layout: otherwise
-title: What If Life Were Otherwise?
+title: What if life were Otherwise?
 author: Claire Isabel Webb & Lois Rosson
 bio: "Dr. Claire Isabel Webb directs the Berggruen Institute’s Future Humans program that investigates the histories and futures of life, mind, and outer space. Webb earned her Ph.D. from MIT’s History, Anthropology, and Science, Technology, and Society (HASTS) program in 2020. Her book project, _Reflexive Alienation_, explores how scientists since the Space Age, despite alien life forms' perpetual and perhaps permanent unknowability, have designed sophisticated experiments of expectation that anticipate Other biologies and intelligences.<br><br> Dr. Lois Rosson is a continuing Berggruen Institute Fellow. She received her Ph.D. from the History Department at U.C. Berkeley in 2022, where she specialized in the History of Science. Her current book project, _How to Paint Space:\ Image and Authority in the American Space Age_, examines the impact of mid-century astronomical illustration on perceptions of space landscapes in both the popular and scientific imaginaries. Rosson was previously a Guggenheim Fellow at the Smithsonian’s National Air and Space Museum, a research associate at Lawrence Livermore National Lab, and holds the 2023 – 2024 Octavia E. Butler Fellowship at the Huntington Library."
-full-title: "“What If Life Were Otherwise?”"
+full-title: "“What if life were Otherwise?”"
 location: Los Angeles
 planet: Earth
 year: 2024
