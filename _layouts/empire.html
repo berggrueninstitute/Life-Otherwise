@@ -25,7 +25,16 @@ layout: post
         transition: transform .6s ease, opacity .2s ease;
     }
 
-    #page24 {
+    /* #page24 {
+        transition: 2s ease;
+    } */
+
+    #page25.hideSecret {
+        transform: translateY(-100vh) rotate(20deg);
+        opacity: 1;
+    }
+
+    #page25 {
         transition: 2s ease;
     }
 
@@ -110,11 +119,13 @@ layout: post
 
         #unHideButton {
             transform: rotate(-90deg);
+            transform-origin: bottom right;
             position: absolute;
-            top: 12vw;
-            right: -4.2vw;
+            top: 0px;
+            right: 0px;
             z-index: 55;
             font-size: 1rem;
+            padding-right: 5%;
         }
 
         #controls {
@@ -136,18 +147,19 @@ layout: post
         }
         
         .hidden1 {
-            transform: translateX(-90vw)
+            transform: translateX(calc(-85vw - 15px));
         }
 
         #unHideButton {
             transform: rotate(-90deg);
+            transform-origin: bottom right;
             position: absolute;
-            top: 20vw;
-            right: -14vw;
+            top: 0px;
+            right: calc(1% - 18px);
+            /* right: -9px; */
             z-index: 55;
-            margin: 0px;
-            font-size: .9rem;
-            padding: 4vw;
+            font-size: 1rem;
+            padding-right: 8%;
         }
 
         #controls {
@@ -207,7 +219,7 @@ layout: post
     <div class="page" id="page22"><img src="/images/empire/Dossier_21.png" alt="Page 22"></div>
     <div class="page" id="page23"><img src="/images/empire/Dossier_22.png" alt="Page 23"></div>
     <div class="page" id="page24"><img src="/images/empire/Dossier_23.png" alt="Page 24"></div>
-    <div class="page" id="page25"><img src="/images/empire/Dossier_24.png" alt="Page 25"></div>
+    <div class="page hideSecret" id="page25" ><img src="/images/empire/Dossier_24.png" alt="Page 25"></div>
 </div>
 
 
@@ -259,6 +271,10 @@ function turnPage(from, to) {
         // next.classList.remove('flipped');
         next.style.transform = "translateX(0vw) rotate(0deg)";
         next.style.opacity = 1;
+    }
+    if(from > 9) {
+        document.getElementById("page25").classList.remove("hideSecret")
+        console.log("yes")
     }
 }
 

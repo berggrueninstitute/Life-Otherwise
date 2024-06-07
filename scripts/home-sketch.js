@@ -8,6 +8,8 @@ var menu = document.getElementById("planets-menu")
 var mouseOverDiamond = 0
 var links;
 let spaceOpacity = 0
+let notScroll = false;
+let notScrollTimer
 
 var speed;
 
@@ -81,7 +83,8 @@ function setup() {
       menuLink.href = articlePaths[storyPlanets[i].article][0];
       menu.appendChild(menuLink);
       planets[rand].description = document.createElement("div");
-      planets[rand].description.innerHTML = planets[rand].link[3]+"<br>"+planets[rand].link[4]+"<br>"+planets[rand].link[5]
+      let secondbr = planets[rand].link[4] === "" ? "" : "<br>";
+      planets[rand].description.innerHTML = planets[rand].link[3]+"<br>"+planets[rand].link[4]+ secondbr +planets[rand].link[5]
       domElements.appendChild(hoverContainer);
       planets[rand].mark = document.createElement("div");
       planets[rand].mark.classList.add('linked',"object"+i);
@@ -201,10 +204,14 @@ function setup() {
         // hovering over a story in the menu brings you to it in space
         planets[rand].menuPlanet.addEventListener('mouseenter', () => {
           targetZoom = planets[rand].z - 150000;
-          console.log(planets[rand].z)
+          // console.log(planets[rand].z)
           // console.log(targetZoom, map(targetZoom, -150000, spaceDimensions.z-150000, -150000, spaceDimensions.z-150000))
-          slider.value = map(targetZoom, 0, spaceDimensions.z, 1, 100)
+          console.log(map(targetZoom, -150000, spaceDimensions.z-150000, window.innerHeight, document.documentElement.scrollHeight))
+          slider.value = map(targetZoom, 0, spaceDimensions.z, 100, 1)
+          console.log("scrollHeight", document.documentElement.scrollHeight)
+          pauseScrollListener()
           window.scrollTo(0, map(targetZoom, -150000, spaceDimensions.z-150000, window.innerHeight, document.documentElement.scrollHeight));
+          //HELP HERE: this scrollTo is scrolling to different places given the exact same input
 
         });
       }
@@ -270,6 +277,7 @@ const slider = document.getElementById('mySlider');
 slider.oninput = function() {
   // Invert the zoom direction
   targetZoom = map(this.value, 1, 100, spaceDimensions.z - visibleDist, 0);
+  pauseScrollListener()
   window.scrollTo(0, map(this.value, 1, 100, window.innerHeight, document.documentElement.scrollHeight));
   console.log(map(this.value, 1, 100, window.innerHeight, document.documentElement.scrollHeight));
 }
@@ -305,87 +313,90 @@ let prevScroll = 0
 let isScrolling = false;
 
 document.addEventListener('scroll', () => {
-  const div = document.getElementById('scrollContainer');
+  if(!notScroll) {
+    const div = document.getElementById('scrollContainer');
 
-  const windowHeight = window.innerHeight;
-  const divTop = div.offsetTop;
-  const divHeight = div.offsetHeight;
+    const windowHeight = window.innerHeight;
+    const divTop = div.offsetTop;
+    const divHeight = div.offsetHeight;
 
-  // Get the current scroll position of the window
-  const scrollPosition = window.scrollY;
+    // Get the current scroll position of the window
+    const scrollPosition = window.scrollY;
 
-  // Calculate when the top of the div aligns with the top of the window
-  const divTopVisible = scrollPosition - divTop;
+    // Calculate when the top of the div aligns with the top of the window
+    const divTopVisible = scrollPosition - divTop;
 
-  // Calculate when the bottom of the div aligns with the bottom of the window
-  const divBottomVisible = (scrollPosition + windowHeight) - (divTop + divHeight);
+    // Calculate when the bottom of the div aligns with the bottom of the window
+    const divBottomVisible = (scrollPosition + windowHeight) - (divTop + divHeight);
 
-  scrollProgress = window.scrollY - div.offsetTop - scrollPause;
-  lowestScrollValue = div.clientHeight - window.innerHeight - scrollPause;
-  scrollPercentage = Math.max(0, (scrollProgress / lowestScrollValue) * 100);
+    scrollProgress = window.scrollY - div.offsetTop - scrollPause;
+    lowestScrollValue = div.clientHeight - window.innerHeight - scrollPause;
+    scrollPercentage = Math.max(0, (scrollProgress / lowestScrollValue) * 100);
 
-  // Invert the zoom direction
-  targetZoom = map(scrollPercentage, 1, 100, spaceDimensions.z - visibleDist, 0);
-  slider.value = scrollPercentage;
-
-
-  // --- space opacity
-  // let fadeElements = document.querySelectorAll('#menu, #spaceControls, #domElements');
-  let fadeElements = document.querySelectorAll('#domElements');
-  const targetScrollY = window.innerHeight -200; // Scroll position at which elements should be visible
-  const isVisible = window.scrollY >= targetScrollY;
-
-  // Apply styles based on visibility
-  // fadeElements.forEach(el => {
-  //   if (isVisible) {
-  //     el.style.display = 'block'; // Show the element
-  //     setTimeout(() => el.style.opacity = 1, 10);
-  //     // el.style.opacity = 1 // Delay opacity to ensure display is processed
-  //   } else {
-  //     el.style.opacity = 0; // Hide the element
-  //     // Use a timeout to delay setting display none until after the opacity transition
-  //     setTimeout(() => el.style.display = 'none', 500); // Match transition time
-  //   }
-  // });
-
-  // --- scroll jump for hero
-  // const hero = document.getElementById('home-hero');
-  // const heroHeight = hero.offsetHeight;
-
-  // if (scrollPosition < heroHeight && scrollPosition > prevScroll && !isScrolling) {
-  //   isScrolling = true;
-  //     window.scrollTo({
-  //         top: heroHeight,
-  //         behavior: 'smooth'
-  //     });
-  //     console.log("detected")
-  //     setTimeout(() => {
-  //       isScrolling = false;
-  //     }, 800);
-  // }
-  // else if (scrollPosition < heroHeight && !isScrolling) {
-  //   isScrolling = true;
-  //     window.scrollTo({
-  //         top: 0,
-  //         behavior: 'smooth'
-  //     });
-  //     setTimeout(() => {
-  //       isScrolling = false;
-  //     }, 800);
-  // }
-  // prevScroll = scrollY
+    // Invert the zoom direction
+    targetZoom = map(scrollPercentage, 1, 100, spaceDimensions.z - visibleDist, 0);
+    console.log("scroll event",targetZoom)
+    slider.value = scrollPercentage;
 
 
-  // // --- prevent from scrolling into hero/intro unless youre fully zoomed out
-  // const conditionMet = (cameraCoords.z <= 0);
-  // const heroBtm = hero.getBoundingClientRect().height;
-  // // console.log(heroBtm)
-  // if (window.scrollY < heroBtm && !conditionMet) {
-  //   window.scrollTo({
-  //     top: heroBtm,
-  //     // behavior: 'smooth'
-  //   });
-  // }
+    // --- space opacity
+    // let fadeElements = document.querySelectorAll('#menu, #spaceControls, #domElements');
+    let fadeElements = document.querySelectorAll('#domElements');
+    const targetScrollY = window.innerHeight -200; // Scroll position at which elements should be visible
+    const isVisible = window.scrollY >= targetScrollY;
+
+    // Apply styles based on visibility
+    // fadeElements.forEach(el => {
+    //   if (isVisible) {
+    //     el.style.display = 'block'; // Show the element
+    //     setTimeout(() => el.style.opacity = 1, 10);
+    //     // el.style.opacity = 1 // Delay opacity to ensure display is processed
+    //   } else {
+    //     el.style.opacity = 0; // Hide the element
+    //     // Use a timeout to delay setting display none until after the opacity transition
+    //     setTimeout(() => el.style.display = 'none', 500); // Match transition time
+    //   }
+    // });
+
+    // --- scroll jump for hero
+    // const hero = document.getElementById('home-hero');
+    // const heroHeight = hero.offsetHeight;
+
+    // if (scrollPosition < heroHeight && scrollPosition > prevScroll && !isScrolling) {
+    //   isScrolling = true;
+    //     window.scrollTo({
+    //         top: heroHeight,
+    //         behavior: 'smooth'
+    //     });
+    //     console.log("detected")
+    //     setTimeout(() => {
+    //       isScrolling = false;
+    //     }, 800);
+    // }
+    // else if (scrollPosition < heroHeight && !isScrolling) {
+    //   isScrolling = true;
+    //     window.scrollTo({
+    //         top: 0,
+    //         behavior: 'smooth'
+    //     });
+    //     setTimeout(() => {
+    //       isScrolling = false;
+    //     }, 800);
+    // }
+    // prevScroll = scrollY
+
+
+    // // --- prevent from scrolling into hero/intro unless youre fully zoomed out
+    // const conditionMet = (cameraCoords.z <= 0);
+    // const heroBtm = hero.getBoundingClientRect().height;
+    // // console.log(heroBtm)
+    // if (window.scrollY < heroBtm && !conditionMet) {
+    //   window.scrollTo({
+    //     top: heroBtm,
+    //     // behavior: 'smooth'
+    //   });
+    // }
+  }
 });
 
 
@@ -424,4 +435,16 @@ function windowResized() {
   resizeTimeout = setTimeout(() => {
     location.reload();
   }, 200);
+}
+
+let scrollTimeout
+
+function pauseScrollListener() {
+  clearTimeout(scrollTimeout)
+  notScroll = true;
+  console.log(notScroll)
+  scrollTimeout = setTimeout(function() {
+    notScroll = false;
+    console.log(notScroll)
+  },200)
 }
