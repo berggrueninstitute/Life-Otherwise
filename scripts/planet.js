@@ -11,7 +11,7 @@ function Planet(depth, numPlanets, earth=false, hide=false) {
     this.description;
     this.showDescription;
     this.r;
-    this.links = [];
+    this.link;
     this.earth = earth
     this.hide = hide
 
@@ -54,7 +54,12 @@ function Planet(depth, numPlanets, earth=false, hide=false) {
             let earthStories = 1
             if (this.hide) {earthStories *= .5}
             if (this.mark) {
+                // console.log(this.link)
                 this.mark.style.display = "block"
+                if (this.link[0] == "/articles/01-otherwise/") {
+                    this.markOffset[0] = .2
+                    this.markOffset[1] = .2
+                }
                 this.mark.style.left = sx+width/2+this.markOffset[0]*this.r + "px";
                 this.mark.style.top = sy+height/2+this.markOffset[1]*this.r + "px";
                 this.description.style.left = sx+width/2+this.markOffset[0]*this.r +14 + "px";

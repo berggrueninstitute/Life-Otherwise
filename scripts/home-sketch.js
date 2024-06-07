@@ -37,7 +37,8 @@ let storyPlanets = [ // distances based on numPlanets being 6000 planets
   {dist: 0.00127, article: 1, earth: false},
   {dist: 0.00127, article: 4, earth: false},
   {dist: 0.00420, article: 2, earth: false},
-  {dist: 3180, article: 3, earth: false}
+  // {dist: 3180, article: 3, earth: false}
+  {dist: 5300, article: 3, earth: false}
 ]
 
 
