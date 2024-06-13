@@ -12,8 +12,8 @@ The [Future Humans Theme](https://berggruen.org/themes/future-humans) sets its s
 
 Future Humans thanks Mr. Nicolas Berggruen and the Leadership Team for their support of this project. 
 
-Dr. Claire Isabel Webb — Future Histories Project Lead
-_Associate Director, Future Humans _
+Dr. Claire Isabel Webb _Future Histories Project Lead /
+Associate Director, Future Humans_
 
 Nicolas Berggruen
 _Chairman and Founder_

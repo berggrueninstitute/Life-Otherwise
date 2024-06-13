@@ -1,8 +1,11 @@
 ---
 layout: citlalli
 title: Citlalli In The Sky With Cnidaria
-author: Gerardo Aldana
-bio: "Prof. Gerardo Aldana is a professor of Chicana/o Studies at UC Santa Barbara. He is the author of _Calculating Brilliance:\ An Intellectual History of Mayan Astronomy at Chich'en Itza_ (2022), and _The Apotheosis of Janaab Pakal:\ Science, History, and Religion at Classic Maya Palenque_ (2007), among other books and articles."
+permalink: citlalli
+authors:
+    - name: Gerardo Aldana
+      bio: |
+        Prof. Gerardo Aldana is a professor of Chicana/o Studies at UC Santa Barbara. He is the author of _Calculating Brilliance: An Intellectual History of Mayan Astronomy at Chich'en Itza_ (2022), and _The Apotheosis of Janaab Pakal: Science, History, and Religion at Classic Maya Palenque_ (2007), among other books and articles.
 full-title: "Citlalli In The Sky With Cnidaria"
 location: Low Orbit
 planet: Earth
@@ -43,7 +46,7 @@ You are here today to help humanity assess what we’re looking at. Your partici
 
 [Pause]
 
-![Image description](/images/citlalli/citlalli-illo-0.png){: .citlalli-side-img }
+![Image description](/images/citlalli/citlalli-illo-0.png){: #illo-0 .citlalli-side-img }
 
 
 By the way, if you were up late, you—or your children?—may have already witnessed some of the social media response to the content of the leaked memo. Slides? Sara?
@@ -122,7 +125,7 @@ His experiment set up the possibility of “the event.”
 
 It would probably be best for Citlalli to describe that for us. 
 
-![Image description](/images/citlalli/citlalli-illo-1.png){: .citlalli-side-img }
+![Image description](/images/citlalli/citlalli-illo-1.png){: #illo-1 .citlalli-side-img }
 
 
 [Delay]
@@ -177,7 +180,7 @@ _Mr. Guthrie:_ Well, it wasn’t the psychedelics that killed him. From what we�
 
 [Inaudible]
 
-![Image description](/images/citlalli/citlalli-illo-2.png){: .citlalli-side-img }
+![Image description](/images/citlalli/citlalli-illo-2.png){: #illo-2 .citlalli-side-img }
 
 
 _President Jimenez:_ All right. Let’s get back to this term. It looks like we need to understand ‘ur-rationalities’?

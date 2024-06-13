@@ -12,8 +12,6 @@
   }
 
 
-  
-
 
 
 @font-face {
@@ -43,6 +41,10 @@ html {
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
     font-size:16px;
+}
+
+html, body {
+    // overscroll-behavior: none;
 }
 
 @media screen and (min-width: 600px){
@@ -136,7 +138,7 @@ p, .menuLink {
     font-size: 1rem;
     line-height: 135%;
 }
-.menuLink{
+.menuLink {
     line-height: 110%;
 }
 
@@ -160,7 +162,7 @@ p, .menuLink {
     position: sticky;
     top: 0px;
     left: 0px;
-    height: 100lvh;
+    height: 100dvh;
 }
 
 #sliderContainer {
@@ -286,7 +288,6 @@ input[type="range"]::-moz-range-thumb {
     display: none;
     min-height: 10px;
     /* width: 20vw; */
-    min-width: 20px;
     max-width: 300px;
     background: var(--lime);
     border: var(--border2);
@@ -528,8 +529,12 @@ h1.article-title {
 h2.article-author {
     margin-bottom: 30lvh;
     font-weight: 400;
-    text-decoration: underline;
     font-size: 1rem;
+}
+
+h2.article-author > span {
+    text-decoration: underline;
+    white-space: nowrap;
     cursor: pointer;
 }
 
@@ -772,6 +777,11 @@ img.basic-image {
     #article-container{
         margin-left: 325px;
     }
+
+    .citlalli-side-img {
+        width: 220px;
+        left: 90px;
+    }
 }
 
 
@@ -837,6 +847,13 @@ img.basic-image {
         left: 1550px;
     }
 
+    .citlalli-side-img {
+        width: 250px;
+        position: static;
+        left: 130px;
+        height: auto;
+    }
+
     #article-container p, .menuLink {
         // font-size: 26px;
     }
@@ -851,12 +868,11 @@ img.basic-image {
     }
 
 
-    /* #spaceControls {
-        background: none;
-        border: none;
+    #spaceControls {
+        bottom: calc(env(safe-area-inset-bottom, 0) + 16px);
     }
 
-    #sliderLabels, #spaceControls h4 {
+    /* #sliderLabels, #spaceControls h4 {
         display: none;
     } */
 
@@ -867,6 +883,10 @@ img.basic-image {
 
     #article-container {
         margin: 100px 60px 400px 60px;
+    }
+
+    .planetDescription {
+        min-width: 100px;
     }
 
     #article-outline {
@@ -985,6 +1005,7 @@ img.basic-image {
     .menuLink {
         padding-bottom: 20px;
         min-height: 60px;
+        font-size: 2rem;
         /* align-items: center; */
     }
 
@@ -994,7 +1015,7 @@ img.basic-image {
     }
 
     h4#mobileMenuHeader {
-        font-size: 26px;
+        font-size: 2rem;
         text-transform: uppercase;
         font-weight: 400;
         margin: 5px 0 50px 0

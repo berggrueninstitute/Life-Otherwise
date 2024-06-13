@@ -2,8 +2,14 @@
 # layout: parallax
 layout: bluePlanet
 title: The Blue Planet Event
-author: Dana Burton and Valerie Olson
-bio: "Dr. Dana Burton is a Faculty Fellow at XE. She is an anthropologist whose research sits at the intersection of the anthropology of outer space, feminist science and technology studies, and multispecies scholarship. She earned her PhD from George Washington University. Burton’s work is informed by ethnographic fieldwork that began at NASA Ames Research Center in California and expanded to include a multi-sited network of NASA centers across the United States and many academic, scientific, and commercial communities and nonhuman entities connected to life detection efforts. <br><br>Prof. Valerie Olson is an assistant professor of anthropology at the University of California, Irvine. Olson is an environmental anthropologist who researches sociocultural dimensions of large-scale ecosystem science and governance in North America. Her projects focus on how remote and largely unpopulated environments, like outer space and ocean subsurfaces, become important sites in the production of new ecological knowledge, technologies, and politics. Olson is the author of _Into the Extreme:\ U.S. Environmental Systems and Politics Beyond Earth_ (2018)."
+permalink: blue-planet
+authors:
+  - name: Dana Burton
+    bio: |
+      Dr. Dana Burton is a Faculty Fellow at XE. She is an anthropologist whose research sits at the intersection of the anthropology of outer space, feminist science and technology studies, and multispecies scholarship. She earned her PhD from George Washington University. Burton’s work is informed by ethnographic fieldwork that began at NASA Ames Research Center in California and expanded to include a multi-sited network of NASA centers across the United States and many academic, scientific, and commercial communities and nonhuman entities connected to life detection efforts.
+  - name: Valerie Olson
+    bio: |
+      Prof. Valerie Olson is an assistant professor of anthropology at the University of California, Irvine. Olson is an environmental anthropologist who researches sociocultural dimensions of large-scale ecosystem science and governance in North America. Her projects focus on how remote and largely unpopulated environments, like outer space and ocean subsurfaces, become important sites in the production of new ecological knowledge, technologies, and politics. Olson is the author of _Into the Extreme: U.S. Environmental Systems and Politics Beyond Earth_ (2018).
 full-title: "The Blue Planet Event"
 location: Acidalia Planitia
 planet: Mars

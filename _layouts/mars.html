@@ -13,6 +13,11 @@ layout: post
         z-index: 50;
     }
 
+    @media screen and (max-width: 1200px) {
+        .marsImg {
+            display: none;
+        }
+    }
 
     @media screen and (min-width: 1200px) {
         #lunokhod {
@@ -120,7 +125,7 @@ let Austraunaut = {
     start: 0,
     end: 0.3,
     right: 0.08,
-    width: 22,
+    width: 20,
     heightS: .65
 };
 
@@ -129,7 +134,7 @@ let static = {
     start: 0,
     end: .16,
     right: 0.02 ,
-    width: 27,
+    width: 24,
     heightS: .15
 };
 
@@ -148,7 +153,7 @@ let pehwene = {
     start: 0.05,
     end: 0.2,
     right: 0,
-    width: 32
+    width: 28
 };
 
 let Secret_History = {
@@ -293,7 +298,7 @@ let lunokhod2 = {
     img: document.getElementById("lunokhod2"),
     start: 0.68,
     end: 0.82,
-    right: 0.12,
+    right: 0.1,
     width: 17
 };
 
@@ -303,7 +308,7 @@ let red_ring = {
     img: document.getElementById("red_ring"),
     start: 0.75,
     end: 0.89,
-    right: 0.087,
+    right: 0.06,
     width: 5,
     z: 55,
     height: .48
@@ -314,8 +319,8 @@ let lunokhod3 = {
     img: document.getElementById("lunokhod3"),
     start: .73,
     end: 0.82,
-    right: 0.04,
-    width: 27,
+    right: 0.02,
+    width: 25,
     height: .5
 };
 
@@ -364,8 +369,8 @@ if (window.innerWidth > 1200) {
 
                 img.style.position = 'fixed';
                 img.style.top = `${top}px`;
-                img.style.right = `${right * 100}vw`;
-                img.style.width = width+"vw"
+                img.style.right = `${right * 100*.85}vw`;
+                img.style.width = width*.85+"vw"
                 if(z) {img.style.zIndex = z}
             // } else {
             //     img.style.position = 'absolute';

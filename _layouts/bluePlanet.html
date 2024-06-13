@@ -23,6 +23,7 @@ layout: post
         }
         #lumps {
             width: 5vw;
+            z-index: 51;
         }
         #bumps {
             width: 11vw;
@@ -63,7 +64,7 @@ function moveImagesOnScroll(images) {
 
                     img.style.position = 'fixed';
                     img.style.top = `${top}px`;
-                    img.style.right = `${right * 100}vw`;
+                    img.style.right = `${right * 100 *.8}vw`; //.8 is a hack to make the images stop overlapping the text
                 // } else {
                 //     img.style.position = 'absolute';
                 //     img.style.top = scrollY + viewportHeight >= imgStart ? `${imgEnd - imgHeight}px` : `${imgStart + viewportHeight}px`;
@@ -78,7 +79,7 @@ let gas = {
     img: document.getElementById("gas"),
     start: 0.1,
     end: .5,
-    right: .12,
+    right: .1,
     height: .6
 }
 let bumps = {

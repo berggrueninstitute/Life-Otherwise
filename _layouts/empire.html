@@ -13,6 +13,7 @@ layout: post
         /* position: relative; */
         /* pointer-events: none; */
         /* transition: 1s ease; */
+        transition: transform 500ms ease;
     }
 
     .page {
@@ -56,19 +57,21 @@ layout: post
 
     #controls > button {
         border-radius: 0px;
-        border: var(--border2);
-        background-color: var(--main-bg-color);
+        /* border: var(--border2); */
+        border: 1.5px solid var(--main-bg-color);
+        /* background-color: var(--main-bg-color); */
+        background-color: var(--main-blue);
         font-family: inherit;
         color: var(--main-blue);
         /* padding: .5rem 1rem; */
         padding: .5rem;
+        padding-bottom: .43rem;
         margin-right: 0rem;
-        stroke: var(--main-blue);
         cursor: pointer;
     }
 
-    #controls > button > svg {
-        stroke: var(--main-blue);
+    #controls > button > svg > polyline {
+        stroke: var(--main-bg-color);
     }
 
     #unHideButton {
@@ -85,6 +88,11 @@ layout: post
                 stroke:white;
                 
             }
+    }
+
+    .expanded {
+        transform: scale(1.5);
+        transform-origin: top right;
     }
 
 
@@ -104,6 +112,7 @@ layout: post
             left: 0vw;
         }
 
+
     }
 
 
@@ -120,7 +129,7 @@ layout: post
         }
 
         .hidden1 {
-            transform: translateX(-93.5vw);
+            transform: translate(-93.5vw, 20dvh);
         }
 
         #unHideButton {
@@ -138,6 +147,9 @@ layout: post
             top: -40px;
             right: 6vw;
         }
+        #expand {
+            display: none;
+        }
     }
 
 
@@ -153,7 +165,8 @@ layout: post
         }
         
         .hidden1 {
-            transform: translateX(calc(-85vw - 15px));
+            transform: translate(-123%, 30dvh) scale(1.5);
+            /* bottom: auto; */
         }
 
         #unHideButton {
@@ -169,8 +182,16 @@ layout: post
         }
 
         #controls {
-            top: -25px;
-            right: 6vw;
+            top: -35px;
+            right: 1.5vw;
+        }
+
+        #controls > button > svg {
+            width: 40px;
+            height: 20px;
+        }
+        #expand {
+            display: none;
         }
 
     }
@@ -185,12 +206,22 @@ layout: post
     <div id="controls">
         <button id="prevPage">
             <svg width="18" height="18"  viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <polyline stroke="#0000E9" points="12,1 0,12 12,23" stroke="black" stroke-width="2" fill="none"/>
+                <polyline stroke="#E6FFFF" points="12,1 0,12 12,23" stroke="black" stroke-width="2" fill="none"/>
             </svg>
         </button>
         <button id="nextPage" style="border-left: none;">
             <svg width="18" height="18" viewBox="-1 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <polyline stroke="#0000E9" points="0,1 12,12 0,23" stroke="black" stroke-width="2" fill="none"/>
+                <polyline stroke="#E6FFFF" points="0,1 12,12 0,23" stroke="black" stroke-width="2" fill="none"/>
+            </svg>
+        </button>
+        <button id="expand" style="border-left: none;">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.1247 2.45746L8.9939 8.99403L16.1247 15.5306" stroke="#E6FFFF" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M1.8631 15.5306L8.9939 8.99401L1.8631 2.45744" stroke="#E6FFFF" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M16.8986 6.55285L17.1208 1.44183L12.0098 1.66405" stroke="#E6FFFF" stroke-width="1.5"/>
+                <path d="M6.0288 1.66405L0.917782 1.44184L1.14 6.55286" stroke="#E6FFFF" stroke-width="1.5"/>
+                <path d="M1.14001 11.4847L0.917788 16.5957L6.02881 16.3735" stroke="#E6FFFF" stroke-width="1.5"/>
+                <path d="M12.0098 16.3736L17.1208 16.5958L16.8986 11.4848" stroke="#E6FFFF" stroke-width="1.5"/>
             </svg>
         </button>
     </div>
@@ -245,6 +276,13 @@ document.getElementById('nextPage').addEventListener('click', () => {
     if (currentPage < totalPages) {
         turnPage(currentPage, currentPage + 1);
         currentPage++;
+    } else {
+        for (let i=1; i<totalPages; i++) {
+            setTimeout(() => {
+                turnPage(currentPage, currentPage - 1);
+                currentPage--;
+            }, i * 50);
+        }
     }
 });
 
@@ -258,12 +296,15 @@ document.getElementById('prevPage').addEventListener('click', () => {
 document.getElementById('unHideButton').addEventListener('click', () => {
     book.classList.toggle("hidden1")
 });
+document.getElementById('expand').addEventListener('click', () => {
+    book.classList.toggle("expanded")
+    book.style.transformOrigin = "top right"
+});
 
 function turnPage(from, to) {
     console.log("from:",from,"  to:",to)
     const current = document.getElementById(`page${from}`);
     const next = document.getElementById(`page${to}`);
-    console.log(next)
 
     if(from < to) {
         let randX = Math.random()*-20 - 100
@@ -280,7 +321,9 @@ function turnPage(from, to) {
     }
     if(from > 9) {
         document.getElementById("page25").classList.remove("hideSecret")
-        console.log("yes")
+    }
+    if (from == 24 && to == 25) {
+        console.log('last')
     }
 }
 

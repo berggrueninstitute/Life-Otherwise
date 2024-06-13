@@ -53,7 +53,7 @@ layout: post
         if (window.innerWidth > 1000) {
             for (i=0; i<sideImages.length; i++) {
                 sideImages[i].style.position = "absolute"
-                sideImages[i].style.left = "80px"
+                // sideImages[i].style.left = "80px"
                 sideImages[i].style.top = ((i+1)*.1)*document.documentElement.scrollHeight+ "px"
             }
         } else {
@@ -73,3 +73,117 @@ layout: post
 
 
 </script>
+
+
+
+
+
+<!-- script for parallax of margin images -->
+<script>
+
+        
+    // let red_ring = {
+    //     img: document.getElementById("red_ring"),
+    //     start: 0.75,
+    //     end: 0.89,
+    //     right: 0.087,
+    //     width: 5,
+    //     z: 55,
+    //     height: .48
+    // };
+
+    let illo_0 = {
+        img: document.getElementById("illo-0"),
+        start: 0.1,
+        end: 0.3,
+        right: 0.087,
+        width: 5
+    };
+    let illo_1 = {
+        img: document.getElementById("illo-1"),
+        start: 0.4,
+        end: 0.6,
+        right: 0.087,
+        width: 5
+    };
+    let illo_2 = {
+        img: document.getElementById("illo-2"),
+        start: 0.7,
+        end: .9,
+        right: 0.087,
+        width: 5
+    };
+    
+    
+    
+    let imgs = [illo_0, illo_1, illo_2];
+    
+    
+    
+    
+    
+    
+    function easeInOutCubic(t) {
+        return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    }
+    
+    function updatePositions() {
+    if (window.innerWidth > 1000) {
+            const viewportHeight = window.innerHeight;
+            const scrollY = window.scrollY;
+            console.log(scrollY)
+    
+            imgs.forEach(({ img, start, end, right, height, heightS, z, width }) => {
+                const imgHeight = img.clientHeight;
+                const imgStart = start * document.body.scrollHeight;
+                const imgEnd = end * document.body.scrollHeight;
+                let heightStop = height || 1
+                let heightStart = heightS || 0
+    
+                // if (scrollY + viewportHeight >= imgStart && scrollY <= imgEnd) {
+                    let progress = ((scrollY - imgStart) / (imgEnd - imgStart))   + heightStart;
+                    if(heightStop<1){
+                        // console.log("before",progress)
+                        progress = Math.min(progress, heightStop)
+                        // console.log(heightStop)
+                    }
+                    // const easedProgress = Math.min(easeInOutCubic(progress),1) * heightStop;
+                    let top = (viewportHeight+imgHeight) * ((1 - progress)) - imgHeight;
+    
+                    // if (height) {
+                    //     const stopPosition = viewportHeight * height - imgHeight;
+                    //     if (top <= stopPosition) {
+                    //         top = stopPosition;
+                    //     }
+                    // }
+    
+                    img.style.position = 'fixed';
+                    img.style.top = `${top}px`;
+                    // img.style.right = `${right * 100}vw`;
+                    // img.style.width = width+"vw"
+                    if(z) {img.style.zIndex = z}
+                // } else {
+                //     img.style.position = 'absolute';
+                //     img.style.top = scrollY + viewportHeight >= imgStart ? `${imgEnd - imgHeight}px` : `${imgStart + viewportHeight}px`;
+                // }
+            });
+        }
+    }
+    
+    
+    if (window.innerWidth > 1200) {
+            window.addEventListener('load', updatePositions)
+            window.addEventListener('scroll', updatePositions)
+        }
+        
+    window.addEventListener('resize', () => {
+        window.addEventListener('load', updatePositions)
+            window.addEventListener('scroll', updatePositions)
+    });
+    
+    
+    
+    
+    
+    
+    </script>

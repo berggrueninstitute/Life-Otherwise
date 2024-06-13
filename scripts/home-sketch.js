@@ -42,6 +42,10 @@ let storyPlanets = [ // distances based on numPlanets being 6000 planets
 ]
 
 
+window.addEventListener('load', function() {
+  console.log("loaded")
+})
+
 
 function setup() {
   planets = []
@@ -49,8 +53,8 @@ function setup() {
   domElements.innerHTML = '';
 
     document.getElementById('menu').style.position = 'absolute'
-    console.log(menu.style.position)
-    let canvas = createCanvas(windowWidth, windowHeight);
+    console.log("heights: ",window.innerHeight, document.documentElement.clientHeight)
+    let canvas = createCanvas(windowWidth, windowHeight+200); //adding 200 to height to account for appearing and disappearing mobile browser ui
     canvas.parent('myCanvasContainer');
     angleMode(DEGREES);
     for (var i = 0; i < numPlanets; i++) {
@@ -431,12 +435,34 @@ document.body.appendChild(mobileMenu)
 
 let resizeTimeout;
 
-function windowResized() {
-  clearTimeout(resizeTimeout);
-  resizeTimeout = setTimeout(() => {
-    location.reload();
-  }, 200);
-}
+// function windowResized() {
+//   clearTimeout(resizeTimeout);
+//   resizeTimeout = setTimeout(() => {
+//     // location.reload(); //ASDF
+//   }, 200);
+// }
+
+let previousWidth = window.innerWidth;
+let previousHeight = window.innerHeight;
+
+window.addEventListener('resize', () => {
+  const currentWidth = window.innerWidth;
+  if (currentWidth !== previousWidth) {
+    previousWidth = currentWidth;
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+      location.reload();
+    }, 100);
+  } 
+  // const currentHeight = window.innerHeight;
+  // if (currentHeight !== previousHeight) {
+  //   previousHeight = currentHeight;
+  //   clearTimeout(resizeTimeout);
+  //   resizeTimeout = setTimeout(() => {
+  //     resizeCanvas(windowWidth, windowHeight)
+  //   }, 100);
+  // }
+});
 
 let scrollTimeout
 
@@ -449,3 +475,21 @@ function pauseScrollListener() {
     console.log(notScroll)
   },200)
 }
+
+
+
+slider.addEventListener('touchstart', disableTouchScrolling, { passive: false });
+slider.addEventListener('touchmove', disableTouchScrolling, { passive: false });
+slider.addEventListener('touchend', enableTouchScrolling);
+
+function disableTouchScrolling(event) {
+  event.preventDefault();
+}
+
+function enableTouchScrolling(event) {
+  // No need to do anything here, touch scrolling will be re-enabled automatically
+}
+
+// Ensure touch scrolling is re-enabled if user leaves the slider without lifting the touch
+document.addEventListener('touchend', enableTouchScrolling);
+document.addEventListener('touchcancel', enableTouchScrolling);

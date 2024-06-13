@@ -1,8 +1,10 @@
 ---
 layout: ectogenesis
 title: Extraterrestrial Ectogenesis
-author: Evie Kendal
-bio: "Dr. Evie Kendal is a bioethicist and public health scientist specializing in the ethics of emerging technologies. Her work focuses on reproductive biotechnologies, health communication and media, and space ethics. Kendal is a Senior Lecturer of Health Promotion at Swinburne University of Technology's Department of Health Sciences and Biostatistics and heads the Ethical, Legal and Social Implications of Emerging Technologies (ELSIET) research group, housed at the Iverson Health Innovation research institute."
+permalink: extraterrestrial-ectogenesis
+authors: 
+    - name: Evie Kendal
+      bio: "Dr. Evie Kendal is a bioethicist and public health scientist specializing in the ethics of emerging technologies. Her work focuses on reproductive biotechnologies, health communication and media, and space ethics. Kendal is a Senior Lecturer of Health Promotion at Swinburne University of Technology's Department of Health Sciences and Biostatistics and heads the Ethical, Legal and Social Implications of Emerging Technologies (ELSIET) research group, housed at the Iverson Health Innovation research institute."
 full-title: "Extraterrestrial Ectogenesis"
 location: M4 Settlement
 <!-- planet:  -->
