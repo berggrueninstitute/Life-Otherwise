@@ -25,17 +25,13 @@ layout: post
         transition: transform .6s ease, opacity .2s ease;
     }
 
-    /* #page24 {
-        transition: 2s ease;
-    } */
-
-    #page25.hideSecret {
-        transform: translateY(-200vh) rotate(20deg);
-        opacity: 1;
+    #page25 {
+        transition: 1s ease;
     }
 
-    #page25 {
-        transition: 2s ease;
+    #page25.revealSecret {
+        transform: translateX(10vh) rotate(20deg);
+        opacity: 1;
     }
 
     .base-page {
@@ -96,6 +92,8 @@ layout: post
     }
 
 
+
+
     @media screen and (min-width: 1401px) {
         #book {
             top: 85px;
@@ -117,6 +115,30 @@ layout: post
 
 
     @media screen and (min-width: 601px) and (max-width: 1400px) {
+        .hidden1 #page2,
+    .hidden1 #page3,
+    .hidden1 #page4,
+    .hidden1 #page5,
+    .hidden1 #page6,
+    .hidden1 #page7,
+    .hidden1 #page8,
+    .hidden1 #page9,
+    .hidden1 #page10,
+    .hidden1 #page11,
+    .hidden1 #page12,
+    .hidden1 #page13,
+    .hidden1 #page14,
+    .hidden1 #page15,
+    .hidden1 #page16,
+    .hidden1 #page17,
+    .hidden1 #page18,
+    .hidden1 #page19,
+    .hidden1 #page20,
+    .hidden1 #page21,
+    .hidden1 #page22 {
+        display: none;
+    }
+
         #book {
             padding: 13px;
             width: calc(70% - 26px);
@@ -129,7 +151,7 @@ layout: post
         }
 
         .hidden1 {
-            transform: translate(-93.5vw, 20dvh);
+            transform: translate(-93.5vw, 150px);
         }
 
         #unHideButton {
@@ -154,18 +176,42 @@ layout: post
 
 
     @media screen and (max-width: 600px) {
+
+        .hidden1 #page2,
+    .hidden1 #page3,
+    .hidden1 #page4,
+    .hidden1 #page5,
+    .hidden1 #page6,
+    .hidden1 #page7,
+    .hidden1 #page8,
+    .hidden1 #page9,
+    .hidden1 #page10,
+    .hidden1 #page11,
+    .hidden1 #page12,
+    .hidden1 #page13,
+    .hidden1 #page14,
+    .hidden1 #page15,
+    .hidden1 #page16,
+    .hidden1 #page17,
+    .hidden1 #page18,
+    .hidden1 #page19,
+    .hidden1 #page20,
+    .hidden1 #page21,
+    .hidden1 #page22 {
+        display: none;
+    }
         #book {
             padding: 20px;
             width: calc(100% - 40px);
             top: none;
-            bottom: 75px;
+            top: 170px;
             left: 0px;
             height: calc(1.18 * 100vw);
             box-sizing: border-box;
         }
         
         .hidden1 {
-            transform: translate(-123%, 30dvh) scale(1.5);
+            transform: translate(-123%, 150px) scale(1.5);
             /* bottom: auto; */
         }
 
@@ -232,31 +278,31 @@ layout: post
         </svg>
     </button>
 
-    <div class="page" id="page1"> <img src="/images/empire/Dossier_00.png" alt="Page 1"></div>
-    <div class="page" id="page2"> <img src="/images/empire/Dossier_01.png" alt="Page 2"></div>
-    <div class="page" id="page3"> <img src="/images/empire/Dossier_02.png" alt="Page 3"></div>
-    <div class="page" id="page4"> <img src="/images/empire/Dossier_03.png" alt="Page 4"></div>
-    <div class="page" id="page5"> <img src="/images/empire/Dossier_04.png" alt="Page 5"></div>
-    <div class="page" id="page6"> <img src="/images/empire/Dossier_05.png" alt="Page 6"></div>
-    <div class="page" id="page7"> <img src="/images/empire/Dossier_06.png" alt="Page 7"></div>
-    <div class="page" id="page8"> <img src="/images/empire/Dossier_07.png" alt="Page 8"></div>
-    <div class="page" id="page9"> <img src="/images/empire/Dossier_08.png" alt="Page 9"></div>
-    <div class="page" id="page10"><img src="/images/empire/Dossier_09.png" alt="Page 10"></div>
-    <div class="page" id="page11"><img src="/images/empire/Dossier_10.png" alt="Page 11"></div>
-    <div class="page" id="page12"><img src="/images/empire/Dossier_11.png" alt="Page 12"></div>
-    <div class="page" id="page13"><img src="/images/empire/Dossier_12.png" alt="Page 13"></div>
-    <div class="page" id="page14"><img src="/images/empire/Dossier_13.png" alt="Page 14"></div>
-    <div class="page" id="page15"><img src="/images/empire/Dossier_14.png" alt="Page 15"></div>
-    <div class="page" id="page16"><img src="/images/empire/Dossier_15.png" alt="Page 16"></div>
-    <div class="page" id="page17"><img src="/images/empire/Dossier_16.png" alt="Page 17"></div>
-    <div class="page" id="page18"><img src="/images/empire/Dossier_17.png" alt="Page 18"></div>
-    <div class="page" id="page19"><img src="/images/empire/Dossier_18.png" alt="Page 19"></div>
-    <div class="page" id="page20"><img src="/images/empire/Dossier_19.png" alt="Page 20"></div>
-    <div class="page" id="page21"><img src="/images/empire/Dossier_20.png" alt="Page 21"></div>
-    <div class="page" id="page22"><img src="/images/empire/Dossier_21.png" alt="Page 22"></div>
-    <div class="page" id="page23"><img src="/images/empire/Dossier_22.png" alt="Page 23"></div>
-    <div class="page" id="page24"><img src="/images/empire/Dossier_23.png" alt="Page 24"></div>
-    <div class="page hideSecret" id="page25" ><img src="/images/empire/Dossier_24.png" alt="Page 25"></div>
+    <div class="page" id="page1"> <img src="/images/empire-compressed/Dossier_00.webp" alt="Page 1"></div>
+    <div class="page" id="page2"> <img src="/images/empire-compressed/Dossier_01.webp" alt="Page 2"></div>
+    <div class="page" id="page3"> <img src="/images/empire-compressed/Dossier_02.webp" alt="Page 3"></div>
+    <div class="page" id="page4"> <img src="/images/empire-compressed/Dossier_03.webp" alt="Page 4"></div>
+    <div class="page" id="page5"> <img src="/images/empire-compressed/Dossier_04.webp" alt="Page 5"></div>
+    <div class="page" id="page6"> <img src="/images/empire-compressed/Dossier_05.webp" alt="Page 6"></div>
+    <div class="page" id="page7"> <img src="/images/empire-compressed/Dossier_06.webp" alt="Page 7"></div>
+    <div class="page" id="page8"> <img src="/images/empire-compressed/Dossier_07.webp" alt="Page 8"></div>
+    <div class="page" id="page9"> <img src="/images/empire-compressed/Dossier_08.webp" alt="Page 9"></div>
+    <div class="page" id="page10"><img src="/images/empire-compressed/Dossier_09.webp" alt="Page 10"></div>
+    <div class="page" id="page11"><img src="/images/empire-compressed/Dossier_10.webp" alt="Page 11"></div>
+    <div class="page" id="page12"><img src="/images/empire-compressed/Dossier_11.webp" alt="Page 12"></div>
+    <div class="page" id="page13"><img src="/images/empire-compressed/Dossier_12.webp" alt="Page 13"></div>
+    <div class="page" id="page14"><img src="/images/empire-compressed/Dossier_13.webp" alt="Page 14"></div>
+    <div class="page" id="page15"><img src="/images/empire-compressed/Dossier_14.webp" alt="Page 15"></div>
+    <div class="page" id="page16"><img src="/images/empire-compressed/Dossier_15.webp" alt="Page 16"></div>
+    <div class="page" id="page17"><img src="/images/empire-compressed/Dossier_16.webp" alt="Page 17"></div>
+    <div class="page" id="page18"><img src="/images/empire-compressed/Dossier_17.webp" alt="Page 18"></div>
+    <div class="page" id="page19"><img src="/images/empire-compressed/Dossier_18.webp" alt="Page 19"></div>
+    <div class="page" id="page20"><img src="/images/empire-compressed/Dossier_19.webp" alt="Page 20"></div>
+    <div class="page" id="page21"><img src="/images/empire-compressed/Dossier_20.webp" alt="Page 21"></div>
+    <div class="page" id="page22"><img src="/images/empire-compressed/Dossier_21.webp" alt="Page 22"></div>
+    <div class="page" id="page23"><img src="/images/empire-compressed/Dossier_22.webp" alt="Page 23"></div>
+    <div class="page" id="page24"><img src="/images/empire-compressed/Dossier_23.webp" alt="Page 24"></div>
+    <div class="page" id="page25" ><img src="/images/empire-compressed/Dossier_24.webp" alt="Page 25"></div>
 </div>
 
 
@@ -272,15 +318,31 @@ const pages = document.querySelectorAll('.page');
 const totalPages = pages.length;
 let book = document.getElementById("book")
 
+
+function updatePageVisibility() {
+    pages.forEach((page, index) => {
+        const pageNumber = index + 1;
+        if (pageNumber> currentPage) {
+            if (pageNumber === 24 || (pageNumber >= currentPage && pageNumber <= currentPage + 3)) {
+                page.style.display = 'block';
+            } else {
+                page.style.display = 'none';
+            }
+        }
+    });
+}
+
 document.getElementById('nextPage').addEventListener('click', () => {
     if (currentPage < totalPages) {
         turnPage(currentPage, currentPage + 1);
         currentPage++;
+        updatePageVisibility();
     } else {
         for (let i=1; i<totalPages; i++) {
             setTimeout(() => {
                 turnPage(currentPage, currentPage - 1);
                 currentPage--;
+                updatePageVisibility();
             }, i * 50);
         }
     }
@@ -290,6 +352,7 @@ document.getElementById('prevPage').addEventListener('click', () => {
     if (currentPage > 1) {
         turnPage(currentPage, currentPage - 1);
         currentPage--;
+        updatePageVisibility();
     }
 });
 
@@ -314,16 +377,24 @@ function turnPage(from, to) {
         setTimeout(function(){        
             current.style.opacity = 0;
         }, 200)
+        setTimeout(function(){        
+            current.style.display = "none";
+            console.log(current.style.display)
+        }, 500)
     } else {
         // next.classList.remove('flipped');
-        next.style.transform = "translateX(0vw) rotate(0deg)";
-        next.style.opacity = 1;
+        next.style.display = "block";
+        setTimeout(function(){        
+            next.style.transform = "translateX(0vw) rotate(0deg)";
+            next.style.opacity = 1;
+        }, 50)
+
     }
-    if(from > 9) {
-        document.getElementById("page25").classList.remove("hideSecret")
+    if(from > 22 && to > from) {
+        document.getElementById("page25").classList.add("revealSecret")
     }
-    if (from == 24 && to == 25) {
-        console.log('last')
+    if(from > 23) {
+        document.getElementById("page25").classList.remove("revealSecret")
     }
 }
 
@@ -340,5 +411,5 @@ pages.forEach((page, index) => {
 //     }
 // });
 
-
+updatePageVisibility();
 </script>
