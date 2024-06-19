@@ -9,10 +9,8 @@ layout: post
     .bluePlanetImg {
         max-width: 70vw;
         max-height: 50vh;
-        /* min-height: 800px; */
         z-index: 50;
     }
-
 
     @media screen and (min-width: 1200px) {
         #gas {
@@ -34,80 +32,71 @@ layout: post
 
 
 <script>
-function easeInOutCubic(t) {
-    return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-}
+    function easeInOutCubic(t) {
+        return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    }
 
-function moveImagesOnScroll(images) {
-    if (window.innerWidth > 1200) {
-        window.addEventListener('scroll', () => {
-            const viewportHeight = window.innerHeight;
-            const scrollY = window.scrollY;
+    function handleScroll(images) {
+        const viewportHeight = window.innerHeight;
+        const scrollY = window.scrollY;
 
-            images.forEach(({ img, start, end, right, height }) => {
-                const imgHeight = img.clientHeight;
-                const imgStart = start * document.body.scrollHeight;
-                const imgEnd = end * document.body.scrollHeight;
-                let heightStop = height || 1
+        images.forEach(({ img, start, end, right, height }) => {
+            const imgHeight = img.clientHeight;
+            const imgStart = start * document.body.scrollHeight;
+            const imgEnd = end * document.body.scrollHeight;
+            let heightStop = height || 1;
 
-                // if (scrollY + viewportHeight >= imgStart && scrollY <= imgEnd) {
-                    const progress = (scrollY + viewportHeight - imgStart) / (imgEnd - imgStart);
-                    const easedProgress = Math.min(easeInOutCubic(progress),1) * heightStop;
-                    let top = (viewportHeight+imgHeight) * ((1 - easedProgress)) - imgHeight;
+            const progress = (scrollY + viewportHeight - imgStart) / (imgEnd - imgStart);
+            const easedProgress = Math.min(easeInOutCubic(progress), 1) * heightStop;
+            let top = (viewportHeight + imgHeight) * ((1 - easedProgress)) - imgHeight;
 
-                    // if (height) {
-                    //     const stopPosition = viewportHeight * height - imgHeight;
-                    //     if (top <= stopPosition) {
-                    //         top = stopPosition;
-                    //     }
-                    // }
-
-                    img.style.position = 'fixed';
-                    img.style.top = `${top}px`;
-                    img.style.right = `${right * 100 *.8}vw`; //.8 is a hack to make the images stop overlapping the text
-                // } else {
-                //     img.style.position = 'absolute';
-                //     img.style.top = scrollY + viewportHeight >= imgStart ? `${imgEnd - imgHeight}px` : `${imgStart + viewportHeight}px`;
-                // }
-            });
+            img.style.position = 'fixed';
+            img.style.top = `${top}px`;
+            img.style.right = `${right * 100 * .8}vw`; // .8 is a hack to prevent overlap with text
         });
     }
-}
 
+    document.addEventListener('DOMContentLoaded', () => {
+        let gas = {
+            img: document.getElementById("gas"),
+            start: 0.1,
+            end: 0.6,
+            right: 0.1,
+            height: 1.02
+        };
+        let bumps = {
+            img: document.getElementById("bumps"),
+            start: 0.2,
+            end: 0.8,
+            right: 0.2,
+            height: 1.02
+        };
+        let lumps = {
+            img: document.getElementById("lumps"),
+            start: 0.4,
+            end: 0.7,
+            right: 0.05,
+            height: 1.02
+        };
+        let mol = {
+            img: document.getElementById("mol"),
+            start: 0.43,
+            end: 0.9,
+            right: 0.15,
+            height: 1.02
+        };
+        let imgs = [gas, bumps, lumps, mol];
 
-let gas = {
-    img: document.getElementById("gas"),
-    start: 0.1,
-    end: .5,
-    right: .1,
-    height: .6
-}
-let bumps = {
-    img: document.getElementById("bumps"),
-    start: .2,
-    end: .8,
-    right: .2,
-    height: 1.02
-}
-let lumps = {
-    img: document.getElementById("lumps"),
-    start: .4,
-    end: .7,
-    right: .05,
-    height: .95
-}
-let mol = {
-    img: document.getElementById("mol"),
-    start: .43,
-    end: .9,
-    right: .15,
-    height: .2
-}
-let imgs = [gas, bumps,  lumps, mol];
+        // Call handleScroll function once on page load if window width > 1200px
+        if (window.innerWidth > 1200) {
+            handleScroll(imgs);
+        }
 
-moveImagesOnScroll(imgs);
-
-
-
-
+        // Attach scroll event listener for continuous scrolling behavior
+        window.addEventListener('scroll', () => {
+            if (window.innerWidth > 1200) {
+                handleScroll(imgs);
+            }
+        });
+    });
 </script>

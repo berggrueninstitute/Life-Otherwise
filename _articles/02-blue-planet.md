@@ -47,6 +47,7 @@ Axiom 1: The Emergence of Aliveness. Matter in the universe is constituted of at
 
 _Urgent Message from ₻ to ₯:_ Did you perceive the full planetary communiqué that came in just now from Signalers in far orbit? In case you’re still receiving down there at ocean depth, they say it felt first like a ripple. The smallest of energetic disturbances that reverberated the millennia of stillness between our planet and the Blue planet. It’s so different from other signals. Unlike the chemical play of regular solar ejecta or the wash of heat that announces an interplanetary weather event, this whispery ripple, according to the communiqué, was almost unobservable.
 
+ ![Image description](/images/bluePlanet/02_gas.gif){: #gas .bluePlanetImg }
 
 _Message from ₯ to ₻:_ Yes! It felt like a prickling all along our collective body. A sense of excitement that was obviously different from the hydrothermal currents that thermoenergize us up from below. It felt like it was falling down from above, like an avalanche of otherkind energy. Where are you now?
 
@@ -230,7 +231,7 @@ _Message from ₻ to ₯:_ Blue is Alive.\
 <br> 
 <br> 
 
-# Epilogue
+## Epilogue
 
 The crunch of gravel resounded in the small cleft. The sky is a narrow strip above, light pink, crowded by rust red cliff faces. 
 
@@ -239,7 +240,6 @@ The crunch of gravel resounded in the small cleft. The sky is a narrow strip abo
 Rocks that had not been disturbed in millennia vibrate as the wheels of Perseverance rover wends its way forward, turning a sharp corner around a jagged rock face, maneuvering around a pile of larger boulders. Silver glints under a fine layer of dust, though the images it sends are still clear. It was 8:19 p.m. for the scientists in Pasadena, California, Earth. The eyes of the rover alongside data signals from an orbiting imager had been the predominant resource the scientists were using to model  Perseverance’s path. All part of the mission from the Blue Planet to seek signs of life or its conditions on the Red Planet.
 
  
- ![Image description](/images/bluePlanet/02_gas.gif){: #gas .bluePlanetImg }
 
 Despite the close confines of the rocks, the journey to the next sampling spot is relatively straightforward. Perseverance continues forward. This part of the Martian topography, located in the northern hemisphere of the red planet was well imaged by Mariner V. Ahead, the onboard camera “recognized” the mineral beveled rock formation from satellite images. A shallow dip, easily navigable with the wide treads of the rover’s wheels, brings it directly to the formation’s side. It rises over six meters high, a scoured surface of obsidian. Perseverance’s camera is already snapping photos, rolling around the formation, reconnecting with its tracks after a few hours of careful documentation. Unlike the cliffs it had spent the better part of a month traversing, this formation has rounded edges. But not from wind, for the sheen of the formation betrayed a metallic component that was not present in the mineral composition of Mars. Perseverance’s camera swivels to capture the base, of where formation meets surface. Ripples from where they had melted into each other pockmarks the ground for almost a meter. (Several scientists, upon receiving the images 29 minutes later, exclaim about this feature.) There is a gradient of sediment as if a portion of it had been underwater.
 
