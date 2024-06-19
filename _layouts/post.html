@@ -126,15 +126,19 @@ layout: default
     });
 
     //js for header motion
+    let movingHeaderCopy
+    updateHeader()
+
     window.addEventListener('scroll', function() {
         let scrollPosition = window.scrollY;
         let header = document.getElementById('moving-header');
 
         if (scrollPosition <= 500) {
             let translateX = (scrollPosition / 500) * 100;
-            header.style.transform = `translateX(${-translateX}vw) translateY(${scrollPosition}px)`;
+            console.log(movingHeaderCopy)
+            movingHeaderCopy.style.transform = `translateX(${-translateX}vw)`;
         } else {
-            header.style.transform = `translateX(-100vw) translateY(300px)`; // Move off screen after 300px
+            movingHeaderCopy.style.transform = `translateX(-100vw)`; // Move off screen after 300px
         }
     });
 
@@ -143,5 +147,31 @@ layout: default
 
     window.addEventListener("resize", function(){
         document.getElementById('right-mask').style.width = `${window.innerWidth - document.getElementById('article-outline').getBoundingClientRect().right}px`;
+        updateHeader();
+
     });
+
+    //for moving header
+    // grab the moving header, make a copy with the same attributes but position fixed (positioned exactly where the original is), and hide the original
+
+    function updateHeader() {
+        let movingHeader = document.getElementById('moving-header');
+        movingHeader.style.visibility = 'hidden';
+
+        let oldMovingHeaderCopy = document.getElementById('moving-header-copy');
+        if (oldMovingHeaderCopy) {
+            document.body.removeChild(oldMovingHeaderCopy);
+        }
+        movingHeaderCopy = movingHeader.cloneNode(true);
+        document.body.appendChild(movingHeaderCopy);
+        movingHeaderCopy.id = 'moving-header-copy';
+        movingHeaderCopy.style.visibility = 'visible';
+        movingHeaderCopy.style.position = 'fixed';
+
+        // movingHeaderCopy.style.top = movingHeader.getBoundingClientRect().top + 'px';
+        movingHeaderCopy.style.top = '0px';
+        movingHeaderCopy.style.left = movingHeader.getBoundingClientRect().left + 'px';
+        movingHeaderCopy.style.width = movingHeader.getBoundingClientRect().width + 'px';
+    }
+
 </script>

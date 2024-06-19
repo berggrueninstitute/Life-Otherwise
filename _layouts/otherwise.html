@@ -37,8 +37,8 @@ layout: post
             } else {
                 bloomContainer2.appendChild(gifElement);
             }
-            const xPos = getRandomInt(bcRect.right - 100);
-            const yPos = getRandomInt(bcRect.bottom);
+            const xPos = getRandomInt(bcRect.right - 500);
+            const yPos = getRandomInt(bcRect.bottom - 400);
             gifElement.style.left = `${xPos}px`;
             gifElement.style.top = `${yPos}px`;
             const start = getRandomInt(document.documentElement.scrollHeight);
@@ -103,6 +103,13 @@ layout: post
 
     #bloom-container2 {
         z-index: -10;
+    }
+    
+    @media (max-width: 800px) {
+        .gif-container {
+            width: 40dvw;
+            height: auto;
+        }
     }
 
 

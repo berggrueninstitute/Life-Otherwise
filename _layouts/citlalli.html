@@ -11,6 +11,25 @@ layout: post
 <img class="citlalli-bottom-img" src="/images/citlalli/citlalli-bottom-illo.png">
 
 <div id = "fullHeightDiv" class="citlalli-image"></div>
+<img id = "bgGifMobile" src ="/images/citlalli/Master_Final_2.gif" >
+
+<style>
+    #bgGifMobile {
+        position: fixed;
+        top: 100px;
+        left: 60vw;
+        z-index: -10;
+        opacity: .3;
+        height: calc(108svh - 100px);
+        width: auto;
+    }
+    /* media query for bgGifMobile that makes display none above 900px */
+    @media screen and (min-width: 900px) {
+        #bgGifMobile {
+            display: none;
+        }
+    }
+</style>
 
 
 <script>

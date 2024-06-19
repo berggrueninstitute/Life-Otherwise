@@ -22,7 +22,7 @@
 }
 
 @font-face {
-    font-family: 'Neue Machina Bold';
+    font-family: 'Neue Machina Regular';
     src: url('../assets/fonts/PPNeueMachina-InktrapBold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
@@ -169,6 +169,7 @@ p, .menuLink {
     display: flex;
     align-items: end;
     padding: 10px;
+    padding-right: 15px;
     justify-content: flex-end;
     height: calc(100% - 20px - 20px - 2px - 1rem); // container height minus padding, minus padding of the header element, minus border, minus height of header element
 }
@@ -180,24 +181,33 @@ p, .menuLink {
     flex-direction: column;
     justify-content: space-between;
     font-size:1rem;
+    // padding-right: 8px;
 }
 #sliderLabels div{
     margin-bottom:0.5em;
 }
 
 #mySlider {
-    writing-mode: bt-lr; /* IE */
-    /* -webkit-appearance: slider-vertical; */
-    writing-mode: vertical-lr;
-    width: 8px;
+    // writing-mode: bt-lr; /* IE */
+    // direction: rtl;
+    // -webkit-appearance: slider-vertical;
+    // writing-mode: vertical-lr;
+    // width: 8px;
     // height: 262px;
-    height: calc(100% - 20px);
-    transform:translateY(-10px) translateX(50%);
+    // height: calc(100% - 20px);
+    position: absolute;
+    transform-origin: 100% 100%;
+    transform: rotate(90deg);
+    margin-bottom: 8px;
     /* margin: 10px; */
 }
 
 input[type="range"] {
     -webkit-appearance: none;
+    background: var(--main-blue);
+    // width: 100%;
+    height: 2px;
+    // padding-right: 8px;
    }
    
 input[type="range"]:focus {
@@ -207,13 +217,13 @@ input[type="range"]:focus {
 input[type="range"]::-webkit-slider-runnable-track {
     -webkit-appearance: none;
     background: var(--main-blue);
-    width: 2px;
+    height: 2px;
 }
 
 input[type="range"]::-moz-range-track {
     -webkit-appearance: none;
     background: var(--main-blue);
-    width: 2px;
+    height: 2px;
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -221,16 +231,17 @@ input[type="range"]::-webkit-slider-thumb {
     height: 20px;
     width: 20px;
     background: var(--main-blue);
-    margin-left: -9px;
+    margin-top: -9px;
     border-radius: 50%;
 }
    
 input[type="range"]::-moz-range-thumb {
-    height: 15px;
-    width: 15px;
-    background: pink;
+    height: 20px;
+    width: 20px;
+    background: var(--main-blue);
     margin-top: -5px;
     border-radius: 50%;
+    border: none;
 }
 
 #spaceControls {
@@ -426,7 +437,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 #home-hero > h1 {
-    font-family: "Neue Machina Bold";
+    // font-family: "Neue Machina";
     font-weight: bold;
     font-size: 4rem;
     line-height: 100%;
@@ -910,11 +921,11 @@ img.basic-image {
     }
 
     .footer-column p {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     #footer-logo {
-        width: 14rem;
+        width: 12rem;
     }
 
     #berggruen-logo {
@@ -935,6 +946,52 @@ img.basic-image {
 
     h1.article-title {
         font-size: 40px;
+    }
+
+    #mySlider {
+        margin-bottom: 4px;
+    }
+
+    input[type="range"] {
+        -webkit-appearance: none;
+        background: var(--main-blue);
+        // width: 100%;
+        // height: 1.5px;
+        right: 5%;
+        // padding-right: 8px;
+       }
+       
+    input[type="range"]:focus {
+        outline: none !important;
+    }
+    
+    input[type="range"]::-webkit-slider-runnable-track {
+        -webkit-appearance: none;
+        background: var(--main-blue);
+        height: 1.5px;
+    }
+    
+    input[type="range"]::-moz-range-track {
+        -webkit-appearance: none;
+        background: var(--main-blue);
+        height: 1.5px;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 15px;
+        width: 15px;
+        background: var(--main-blue);
+        margin-top: -6.5px;
+        border-radius: 50%;
+    }
+       
+    input[type="range"]::-moz-range-thumb {
+        height: 15px;
+        width: 15px;
+        background: var(--main-blue);
+        margin-top: -5px;
+        border-radius: 50%;
     }
 }
 

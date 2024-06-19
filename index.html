@@ -63,6 +63,36 @@ layout: default
             document.getElementById('logo').addEventListener('click', function() {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
+
+            let bLogo = document.getElementById('logoSVG')
+            // change bLogo's fill to blue when the bottom of home-hero is 20px away from the top of the screen
+            window.addEventListener('scroll', function() {
+                let homeHero = document.getElementById('home-hero')
+                let homeHeroBottom = homeHero.getBoundingClientRect().bottom
+                if (homeHeroBottom < 20) {
+                    bLogo.style.fill = '#0000E9'
+                } else {
+                    bLogo.style.fill = 'white'
+                }
+            })
+
+
+            // adjust slider height
+            // Assuming you have references to your parent and child elements
+            const parent = document.querySelector('#sliderContainer');
+            const sliderr = document.querySelector('#mySlider');
+
+            // Function to set child element dimensions based on parent's height
+            function setChildDimensions() {
+                const parentHeight = parent.offsetHeight; // Get current height of parent
+                sliderr.style.width = `${parentHeight-25}px`; // Set child's width to parent's height
+            }
+
+            // Event listener for when the window is resized (if needed)
+            window.addEventListener('resize', setChildDimensions);
+
+            // Initial call to set dimensions when the page loads
+            setChildDimensions();
         </script>
           
 
