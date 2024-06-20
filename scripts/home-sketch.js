@@ -29,7 +29,7 @@ let cameraCoords = {
 };
 let targetZoom = cameraCoords.z;
 
-let scrollPause = 600;
+let scrollPause = (window.innerWidth > 1000) ? 600 : 200;
 
 let storyPlanets = [ // distances based on numPlanets being 6000 planets
   {dist: 0, article: 0, earth: true, hide: true},
@@ -54,7 +54,8 @@ function setup() {
 
     document.getElementById('menu').style.position = 'absolute'
     console.log("heights: ",window.innerHeight, document.documentElement.clientHeight)
-    let canvas = createCanvas(windowWidth, windowHeight+200); //adding 200 to height to account for appearing and disappearing mobile browser ui
+    let extraHeight = (window.innerWidth < 1000) ? 200 : 0  //adding 200 to height to account for appearing and disappearing mobile browser ui
+    let canvas = createCanvas(windowWidth, windowHeight+extraHeight); 
     canvas.parent('myCanvasContainer');
     angleMode(DEGREES);
     for (var i = 0; i < numPlanets; i++) {
@@ -282,9 +283,11 @@ const slider = document.getElementById('mySlider');
 slider.oninput = function() {
   // Invert the zoom direction
   targetZoom = map(this.value, 1, 100, spaceDimensions.z - visibleDist, 0);
+  console.log("slider value",this.value)
   pauseScrollListener()
-  window.scrollTo(0, map(this.value, 1, 100, window.innerHeight, document.documentElement.scrollHeight));
-  console.log(map(this.value, 1, 100, window.innerHeight, document.documentElement.scrollHeight));
+  let targScroll = map(this.value, 1, 100, window.innerHeight, document.documentElement.scrollHeight)
+  window.scrollTo(0, targScroll);
+  console.log("targScroll",targScroll);
 }
 
 
@@ -340,6 +343,8 @@ document.addEventListener('scroll', () => {
 
     // Invert the zoom direction
     targetZoom = map(scrollPercentage, 1, 100, spaceDimensions.z - visibleDist, 0);
+    console.log("LowestScrollValue",lowestScrollValue)
+    console.log("scroll %",scrollPercentage)
     console.log("scroll event",targetZoom)
     slider.value = scrollPercentage;
 
@@ -478,18 +483,20 @@ function pauseScrollListener() {
 
 
 
-slider.addEventListener('touchstart', disableTouchScrolling, { passive: false });
-slider.addEventListener('touchmove', disableTouchScrolling, { passive: false });
-slider.addEventListener('touchend', enableTouchScrolling);
+// slider.addEventListener('touchstart', disableTouchScrolling, { passive: false });
+// slider.addEventListener('touchmove', disableTouchScrolling, { passive: false });
+// slider.addEventListener('touchend', enableTouchScrolling);
 
-function disableTouchScrolling(event) {
-  event.preventDefault();
-}
+// function disableTouchScrolling(event) {
+//   event.preventDefault();
+// }
 
-function enableTouchScrolling(event) {
-  // No need to do anything here, touch scrolling will be re-enabled automatically
-}
+// function enableTouchScrolling(event) {
+//   // No need to do anything here, touch scrolling will be re-enabled automatically
+// }
 
-// Ensure touch scrolling is re-enabled if user leaves the slider without lifting the touch
-document.addEventListener('touchend', enableTouchScrolling);
-document.addEventListener('touchcancel', enableTouchScrolling);
+// // Ensure touch scrolling is re-enabled if user leaves the slider without lifting the touch
+// document.addEventListener('touchend', enableTouchScrolling);
+// document.addEventListener('touchcancel', enableTouchScrolling);
+
+

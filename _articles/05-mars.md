@@ -56,14 +56,21 @@ endnotes:   |
     27. Fisher, _Ghosts of My Life_, 18.
 ---
 
+![Image description](/images/mars/Austraunaut.jpg){: #Austraunaut .marsImg }
 
 **Netti Remembers**
 
 Drawn out of her repose by the loud sound of the life-support system shifting to its nocturnal mode, Netti became aware of her surroundings and the photograph in her hand. The view from the window in her cabin revealed the billowing plains of Terra Sirenum in the southern hemisphere of Mars. She had stopped to rest on her long journey, now hundreds of kilometers from her home base and the ring of terrestrial garbage that surrounded it. Here, there was no sign of the scars humans had rendered on the planet. The horizon looked boundless and pristine. Beyond the requisite supplies and some navigation instruments, she had brought very little with her—a photograph, a book, and a postcard from her mother. Her home was now the small exploration rover, sculpted from glass and steel, resting on its four wheels. The cabin was cluttered but not uncomfortable. She had enough space to straighten her body out to sleep and to change into a space suit. She could even do some stretching exercises.
 
+![Image description](/images/mars/static.gif){: #static .marsImg }
+
 The creased photograph in her hand was technically a printout. It seemed to show a black-and-white image of static from a malfunctioning TV set, punctuated by a thick horizontal white stripe that cut across the picture. One could be forgiven for mistaking it for an ultrasound mangled by a printer. But this picture was a matter of historical record—the first image ever sent back from Mars to human eyes, dispatched from the Mars-3 probe, all the way back in 1971.
 
+![Image description](/images/mars/rover.gif){: #rover .marsImg }
+
 The story of this probe had remained with her from her childhood, an obscure footnote in the history of Mars that few if any still cared about. As a child, her mother had presented her with many books on the red planet, including one about the forgotten Georgii Babakin, the man who had designed Mars-3. As a child, Babakin had found refuge in science fiction, a world away from the many traumas of his childhood, including his father’s death in World War I. His tragically short life, as it arced from his modest beginnings in suburban Moscow on a trajectory toward Mars had ended with that impenetrable photograph. To some, the picture’s garbled image was simply the artifact of a failed camera. To others, it showed the ghosted visage of an alien planet: if one looked hard enough, it would reveal some ineffable truth. Netti hoped for the latter.
+
+![Image description](/images/mars/Zander.png){: #Zander .marsImg }
 
 Netti found herself drawn to Mars not because it was so ubiquitous in humans’ dreams of space but because it seemed to be the graveyard for so many hopes. In high school, when her creative writing teacher had challenged students to write a fictional passage about a place without witnesses, she instinctively knew what to write: a speculation about that first garbled photograph from Mars sent back by Mars-3. She had written:
 
@@ -72,6 +79,8 @@ Netti found herself drawn to Mars not because it was so ubiquitous in humans’ 
 
 
 > _On the object itself, a sensor soon activates a braking parachute and then a huge, main parachute, slowing it down. A heat shield flies off its base. At about a hundred feet above the foreboding surface, a gunpowder rocket fires to slow the object down further as it descends to the surface, now moving gingerly toward the ground. Covered in a thick layer of foam plastic, the object hits the surface and bounces a few times before coming to rest, now released from its protective covering. On the Martian terrain, the object, resembling some half-finished design for a crab-like robot, comes to life as various mechanical arms and levers move into position to face the surface, ready to study the soil and the surrounding air. Because of the oppressive dust storm, visibility in all direction is compromised. Yet, ninety seconds after landing, the object deploys a camera and begins scanning the horizon to record and then dispatch to its creators the first picture ever taken on Mars._
+
+![Image description](/images/mars/Mars_1_NASA.png){: #Mars_1_NASA .marsImg }
 
 
 > _After transmitting for about 20 seconds, the camera stops working. The fierce dust storm has caused a coronal discharge shorting out all the electronics. Back on Earth, what is received is a strange, grainy image with static and no discernable landmarks. Scientists pore over this impenetrable picture, but there is nothing to see, they say. The mission is forgotten._
@@ -82,38 +91,15 @@ Haunted by incompleteness, the image, and its confusing aura, seemed to become m
 
 Perhaps there were answers to be found in the photograph, the book, and the postcard.
 
-<br>
-<br>
-
-![Image description](/images/mars/lunokhod.png){: #lunokhod .marsImg }
-![Image description](/images/mars/lunokhod2.png){: #lunokhod2 .marsImg }
-![Image description](/images/mars/lunokhod3.png){: #lunokhod3 .marsImg }
-![Image description](/images/mars/tekhnika.png){: #tehnika .marsImg }
-![Image description](/images/mars/stamp.png){: #stamp .marsImg }
-![Image description](/images/mars/mipa.png){: #mipa .marsImg }
-![Image description](/images/mars/building.png){: #building .marsImg }
-![Image description](/images/mars/red.png){: #red .marsImg }
-![Image description](/images/mars/Alexander.png){: #Alexander .marsImg }
-![Image description](/images/mars/3d-mars.png){: #three-dMars .marsImg }
-![Image description](/images/mars/Secret_History.png){: #Secret_History .marsImg }
-![Image description](/images/mars/Onward_to_mars.png){: #Onward_to_mars .marsImg }
 ![Image description](/images/mars/ruda.png){: #ruda .marsImg }
-![Image description](/images/mars/Mars_1_NASA.png){: #Mars_1_NASA .marsImg }
-![Image description](/images/mars/countdown_2.gif){: #countdown_2 .marsImg }
-![Image description](/images/mars/Austraunaut.jpg){: #Austraunaut .marsImg }
-![Image description](/images/mars/static.gif){: #static .marsImg }
-![Image description](/images/mars/2_December.png){: #December .marsImg }
-![Image description](/images/mars/red_ring.png){: #red_ring .marsImg }
-![Image description](/images/mars/Cabin.png){: #Cabin .marsImg }
-![Image description](/images/mars/Zander.png){: #Zander .marsImg }
-![Image description](/images/mars/rover.gif){: #rover .marsImg }
-![Image description](/images/mars/pehwene.png){: #pehwene .marsImg }
 
 **A Secret History in Three Acts**
 
 **Act I: Red Star**
 
 The book that Netti had tucked under the dashboard, with the evocative title _Red Star_, had served as a distraction during her rest periods. She had known, of course, that her mother had named her “Netti” after a character in the book, but throughout her life, she had resisted reading it. Published in 1908, exactly a century before Netti’s birth, _Red Star_ (or _Krasnaia zvezda_ in its original Russian) was perhaps the most famous science fiction novel published in the Russian language. Throughout her short life, many would ask Netti about her unusual name, and some, who had read _Red Star_, would ask about the novel. She would answer gamely, yes, her parents had appropriated the name from the novel, written by the famous Bolshevik, avowed communist, and Lenin’s comrade-in-arms, Aleksandr Bogdanov. This would be followed by some cursory jokes about socialism, workers’ rights, and alienation from the means of production—ideas that seemed as illusory as living on another planet might have once seemed. But here she was, living and breathing on Mars. So perhaps, those socialist ideas that haunted her namesake could be restored from the footnotes of history to its main text?
+
+![Image description](/images/mars/Alexander.png){: #Alexander .marsImg }
 
 Netti knew very little of Bogdanov’s story when she left for Mars but over the months she had learned a lot more. Her book included a short biography of the author, and she began to feel a sense of familiarity with both his life and his fiction. As she dozed off, her thoughts drifted to what she had just read.
 
@@ -123,11 +109,15 @@ The book was deeply shaped by contemporary forces in the early 20th century, inc
 
 On Mars, Lenni finds a socialist utopia where workers live and work together and where job assignments are based on societal demands rather than any capitalist forms of extraction. Those who do not wish to work do not. The poison of nationalism is absent on Mars, with ethnic divisions no longer a vexing, divisive issue. The contradictions between the urban and the rural—a central concern of Marxists at the turn of the century—are resolved in the creation of “in-between” worlds where people live and work. Apartments are logically connected to laboratory workspaces (often underground) such that inhabitants valorize one over the other. Everything, including work, is highly automated. On Mars, though, there was no manifestation of scientific management practices like Taylorism, the uniquely American system of mass production wherein the smallest task of a worker is broken down to its most efficient form. Unlike many of his contemporaries, Bogdanov found Taylorism deeply exploitative. Social development is geared towards an appreciation of the value for the whole rather than individual gain. In fact, creativity at all levels is a collective force. This was full-blown socialism on Mars, but in the words of one historian, “updated by means of contemporary scientific and organizational discoveries.” <sup>2</sup>
 
+![Image description](/images/mars/building.png){: #building .marsImg }
+
 All of this resonated deeply with Netti who felt utterly disconnected from the clinical and mechanical nature of her life and work on Mars, which to her seemed less a planet than a corporate brand, spewing out garbage onto the Martian surface. If work left her enervated, she found solace in Bogdanov’s imagination. What Netti found most seductive about Bogdanov’s book was that it insisted on a form of generosity and fairness to all, undergirded by concepts of self-sacrifice and egalitarianism. At the same time, Bogdanov resisted the urge to valorize a dogmatic form of a socialist utopia, warning against the many problems inherent in trying to construct a society on Mars—including the dangers of nuclear power, the destruction of the natural environment of Mars, and the challenges of what might today called bioethics.<sup>3</sup> 
 
 Sitting in her rover at the edge of Newton Crater, a 180-mile geological formation south of the Martian equator, Netti rehearsed these aspects of Bogdanov’s novel. But there was one other dimension of the book—its gender politics—that had drawn her attention in the past few months. The character she was named after, Netti, is initially introduced as male but then is rendered female in the latter part of the novel when she becomes Lenni’s love interest. This transformation is treated without any special consideration as if the transition was emblematic of a deeper form of normative fluidity in Martian socialism and impossible within terrestrial capitalism. For Netti, these ideas were enormously comforting and led her to the radical tracts of Bogdanov’s friend and Bolshevik feminist Aleksandra Kollontai who believed that an ideal form of socialism could not be attained absent radical shifts in attitudes to sexual difference.<sup>4</sup>
 
 As Netti finally dozed off, the postcard fell out of her hand and onto the floor of her cabin. Sent long ago by her mother, the scribble simply said “Onwards, to Mars!” The picture on the back showed a slim middle-aged man with a mustache and a beard, sitting at his desk, legs crossed, staring intently at the camera: who was this Man from Mars?
+
+![Image description](/images/mars/tekhnika.png){: #tehnika .marsImg }
 
 **Act II: Onwards, to Mars!**
 
@@ -141,6 +131,7 @@ The Tsander family’s home life was occupied by all manner of seemingly mad exp
 
 In June 1922, Tsander quit his job at the factory to devote all his time to developing a working design of a spaceship that incorporated elements of an airplane. Unemployed, he survived by the generosity of his former fellow factory workers who organized a pool of donations to help feed the man. While they may not have shared Tsander’s unyielding belief in the possibility of space travel, they were extremely fond of Tsander. In gratitude, Tsander gave a speech at the factory, about a year after he quit, in April 1923, which is preserved in the archives of the Russian Academy of Sciences:
 
+![Image description](/images/mars/Cabin.png){: #Cabin .marsImg }
 
 > _Comrades! I’ve been told by the Secretary of your factory committee … that you have awarded me a gift of one percent of your April wages to be presented at this general meeting! Comrades! You yourselves are not living under the best of conditions, and I therefore am even more grateful to you to understand the project on which I am working. I hope also that the money which you have given me will not be in vain, but will make it possible for me to present something of value to your factory…<sup>8</sup>_
 
@@ -154,6 +145,8 @@ But Tsander wasn’t around to see it. Because of overwork and poor eating habit
 
 Tsander died in the early morning of March 28, 1933, at the age of forty-six. The last letter he wrote to Korolev ended, “Forward, comrades, and only forward! Raise the rockets higher and higher, closer to the stars.” When they received news of his death, many GIRD members, including Korolev, openly wept for their fallen comrade. Tsander, the dreamer, left behind 7,200 pages of technical writings on almost every aspect of space exploration and rocketry, much of which remained unpublished. 
 
+![Image description](/images/mars/red.png){: #red .marsImg }
+
 **Act III: Babakin’s Hands**
 
 The very first human object that touched Mars was built in a factory in Khimki, a suburb of Moscow that was originally established as a settlement in the mid-19th century. By the time of the Revolution, about 2,000 people lived here, in picturesque houses, some evoking the Art Nouveau style fashionable in Russia at the time. The Bolsheviks set about locating a number of industrial cooperative artels in Khimki, including factories building knitwear underwear, furniture, and metal products. In 1937, the area changed when the Soviets established Factory No. 301, a fighter aircraft design and production facility, bringing an influx of about 20,000 people—workers and their families—into the settlement. These men and women were at the forefront of the war: when the Nazis invaded the Soviet Union, the closest they came to Moscow was Khimki. The people there always considered themselves the last defense against fascism.<sup>13</sup>
@@ -163,6 +156,8 @@ In the 1950s, Khimki became a massive center for defense enterprises with design
 If there was one person at Lavochkin who embodied its oddball creative spirit, it was Georgii Nikolaevich Babakin, the design chief who was nominally responsible for the peculiar form of many of the space probes coming out of Khimki. Like Tsander, Babakin was known as “a very gentle person, with a markedly polite manner of addressing people” and like Tsander his life was cut short suddenly.<sup>14</sup>
 
 Babakin had little formal education and his “natural genius” for spacecraft engineering came from some deeper ineffable instinct. He dropped out of school in 1929 while in the 7<sup>th</sup> grade, and later completed a four-month radio technician course when he was 16. He received his college degree when he was 42, in 1956. As a self-taught person, he continually surprised his more educated colleagues with engineering solutions that seemed to emerge fully formed. But he also trusted his engineers completely and would organize, within the world of socialist work, small-scale competitions among different engineers. One project, for example, reduced the weight of a spacecraft, promising monetary bonuses for those who were able to lessen a system’s mass by a kilogram or more.<sup>15</sup> Babakin joined the Communist Party in 1951 and seemed to accept its tenets—especially workers’ rights—without cynicism. Although he was the nominal head of the Lavochkin design bureau, Babakin had an unusual affinity for the rank-and-file workers, often helping them do manual labor when it would have been considered beneath someone with the rank of “Chief Designer” to do so.
+
+![Image description](/images/mars/ring-mobile.jpg){: .marsImg .mbOnly }
 
 In 1968, Babakin’s team was tasked with the design of a new generation of space probes to visit Mars. They produced two Martian orbiters—if successful, they would become the first spacecraft to orbit another planet—but both were destroyed in 1969 when their launch vehicle exploded. For the next launch window in 1971, Babakin and his engineers devised landing capsules, shaped like the body of a spider, that would alight on Mars, open its petals, and deploy instruments on its surface. Each lander also carried a nine-pound metallic box-shaped robot called PrOP-M that would undulate across the surface on skis, like a box on collapsing stilts. Connected to the lander by an umbilical cord, the device could wander at least 50 feet away from its host while checking the density of the Martian soil and measuring radiation on the surface. It was even programmed to stop and change direction if it ran into an obstacle.<sup>16</sup>
 
@@ -178,3 +173,19 @@ Netti woke up after a fitful sleep, ready to make the last jaunt to her destinat
 
 She reactivated the rover’s systems, methodically ran through a checklist, and then, armed with a book, a picture, and a postcard, set off in a southward direction. Her destination was the Ptolemaeus Crater, named after the Greco-Roman thinker Claudius Ptolemy where Mars-3 lay dead.<sup>21</sup> This was going to be a long voyage and one she would never come back from, but she had prepared well. She had studied maps, reference books, and pored over old Russian books to find the exact spot where Mars-3 had come down. She could already anticipate driving up to it, the dot slowly becoming larger, perhaps covered in a layer of dust, the vertical camera peeking out from the probe. Would the PrOP-M robot be deployed? Perhaps. She imagined herself exiting the rover in her suit, walking over to the probe, and kneeling down to where the camera was. She would angle her neck to see what the camera saw. What would she see? Hard to know. All she knew was that there was a connection to be made, one haunted by Bogdanov and Tsander and Babakin and now leading to her. A secret future history of Mars awaited her.
 
+![Image description](/images/mars/3d-mars.png){: #three-dMars .marsImg }
+
+
+
+
+![Image description](/images/mars/lunokhod.png){: #lunokhod .marsImg .dtOnly }
+![Image description](/images/mars/lunokhod2.png){: #lunokhod2 .marsImg .dtOnly }
+![Image description](/images/mars/lunokhod3.png){: #lunokhod3 .marsImg .dtOnly }
+![Image description](/images/mars/stamp.png){: #stamp .marsImg .dtOnly}
+![Image description](/images/mars/mipa.png){: #mipa .marsImg .dtOnly}
+![Image description](/images/mars/Secret_History.png){: #Secret_History .marsImg .dtOnly }
+![Image description](/images/mars/Onward_to_mars.png){: #Onward_to_mars .marsImg .dtOnly }
+![Image description](/images/mars/countdown_2.gif){: #countdown_2 .marsImg .dtOnly }
+![Image description](/images/mars/2_December.png){: #December .marsImg .dtOnly }
+![Image description](/images/mars/red_ring.png){: #red_ring .marsImg .dtOnly }
+![Image description](/images/mars/pehwene.png){: #pehwene .marsImg .dtOnly}
