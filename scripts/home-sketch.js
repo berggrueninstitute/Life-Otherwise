@@ -10,6 +10,7 @@ var links;
 let spaceOpacity = 0
 let notScroll = false;
 let notScrollTimer
+let mobilePlanetAdj = (isTouchDevice) ? 150 : 0
 touchStartCustom = false;
 
 var speed;
@@ -537,9 +538,10 @@ function handleSliderMobile() {
     sliderLabels.children[i].innerHTML = sliderLabels.children[i].innerHTML.replace(" —","")
   }
   slider.classList.add('hide-track');
-  slider.style.background = "white";
+  slider.style.background = "transparent";
   slider.style.pointerEvents = "none";
   slider.value = mapp(which, 0, sliderLabels.children.length-1, 0, 101)
+  slider.style.transform = "translateY(-3px) rotate(90deg)";
   // sliderLabels.children[which].style.fontWeight = "bold" 
 }
 

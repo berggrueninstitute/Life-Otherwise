@@ -43,13 +43,13 @@ function Planet(depth, numPlanets, earth=false, hide=false) {
 
         if (this.z > cameraCoords.z && dist < visibleDist ) {
             var sx = map(this.x / dist, 0, 1, 0, spaceDimensions.x);
-            var sy = map(this.y / dist, 0, 1, 0, spaceDimensions.y);
+            var sy = map(this.y / dist, 0, 1, 0, spaceDimensions.y)-mobilePlanetAdj;
             this.r = map(dist, 0, visibleDist, 100, 4);
             if (this.hide || this.earth) {
                 // earthStories *= .5
                 this.r*=(width/200)
                 sx = 0
-                sy = 0
+                sy = 0-mobilePlanetAdj
             }
             let earthStories = 1
             if (this.hide) {earthStories *= .5}
