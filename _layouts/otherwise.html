@@ -37,8 +37,10 @@ layout: post
             } else {
                 bloomContainer2.appendChild(gifElement);
             }
-            const xPos = getRandomInt(bcRect.right - 500);
-            const yPos = getRandomInt(bcRect.bottom - 400);
+            let xOffset = (window.innerWidth>800) ? 500 : 100
+            let yOffset = (window.innerWidth>800) ? 400 : 0
+            const xPos = getRandomInt(bcRect.right - xOffset);
+            const yPos = getRandomInt(bcRect.bottom - yOffset);
             gifElement.style.left = `${xPos}px`;
             gifElement.style.top = `${yPos}px`;
             const start = getRandomInt(document.documentElement.scrollHeight);
@@ -107,8 +109,10 @@ layout: post
     
     @media (max-width: 800px) {
         .gif-container {
-            width: 40dvw;
             height: auto;
+        }
+        .gif-container img {
+            width: 60dvw;
         }
     }
 

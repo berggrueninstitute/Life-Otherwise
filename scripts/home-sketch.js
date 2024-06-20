@@ -10,6 +10,7 @@ var links;
 let spaceOpacity = 0
 let notScroll = false;
 let notScrollTimer
+touchStartCustom = false;
 
 var speed;
 
@@ -152,7 +153,9 @@ function setup() {
                   planets[rand].showDescription = 1
                   tappedOnce = true;
                   targetZoom = planets[rand].z - 150000;
-                  slider.value = map(targetZoom, 0, spaceDimensions.z, 1, 100)
+                  if(!touchStartCustom) {
+                    slider.value = map(targetZoom, 0, spaceDimensions.z, 1, 100)
+                  }
                   window.scrollTo(0, map(targetZoom, 0, spaceDimensions.z, window.innerHeight, document.documentElement.scrollHeight));
                   console.log("1st click", tappedOnce)
               } else {
@@ -213,7 +216,9 @@ function setup() {
           // console.log(planets[rand].z)
           // console.log(targetZoom, map(targetZoom, -150000, spaceDimensions.z-150000, -150000, spaceDimensions.z-150000))
           console.log(map(targetZoom, -150000, spaceDimensions.z-150000, window.innerHeight, document.documentElement.scrollHeight))
-          slider.value = map(targetZoom, 0, spaceDimensions.z, 100, 1)
+          if(!touchStartCustom) {
+            slider.value = map(targetZoom, 0, spaceDimensions.z, 100, 1)
+          }
           console.log("scrollHeight", document.documentElement.scrollHeight)
           pauseScrollListener()
           window.scrollTo(0, map(targetZoom, -150000, spaceDimensions.z-150000, window.innerHeight, document.documentElement.scrollHeight));
@@ -282,12 +287,14 @@ const slider = document.getElementById('mySlider');
 
 slider.oninput = function() {
   // Invert the zoom direction
-  targetZoom = map(this.value, 1, 100, spaceDimensions.z - visibleDist, 0);
-  console.log("slider value",this.value)
-  pauseScrollListener()
-  let targScroll = map(this.value, 1, 100, window.innerHeight, document.documentElement.scrollHeight)
-  window.scrollTo(0, targScroll);
-  console.log("targScroll",targScroll);
+  if (this.value != 100 && this.value != 1) {
+    targetZoom = map(this.value, 1, 100, spaceDimensions.z - visibleDist, 0);
+    console.log("slider value",this.value)
+    pauseScrollListener()
+    let targScroll = map(this.value, 1, 100, window.innerHeight, document.documentElement.scrollHeight)
+    window.scrollTo(0, targScroll);
+    console.log("targScroll",targScroll);
+  }
 }
 
 
@@ -321,6 +328,8 @@ let prevScroll = 0
 let isScrolling = false;
 
 document.addEventListener('scroll', () => {
+  if (isTouchDevice()) {  handleSliderMobile()}
+
   if(!notScroll) {
     const div = document.getElementById('scrollContainer');
 
@@ -346,7 +355,9 @@ document.addEventListener('scroll', () => {
     console.log("LowestScrollValue",lowestScrollValue)
     console.log("scroll %",scrollPercentage)
     console.log("scroll event",targetZoom)
-    slider.value = scrollPercentage;
+    if(!touchStartCustom && !isTouchDevice()) {
+      slider.value = scrollPercentage; 
+    }
 
 
     // --- space opacity
@@ -483,10 +494,16 @@ function pauseScrollListener() {
 
 
 
-// slider.addEventListener('touchstart', disableTouchScrolling, { passive: false });
-// slider.addEventListener('touchmove', disableTouchScrolling, { passive: false });
-// slider.addEventListener('touchend', enableTouchScrolling);
 
+slider.addEventListener('touchstart', function() {
+  touchStartCustom = true;
+  console.log("touchStartCustom",touchStartCustom)
+});
+// event listener that sets touchStartCustom to false when the slider is released
+slider.addEventListener('touchend', function() {
+  touchStartCustom = false;
+  console.log("touchStartCustom",touchStartCustom)
+});
 // function disableTouchScrolling(event) {
 //   event.preventDefault();
 // }
@@ -499,4 +516,35 @@ function pauseScrollListener() {
 // document.addEventListener('touchend', enableTouchScrolling);
 // document.addEventListener('touchcancel', enableTouchScrolling);
 
+function isTouchDevice() {
+  return 'ontouchstart' in window || 
+         (navigator.maxTouchPoints > 0) || 
+         (navigator.msMaxTouchPoints > 0) || 
+         matchMedia('(pointer: coarse)').matches;
+}
 
+function handleSliderMobile() {
+  // make slider label closest to the slider thumb bold
+  let sliderLabels = document.getElementById("sliderLabels")
+  let sliderValue = slider.value;
+
+  // based on amount of children, bold the label closest to the slider value. since the slider's range is 0 to 100, we can divide the slider value by the number of children to get the index of the child that should be bolded
+  let which = Math.floor(mapp(targetZoom, spaceDimensions.z, 0, 0, sliderLabels.children.length));
+  for (let i = 0; i < sliderLabels.children.length; i++) {
+    // sliderLabels.children[i].style.fontWeight = "normal"
+    sliderLabels.children[i].style.paddingRight = "7px"
+      // remove last em-dash from the innerHTML of the slider label
+    sliderLabels.children[i].innerHTML = sliderLabels.children[i].innerHTML.replace(" —","")
+  }
+  slider.classList.add('hide-track');
+  slider.style.background = "white";
+  slider.style.pointerEvents = "none";
+  slider.value = mapp(which, 0, sliderLabels.children.length-1, 0, 101)
+  // sliderLabels.children[which].style.fontWeight = "bold" 
+}
+
+
+
+function mapp(value, start1, stop1, start2, stop2) {
+  return start2 + ((value - start1) * (stop2 - start2)) / (stop1 - start1);
+}
