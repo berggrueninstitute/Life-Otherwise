@@ -498,12 +498,14 @@ function pauseScrollListener() {
 
 slider.addEventListener('touchstart', function() {
   touchStartCustom = true;
+  document.body.classList.add("slidingOnMobile");
   console.log("touchStartCustom",touchStartCustom)
 });
 // event listener that sets touchStartCustom to false when the slider is released
 slider.addEventListener('touchend', function() {
   touchStartCustom = false;
-  console.log("touchStartCustom",touchStartCustom)
+  console.log("touchStartCustom",touchStartCustom);
+  document.body.classList.remove("slidingOnMobile");
 });
 // function disableTouchScrolling(event) {
 //   event.preventDefault();

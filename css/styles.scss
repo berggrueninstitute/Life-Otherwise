@@ -251,44 +251,44 @@ input[type="range"]::-moz-range-thumb {
 }
 
 /* CSS class to hide the slider track */
-#mySlider.hide-track::-webkit-slider-runnable-track {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 100%;
-    height: 0;
-    background: transparent;
-    box-shadow: none; /* Remove the shadow */
-}
+// #mySlider.hide-track::-webkit-slider-runnable-track {
+//     -webkit-appearance: none;
+//     appearance: none;
+//     width: 100%;
+//     height: 0;
+//     background: transparent;
+//     box-shadow: none; /* Remove the shadow */
+// }
 
-#mySlider.hide-track::-moz-range-track {
-    -moz-appearance: none;
-    appearance: none;
-    width: 100%;
-    height: 0;
-    background: transparent;
-}
+// #mySlider.hide-track::-moz-range-track {
+//     -moz-appearance: none;
+//     appearance: none;
+//     width: 100%;
+//     height: 0;
+//     background: transparent;
+// }
 
-#mySlider.hide-track::-ms-track {
-    appearance: none;
-    width: 100%;
-    height: 0;
-    background: transparent;
-    border: none;
-    color: transparent;
-}
+// #mySlider.hide-track::-ms-track {
+//     appearance: none;
+//     width: 100%;
+//     height: 0;
+//     background: transparent;
+//     border: none;
+//     color: transparent;
+// }
 
-#mySlider.hide-track::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    height: 12px;
-    width: 12px;
-    margin-top: -4px;
-}
+// #mySlider.hide-track::-webkit-slider-thumb {
+//     -webkit-appearance: none;
+//     height: 12px;
+//     width: 12px;
+//     margin-top: -4px;
+// }
    
-#mySlider.hide-track::-moz-range-thumb {
-    height: 12px;
-    width: 12px;
-    margin-top: -4px;
-}
+// #mySlider.hide-track::-moz-range-thumb {
+//     height: 12px;
+//     width: 12px;
+//     margin-top: -4px;
+// }
 
 
 
