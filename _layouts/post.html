@@ -127,6 +127,7 @@ layout: default
 
     //js for header motion
     let movingHeaderCopy
+    let translateX = 0;
     updateHeader()
 
     window.addEventListener('scroll', function() {
@@ -134,7 +135,7 @@ layout: default
         let header = document.getElementById('moving-header');
 
         if (scrollPosition <= 500) {
-            let translateX = (scrollPosition / 500) * 100;
+            translateX = (scrollPosition / 500) * 100;
             console.log(movingHeaderCopy)
             movingHeaderCopy.style.transform = `translateX(${-translateX}vw)`;
         } else {
@@ -172,6 +173,7 @@ layout: default
         movingHeaderCopy.style.top = '0px';
         movingHeaderCopy.style.left = movingHeader.getBoundingClientRect().left + 'px';
         movingHeaderCopy.style.width = movingHeader.getBoundingClientRect().width + 'px';
+        movingHeaderCopy.style.transform = `translateX(${-translateX}vw)`;
     }
 
 </script>
