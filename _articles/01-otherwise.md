@@ -1,6 +1,6 @@
 ---
 layout: otherwise
-title: What If Life Were Otherwise?
+title: What if Life were Otherwise?
 permalink: what-if-life-were-otherwise
 authors: 
     - name: Claire Isabel Webb
