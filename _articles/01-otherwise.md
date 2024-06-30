@@ -9,8 +9,7 @@ authors:
     - name: Lois Rosson
       bio: |
         Dr. Lois Rosson is a Space Historian with the NASA History Office and a continuing Berggruen Institute Fellow. She received her Ph.D. from the History Department at U.C. Berkeley in 2022, where she specialized in the History of Science. Her current book project, _How to Paint Space: \ Image and Authority in the American Space Age_, examines the impact of mid-century astronomical illustration on perceptions of space landscapes in both the popular and scientific imaginaries. Rosson was previously a Guggenheim Fellow at the Smithsonian’s National Air and Space Museum, a research associate at Lawrence Livermore National Lab, and held the 2023 – 2024 Octavia E. Butler Fellowship at the Huntington Library.
-       
->>>>>>> ef3015ea48fa730231ab1f3b797290cdb1dff3b6
+
 
 full-title: "“What If Life Were Otherwise?”"
 location: Los Angeles
