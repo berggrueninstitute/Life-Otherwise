@@ -86,10 +86,6 @@ layout: post
             }
     }
 
-    .expanded {
-        transform: scale(1.5);
-        transform-origin: top right;
-    }
 
 
 
@@ -110,7 +106,67 @@ layout: post
             left: 0vw;
         }
 
+        .expanded {
+            transform: scale(1.5);
+            transform-origin: top right;
+        }
 
+
+    }
+
+
+    @media screen and (min-width: 1001px) and (max-width: 1400px) {
+        .hidden1 {
+            /* transform: translate(-93.5vw, 150px); */
+        }
+
+        .expanded {
+            transform: scale(2);
+            transform-origin: top right;
+            
+        }
+        #book {
+            top: 85px;
+            right: 2vw;
+            width: 19vw;
+            height: calc(1.18 * 19vw);
+        }
+        #unHideButton {
+            display: none;
+        }
+
+        #controls {
+            bottom: -50px;
+            left: 0vw;
+            transition: 500ms ease;
+        }
+        .expanded > #controls {
+            transform-origin: top left;
+            transform: scale(.6);
+        }
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 1000px) {
+        .hidden1 {
+            transform: translate(-93.5vw, 150px);
+        }
+        #book {
+            padding: 13px;
+            width: calc(70% - 26px);
+            /* top: none; */
+            top: 170px;
+            /* bottom: 75px; */
+            right: 4vw;
+            height: calc(1.18 * 70vw);
+            box-sizing: border-box;
+        }
+        #expand {
+            display: none;
+        }
+        #controls {
+            top: -40px;
+            right: 6vw;
+        }
     }
 
 
@@ -139,20 +195,9 @@ layout: post
         display: none;
     }
 
-        #book {
-            padding: 13px;
-            width: calc(70% - 26px);
-            /* top: none; */
-            top: 170px;
-            /* bottom: 75px; */
-            right: 4vw;
-            height: calc(1.18 * 70vw);
-            box-sizing: border-box;
-        }
 
-        .hidden1 {
-            transform: translate(-93.5vw, 150px);
-        }
+
+
 
         #unHideButton {
             transform: rotate(-90deg);
@@ -165,13 +210,6 @@ layout: post
             padding-right: 5%;
         }
 
-        #controls {
-            top: -40px;
-            right: 6vw;
-        }
-        #expand {
-            display: none;
-        }
     }
 
 
