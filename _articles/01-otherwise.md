@@ -10,7 +10,7 @@ authors:
       bio: |
         Dr. Lois Rosson is a continuing Berggruen Institute Fellow. She received her Ph.D. from the History Department at U.C. Berkeley in 2022, where she specialized in the History of Science. Her current book project, _How to Paint Space: Image and Authority in the American Space Age_, examines the impact of mid-century astronomical illustration on perceptions of space landscapes in both the popular and scientific imaginaries. Rosson was previously a Guggenheim Fellow at the Smithsonian’s National Air and Space Museum, a research associate at Lawrence Livermore National Lab, and holds the 2023 – 2024 Octavia E. Butler Fellowship at the Huntington Library.
 
-full-title: "“What if life were Otherwise?”"
+full-title: "“What If Life Were Otherwise?”"
 location: Los Angeles
 planet: Earth
 year: 2024
