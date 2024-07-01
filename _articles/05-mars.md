@@ -1,6 +1,6 @@
 ---
 layout: mars
-title: Haunted On Mars
+title: Haunted on Mars
 permalink: haunted-on-mars
 authors:
     - name: Asif Siddiqi

@@ -1,6 +1,6 @@
 ---
 layout: empire
-title: Empire Of The Dandelion
+title: Empire of the Dandelion
 permalink: empire-of-the-dandelion
 authors:
     - name: Lois Rosson

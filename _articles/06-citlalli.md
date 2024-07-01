@@ -1,6 +1,6 @@
 ---
 layout: citlalli
-title: Citlalli In The Sky With Cnidaria
+title: Citlalli in the Sky With Cnidaria
 permalink: citlalli
 authors:
     - name: Gerardo Aldana
