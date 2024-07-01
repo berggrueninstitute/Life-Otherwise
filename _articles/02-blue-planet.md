@@ -68,11 +68,8 @@ _Message from ₯ to ₻:_ Or as it was portrayed by our Signaler kin in orbit o
 _Message from ₻ to ₯:_ So true! Ahh, a cluster-kin has just reminded us… here’s a poem we wrote during Seeker training. At this moment it seems funny now how emotional I got about that static planet. Trying to convey what I imagined fungi to feel like being stuck on a planet without convergent bacterial partners. We thought you’d laugh at this… but that you’d also understand:
 =======
 _Message from ₻ to ₯:_ So true! Ahh, a cluster-kin has just reminded us… here’s a poem we wrote during Seeker training. At this moment it seems funny now how emotional I got about that static planet. Trying to convey what I imagined fungi to feel like being stuck on a planet without convergent bacterial partners. We thought you’d laugh at this… but that you’d also understand:
->>>>>>> ef3015ea48fa730231ab1f3b797290cdb1dff3b6
->>>>>>> 8b7299187bce21b376c9be33ed45ba93cd2f6a2d
 
                     	
-
 
 > _Small sad still spores_
 
