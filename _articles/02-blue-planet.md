@@ -64,9 +64,9 @@ All the memories are flowing among us at the camp. Remember being so absolutely 
 
 _Message from ₯ to ₻:_ Or as it was portrayed by our Signaler kin in orbit on asteroids. Back then, we thought their position in space removed them from all the liveliness here, but now, we are envious! From their position, they can relay Blue’s sensory changes to the energetic gradient before we can feel them on the surface.   
 
-<<<<<<< HEAD
+
 _Message from ₻ to ₯:_ So true! Ahh, a cluster-kin has just reminded us… here’s a poem we wrote during Seeker training. At this moment it seems funny now how emotional I got about that static planet. Trying to convey what I imagined fungi to feel like being stuck on a planet without convergent bacterial partners. We thought you’d laugh at this… but that you’d also understand:
-=======
+
 _Message from ₻ to ₯:_ So true! Ahh, a cluster-kin has just reminded us… here’s a poem we wrote during Seeker training. At this moment it seems funny now how emotional I got about that static planet. Trying to convey what I imagined fungi to feel like being stuck on a planet without convergent bacterial partners. We thought you’d laugh at this… but that you’d also understand:
 
                     	
