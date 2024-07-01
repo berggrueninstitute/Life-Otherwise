@@ -6,7 +6,7 @@ authors:
     - name: Gerardo Aldana
       bio: |
         Prof. Gerardo Aldana is a professor of Chicana/o Studies at UC Santa Barbara. He is the author of _Calculating Brilliance: An Intellectual History of Mayan Astronomy at Chich'en Itza_ (2022), and _The Apotheosis of Janaab Pakal: Science, History, and Religion at Classic Maya Palenque_ (2007), among other books and articles.
-full-title: "Citlalli In The Sky With Cnidaria"
+full-title: "Citlalli in the Sky With Cnidaria"
 location: Low Orbit
 planet: Earth
 year: 2029
@@ -176,7 +176,7 @@ _Mr. Guthrie:_ You’re not going to like this.
 
 _Professor Ruiz:_ Mmm… Memo worked at one time with an indigenous elder who used to say that to take ur-rationalities seriously—really seriously—you had to engage in plant medicines… psychedelics. Memo seems to have been doing this on the side, and one day it killed him.
 
-_Mr. Guthrie:_ Well, it wasn’t the psychedelics that killed him. From what we’ve been able to put together, it looks like one day he used a new connection for some LSD—which was unusual really for two reasons:  because he mainly avoided synthetics, and because he always used his one trusted connection. Turned out this LSD was laced with fentanyl.
+_Mr. Guthrie:_ Well, it wasn’t the psychedelics that killed him. From what we’ve been able to put together, it looks like one day he used a new connection for some LSD—which was unusual really for two reasons: because he mainly avoided synthetics, and because he always used his one trusted connection. Turned out this LSD was laced with fentanyl.
 
 [Inaudible]
 
@@ -185,7 +185,7 @@ _Mr. Guthrie:_ Well, it wasn’t the psychedelics that killed him. From what we�
 
 _President Jimenez:_ All right. Let’s get back to this term. It looks like we need to understand ‘ur-rationalities’?
 
-_Mr. Guthrie:_ Right…that’s what caught the attention of our intelligence community. You see Madam President, the idea of ur-rationalities wasn’t originally Memo’s idea.  He borrowed it from an elderly Mayan woman who we’ve had eyes on for decades.  
+_Mr. Guthrie:_ Right… that’s what caught the attention of our intelligence community. You see Madam President, the idea of ur-rationalities wasn’t originally Memo’s idea. He borrowed it from an elderly Mayan woman who we’ve had eyes on for decades.  
 
 _President Jimenez:_ An “elderly Mayan woman?” 
 
@@ -199,7 +199,7 @@ _Mr. Guthrie:_ Yes: X.I.L.O. J. Xiloj. In 1971, Xiloj attended a lecture by Rich
 
 _President Jimenez:_ Richard Feynman?
 
-_Mr. Guthrie:_ The physicist.  You know: “Surely You’re Joking, Mr. Feynman”? An intellectual giant.  Feynman Diagrams? Quantum electrodynamics? _That_ Feynman. 
+_Mr. Guthrie:_ The physicist. You know: “Surely You’re Joking, Mr. Feynman”? An intellectual giant. Feynman Diagrams? Quantum electrodynamics? _That_ Feynman. 
 
 _President Jimenez:_ Now physicists?
 
@@ -227,10 +227,10 @@ _Mr. Guthrie:_ Circumstances. The report says that in the 1950s, a Yuri Knorosov
 
 _President Jimenez:_ I know what the Dresden Codex is.
 
-_Mr. Guthrie:_ Right. Well, I most certainly did not. But hmm…so he, Knorosov, claimed to have “cracked the code” – that is, deciphered Mayan hieroglyphic writing. But he was Russian, and it was the Cold War, so American scholars rejected his work. Says here:
+_Mr. Guthrie:_ Right. Well, I most certainly did not. But hmm… so he, Knorosov, claimed to have “cracked the code”–that is, deciphered Mayan hieroglyphic writing. But he was Russian, and it was the Cold War, so American scholars rejected his work. Says here:
 
 
-> _“…the most respected Maya archaeologist at the time, Eric Thompson, wrote in review that Knorosov’s proposed decipherment “could be an authentic example of the effects of strict Party cooperation by a small group who work in research in Russia.  For the good of the Free World, it is hoped that it is so, as far as military research is concerned.”_
+> _“…the most respected Maya archaeologist at the time, Eric Thompson, wrote in review that Knorosov’s proposed decipherment “could be an authentic example of the effects of strict Party cooperation by a small group who work in research in Russia. For the good of the Free World, it is hoped that it is so, as far as military research is concerned.”_
 
 I don’t know anything about linguistics, but that sounds like a political response to me. In any case, then in 1960… right, Tatiana Proskouriakoff—another Russian… no… wait just a second… “a Mayanist of Russian descent,” but an American citizen—she cracked “a key historical thread within Mayan hieroglyphic inscriptions more broadly.”  
 
@@ -308,7 +308,7 @@ Okay… redacted… redacted… and then:
 
 > _During his talk, an alternative thought occurred to mesomething I’ve only had glances of in the corners of my mind. What if mathematics is just one language invented and used by humansnot a language of the universe like Galileo or Einstein thought. That brought to mind a dog I saw while I was walking to the lecture hall this morning. I remember seeing it playing on the lawn, catching a tennis ball. That dog wasn’t solving polynomial expressions in its brain to predict a projectile trajectory, but it caught the ball easily. Does a human brain solve polynomials to interact with projectiles? Or is math more like a secondary human tooland other creatures have their own cognitive tools, even for performing similar actions. This might mean that math is part of a construct, part of human rationality, but that’s not a rationality that all creatures engage._
 
-_Professor Ruiz:_ Honestly, that is incredible to hear. I have researched this history and I thought I understood what Xiloj was doing. But how she first started contemplating what Memo worked with? That is totally new…to me.
+_Professor Ruiz:_ Honestly, that is incredible to hear. I have researched this history and I thought I understood what Xiloj was doing. But how she first started contemplating what Memo worked with? That is totally new… to me.
 
 _President Jimenez:_ Go on…
 
@@ -326,7 +326,7 @@ _Professor Ruiz:_ Right. In English we would translate that as ‘I am your serv
 
 _President Jimenez:_ That’s an odd example.
 
-_Professor Ruiz:_ Yes… I agree. But look. In English, we build this sentence in a noun-centered way.  Servant is a noun that is possessed by you, and I fill that position. “Am”“to be” – is what defines the relationships between the nouns. In Yucatec, though, it is one word. The ‘a’ is a prefix and the ‘en’ is a suffix to the main root _‘winik_,’ which means person. But it is really not even that noun-ish because _winik_ personhood can be human, but it can also refer to members of other animate populations as well. So in Yucatec, ‘a’ refers to you and ‘en’ refers to me, so we might more strictly translate this as ‘your-person-me.’  Which is heavily conditional—juxtaposition and context. Is this making sense?
+_Professor Ruiz:_ Yes… I agree. But look. In English, we build this sentence in a noun-centered way.  Servant is a noun that is possessed by you, and I fill that position. “Am”“to be” – is what defines the relationships between the nouns. In Yucatec, though, it is one word. The ‘a’ is a prefix and the ‘en’ is a suffix to the main root _‘winik_,’ which means person. But it is really not even that noun-ish because _winik_ personhood can be human, but it can also refer to members of other animate populations as well. So in Yucatec, ‘a’ refers to you and ‘en’ refers to me, so we might more strictly translate this as ‘your-person-me.’ Which is heavily conditional—juxtaposition and context. Is this making sense?
 
 _President Jimenez:_ So it’s not at all transparent why we had eyes on her. On Xiloj. Great. Where’s Memo’s project in all of this?
 
@@ -365,7 +365,7 @@ But wait. Who was heMemothat he got to meet this Mayan elder? This member of a s
 
 _Mr. Guthrie:_ Kind of a mystery. He was nowhere on our radar. Seemed an unconventional vagabond type.  Engineering degree. No steady work. Took jobs to save money for travelingmostly through Latin America. His early notes describe his wanderings as “weaving a cultural jacket,” so that he can “wear his memories for warmth” when he returns to the U.S. But here you go… from his travel journal. 
 
-_Professor Ruiz:_ Wait…why do you have his journal?! His parents were looking desperately for that.
+_Professor Ruiz:_ Wait… why do you have his journal?! His parents were looking desperately for that.
 
 [Inaudible]
 
@@ -378,7 +378,7 @@ _Mr. Guthrie:_ This is from July 6, 2020.
 > _Caye Caulker. Wrote up more notes on this wild idea I had in class last Spring. Yes, Artificial Neural Networks_ _are extremely over-simplified models of neural networks in our brains. But even very simple ANNs can perform logical operations—they seem made for that. Arithmetic is also incredibly straightforward with very tiny networks. But it goes a lot further since large ANNs can operate as dynamical systems and in clusters they perform operations very much like mathematical functions. Back-propagation algorithms are like embodiments of minimization operations._
 
 
-> _So might it be possible that mathematicians create and have created math as a language by a form of meditation on their own neural processes? Math as Meditation?  We can perceive and describe our emotions, which are just biochemical reactions…why wouldn’t we be able to perceive and describe our neural operations?_
+> _So might it be possible that mathematicians create and have created math as a language by a form of meditation on their own neural processes? Math as Meditation? We can perceive and describe our emotions, which are just biochemical reactions…why wouldn’t we be able to perceive and describe our neural operations?_
 
 
 > _Also met an intriguing woman at a restaurant on the beach today—Sandra Xiloj. Apparently, she lives here now, but is from Guatemala. She says she may have a granddaughter that I’d like to meet?”_
@@ -395,10 +395,10 @@ _Mr. Guthrie:_ I thought she was indigenous?
 
 _President Jimenez:_ I’m sorry but we are NOT having this conversation right now.
 
-_Mr. Guthrie:_ Right… right… umm…Here’s one more unredacted section from a few days later. Again, I quote from July 9, 2020:
+_Mr. Guthrie:_ Right… right… umm… Here’s one more unredacted section from a few days later. Again, I quote from July 9, 2020:
 
 
-> Memo:_“So if math isn’t just human invention. If math results from a form of meditation—not some universal language— and if rationalities take forms appropriate to the life-forms in which they are embedded, then doesn’t this fit with indigenous cosmologies built upon pantheism—God is in everything?  Is this what Xiloj is getting at?_
+> Memo:_“So if math isn’t just human invention. If math results from a form of meditation—not some universal language— and if rationalities take forms appropriate to the life-forms in which they are embedded, then doesn’t this fit with indigenous cosmologies built upon pantheism—God is in everything? Is this what Xiloj is getting at?_
 
 
 > _Today we talked about the ramifications all of this might have for modern notions of the nature of the universe. She thinks that what folks have been calling “pantheism” might be better translated today as starting with a field of agency which is just as fundamental as the strong or weak nuclear forces. A field of agency as fundamental as electromagnetism. Just pure agency. Not consciousness. The force of will. What if, she wonders, time as we think about it in a Western perspective is simply an oversimplification—a dimensional reduction—of this agency field?  Sure, it would be easy to model non-living objects with a single time dimension—a baseball has no agency of its own, so to model it, we strip down the agency field to the single dimension of time. But modeling living organisms would require the full multi-dimensional (5-tensor?) field of agency?_
@@ -436,7 +436,7 @@ _Mr. Guthrie:_ We may have had a hand in that, Madam President.
 
 _President Jimenez:_ Hmh.
 
-_Professor Ruiz:_ And this is when I was pulled into the project. According to NASA, when they heard about the event, some people very tentatively suggested that the data might reflect something intentional. A kind of non-random symbolic transmission. At least one idea was that all of the bioluminescent reactions reflected an intentional message transmitted through outer-space and intercepted by _Ho’ Chan Ajaw X1_’s ur-rational ecosystem.  Some suspected it might have been generated by an as-yet unknown military technology originating from the Asian subcontinent…aha!  I see, Mr. Guthrie… But the spacecraft was in orbit around the Moon on its dark side at the time, so impossible. Anyway, that is what they wanted me to investigate: was it a message or not?
+_Professor Ruiz:_ And this is when I was pulled into the project. According to NASA, when they heard about the event, some people very tentatively suggested that the data might reflect something intentional. A kind of non-random symbolic transmission. At least one idea was that all of the bioluminescent reactions reflected an intentional message transmitted through outer-space and intercepted by _Ho’ Chan Ajaw X1_’s ur-rational ecosystem. Some suspected it might have been generated by an as-yet unknown military technology originating from the Asian subcontinent…aha! I see, Mr. Guthrie… But the spacecraft was in orbit around the Moon on its dark side at the time, so impossible. Anyway, that is what they wanted me to investigate: was it a message or not?
 
 My team was given access to all of the data recorded. We built a number of deep-learning engines to assess whether or not there appeared to be enough regularity for the patterns to constitute an expression within some known or unknown language.  
 
@@ -466,9 +466,9 @@ You can see there that with a 48% probability, our AI came back with the identif
 
 So we reported these results in the memo and received silence. Well, silence and a gag order.
 
-_Ms. Lopez:_ I have to be missing something. You’re telling us that you’re worried that this system, this ecosystem, accidentally picked up a bunch of signals that have somesomewhat decentchance of being interpreted as a message from extraterrestrials.  That’s what you’re concerned about?
+_Ms. Lopez:_ I have to be missing something. You’re telling us that you’re worried that this system, this ecosystem, accidentally picked up a bunch of signals that have somesomewhat decentchance of being interpreted as a message from extraterrestrials. That’s what you’re concerned about?
 
-Sure, I remember all the excitement in 2021 when the Pentagon released Navy jet video recordings of UFOs.  But in this case, at the very least, we have plausible deniability about anything they might suggest about a conspiracy. To quote your political nemesis, Madam President: “it’s a nothing-burger.”
+Sure, I remember all the excitement in 2021 when the Pentagon released Navy jet video recordings of UFOs. But in this case, at the very least, we have plausible deniability about anything they might suggest about a conspiracy. To quote your political nemesis, Madam President: “it’s a nothing-burger.”
 
 _Mr. Guthrie:_ I’m afraid it’s not, Madam President.  
 
@@ -514,7 +514,7 @@ _Dr. Magdaleno:_ Yes, Madam President. Here it is:
 > _But that may have changed._
 
 
-> _Some among us propose that your new AI technologies constitute the basis of a non-human species that may serve as a competing ur-rationality. We observe that you have given elements of this AI species access to all of your most asymmetrically powerful tools and technologies. You cannot now simply “turn it off,” nor can you assume that it won’t be maliciously developed and deployed if you were to attempt to destroy it. This suggests that you must learn to collaborate with—rather than conquer —this AI species in order to survive._
+> _Some among us propose that your new AI technologies constitute the basis of a non-human species that may serve as a competing ur-rationality. We observe that you have given elements of this AI species access to all of your most asymmetrically powerful tools and technologies. You cannot now simply “turn it off,” nor can you assume that it won’t be maliciously developed and deployed if you were to attempt to destroy it. This suggests that you must learn to collaborate with—rather than conquer— this AI species in order to survive._
 
 
 > _Some among us speculate that if humans can actually learn collaboration for mutual benefit with AI, that may lead to new relationships with other species on your planet. And if that becomes the case, then we may find alternate interest in reaching out to you._
