@@ -424,7 +424,7 @@ _Professor Ruiz:_ And so—finally—that’s what brings us to our situation to
 
 [Delay]
 
-_Dr. Magdaleno:_ Right. And very early on, the work was successful and he had plenty of grant money, so he recruited two other graduate students to work with him, along with me as a postdoc and pilot for the mission.  We continued the project, along with his original advisor. We launched the space craft the _Ho’ Chan Ahaw X1_—on September 16, 2028.  
+_Dr. Magdaleno:_ Right. And very early on, the work was successful and he had plenty of grant money, so he recruited two other graduate students to work with him, along with me as a postdoc and pilot for the mission.  We continued the project, along with his original advisor. We launched the spacecraft the _Ho’ Chan Ahaw X1_—on September 16, 2028.  
 
 And that was successful, really the whole operation was, but we didn’t get any attention in the press or even much on social media at the time. Even when everything went haywire “the event” on October 31, 2028. Still it stayed quiet.  
 
