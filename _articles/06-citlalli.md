@@ -271,7 +271,7 @@ _President Jimenez:_ Right. Go on with the translation.
 _Mr. Guthrie:_ 
 
 
-> Xiloj: “_17 May 1971. Caltech. Arrived at the talk early. Gustavo agreed to accompany me, which I was pleased with. El Sindicato said it was for security, but I’m beginning to enjoy his company. We kept to the back of the roomthe audience was large, and everyone was talking, animated, excited. Most looked like older professors, but there were plenty of students, and interestingly many young women. I felt conspicuous, so we stayed in the back._
+> Xiloj: “_17 May 1971. Caltech. Arrived at the talk early. Gustavo agreed to accompany me, which I was pleased with. El Sindicato said it was for security, but I’m beginning to enjoy his company. We kept to the back of the room—the audience was large, and everyone was talking, animated, excited. Most looked like older professors, but there were plenty of students, and interestingly many young women. I felt conspicuous, so we stayed in the back._
 
 
 > _“F[eynman] started talking about the scribes who wrote the Venus Table. ‘They didn’t understand the why’ —he says. It was a bit disappointing that such a powerful intellect had nothing new to say about the Dresden Codex. He talked about the tracking of Venus’s visibility, but Förstemann published that in the nineteenth century. He referred to corrections for long-term observations, but that was Teeple’s work in the 1930s. Gustavo says he’s just using our ancestors as a prop, so he elbowed me to get up and leave. But this was my chance to hear F lecture on modern physics, so I pulled Gustavo back down into his seat.”_
@@ -306,7 +306,7 @@ _Mr. Guthrie:_ Quoting Xiloj. Yes. This is from the same date, May 17th. Again, 
 Okay… redacted… redacted… and then:
 
 
-> _During his talk, an alternative thought occurred to mesomething I’ve only had glances of in the corners of my mind. What if mathematics is just one language invented and used by humansnot a language of the universe like Galileo or Einstein thought. That brought to mind a dog I saw while I was walking to the lecture hall this morning. I remember seeing it playing on the lawn, catching a tennis ball. That dog wasn’t solving polynomial expressions in its brain to predict a projectile trajectory, but it caught the ball easily. Does a human brain solve polynomials to interact with projectiles? Or is math more like a secondary human tooland other creatures have their own cognitive tools, even for performing similar actions. This might mean that math is part of a construct, part of human rationality, but that’s not a rationality that all creatures engage._
+> _During his talk, an alternative thought occurred to mesomething I’ve only had glances of in the corners of my mind. What if mathematics is just one language invented and used by humans—not a language of the universe like Galileo or Einstein thought. That brought to mind a dog I saw while I was walking to the lecture hall this morning. I remember seeing it playing on the lawn, catching a tennis ball. That dog wasn’t solving polynomial expressions in its brain to predict a projectile trajectory, but it caught the ball easily. Does a human brain solve polynomials to interact with projectiles? Or is math more like a secondary human tool—and other creatures have their own cognitive tools, even for performing similar actions. This might mean that math is part of a construct, part of human rationality, but that’s not a rationality that all creatures engage._
 
 _Professor Ruiz:_ Honestly, that is incredible to hear. I have researched this history and I thought I understood what Xiloj was doing. But how she first started contemplating what Memo worked with? That is totally new… to me.
 
@@ -326,7 +326,7 @@ _Professor Ruiz:_ Right. In English we would translate that as ‘I am your serv
 
 _President Jimenez:_ That’s an odd example.
 
-_Professor Ruiz:_ Yes… I agree. But look. In English, we build this sentence in a noun-centered way.  Servant is a noun that is possessed by you, and I fill that position. “Am”“to be” – is what defines the relationships between the nouns. In Yucatec, though, it is one word. The ‘a’ is a prefix and the ‘en’ is a suffix to the main root _‘winik_,’ which means person. But it is really not even that noun-ish because _winik_ personhood can be human, but it can also refer to members of other animate populations as well. So in Yucatec, ‘a’ refers to you and ‘en’ refers to me, so we might more strictly translate this as ‘your-person-me.’ Which is heavily conditional—juxtaposition and context. Is this making sense?
+_Professor Ruiz:_ Yes… I agree. But look. In English, we build this sentence in a noun-centered way.  Servant is a noun that is possessed by you, and I fill that position. “Am”—“to be” – is what defines the relationships between the nouns. In Yucatec, though, it is one word. The ‘a’ is a prefix and the ‘en’ is a suffix to the main root _‘winik_,’ which means person. But it is really not even that noun-ish because _winik_ personhood can be human, but it can also refer to members of other animate populations as well. So in Yucatec, ‘a’ refers to you and ‘en’ refers to me, so we might more strictly translate this as ‘your-person-me.’ Which is heavily conditional—juxtaposition and context. Is this making sense?
 
 _President Jimenez:_ So it’s not at all transparent why we had eyes on her. On Xiloj. Great. Where’s Memo’s project in all of this?
 
@@ -361,9 +361,9 @@ You see, by combining her perspective on language with her perspective on math, 
 
 _President Jimenez:_ Got it. A Mayan worldview might have different species communicating through ur-rationalities.  
 
-But wait. Who was heMemothat he got to meet this Mayan elder? This member of a secret society?
+But wait. Who was he—Memo—that he got to meet this Mayan elder? This member of a secret society?
 
-_Mr. Guthrie:_ Kind of a mystery. He was nowhere on our radar. Seemed an unconventional vagabond type.  Engineering degree. No steady work. Took jobs to save money for travelingmostly through Latin America. His early notes describe his wanderings as “weaving a cultural jacket,” so that he can “wear his memories for warmth” when he returns to the U.S. But here you go… from his travel journal. 
+_Mr. Guthrie:_ Kind of a mystery. He was nowhere on our radar. Seemed an unconventional vagabond type.  Engineering degree. No steady work. Took jobs to save money for traveling—mostly through Latin America. His early notes describe his wanderings as “weaving a cultural jacket,” so that he can “wear his memories for warmth” when he returns to the U.S. But here you go… from his travel journal. 
 
 _Professor Ruiz:_ Wait… why do you have his journal?! His parents were looking desperately for that.
 
@@ -410,7 +410,7 @@ _President Jimenez:_ Okay. Now we’re in the woods. Let’s get back to how thi
 
 _Professor Ruiz:_ And so…
 
-_Dr. Magdaleno:_ Well, it’s actually the next step because that’s when they got into a fightor a serious disagreementand Memo came back to the States. Because Xiloj…
+_Dr. Magdaleno:_ Well, it’s actually the next step because that’s when they got into a fightor a serious disagreement—and Memo came back to the States. Because Xiloj…
 
 Oh, I’m sorry, Professor. I didn’t mean to interrupt you.
 
@@ -418,15 +418,15 @@ _Professor Ruiz:_ No… please. Go ahead.
 
 [Delay]
 
-_Dr. Magdaleno:_ Okay, thanks. Right, well, they had a falling out because they had very different positions on which direction to go.  Xiloj apparently wanted to start from the beginning and re-derive the Standard Model of Physics using an agency field in place of time as a dimension. And Memo wanted to prove that ur-rationalities existed as something other than just an interesting metaphor. He thought they could form the basis of a new complex of experimental science. But obviously, Xiloj didn’t want to expose these indigenous theories to Western science. She thought they should be maintained in indigenous communities for indigenous needs. Memo thought it could be useful beyond thatfor, like, saving the environment. That’s when he came back to the US to apply to graduate school.
+_Dr. Magdaleno:_ Okay, thanks. Right, well, they had a falling out because they had very different positions on which direction to go.  Xiloj apparently wanted to start from the beginning and re-derive the Standard Model of Physics using an agency field in place of time as a dimension. And Memo wanted to prove that ur-rationalities existed as something other than just an interesting metaphor. He thought they could form the basis of a new complex of experimental science. But obviously, Xiloj didn’t want to expose these indigenous theories to Western science. She thought they should be maintained in indigenous communities for indigenous needs. Memo thought it could be useful beyond that—for, like, saving the environment. That’s when he came back to the US to apply to graduate school.
 
 _Professor Ruiz:_ And so—finally—that’s what brings us to our situation today. Memo decided against his first inclination, which was to attempt to create symbolic languages for ur-rational communication. He hoped instead to engineer visual or audio signals that would indicate that intentional ur-rational communication between non-human species was occurring. That’s what he was able to build in the lab.
 
 [Delay]
 
-_Dr. Magdaleno:_ Right. And very early on, the work was successful and he had plenty of grant money, so he recruited two other graduate students to work with him, along with me as a postdoc and pilot for the mission.  We continued the project, along with his original advisor. We launched the spacecraftthe _Ho’ Chan Ahaw X1_—on September 16, 2028.  
+_Dr. Magdaleno:_ Right. And very early on, the work was successful and he had plenty of grant money, so he recruited two other graduate students to work with him, along with me as a postdoc and pilot for the mission.  We continued the project, along with his original advisor. We launched the spacecraft—the _Ho’ Chan Ahaw X1_—on September 16, 2028.  
 
-And that was successful, really the whole operation was, but we didn’t get any attention in the press or even much on social media at the time. Even when everything went haywire“the event” on October 31, 2028. Still it stayed quiet.  
+And that was successful, really the whole operation was, but we didn’t get any attention in the press or even much on social media at the time. Even when everything went haywire—“the event”—on October 31, 2028. Still it stayed quiet.  
 
 [Inaudible]
 
@@ -444,11 +444,11 @@ _President Jimenez:_ So now we’re there. The leaked memo.
 
 _Professor Ruiz:_ Almost. Because again, we didn’t know if it was a message or not. And it was not trivial.  From the very beginning, though, two factors became critical when we attempted to code the data. We concentrated on the following variables: the species of life-form, the biochemical mechanism for producing visible light, the segment of the light spectrum, and the period of the flashes of emitted light. Those were the key variables, although we included others.  
 
-We found out right away that our results were very sensitive to changes in species adjacency as well as the bin size for bioluminescent flashesthat is, how much of the EM spectrum we used for a bin. The first part… umm…ruffled some feathers in our group because what we takeI mean scientificallywhat we take to be adjacent species taxonomically did not produce intelligible results. We only found interpretable results when we freed up the relationships and ran all possible adjacencies, independent of our taxonomic preconceptions.  
+We found out right away that our results were very sensitive to changes in species adjacency as well as the bin size for bioluminescent flashes—that is, how much of the EM spectrum we used for a bin. The first part… umm…ruffled some feathers in our group because what we takeI mean scientifically—what we take to be adjacent species taxonomically did not produce intelligible results. We only found interpretable results when we freed up the relationships and ran all possible adjacencies, independent of our taxonomic preconceptions.  
 
 _President Jimenez:_ You ran these deep learning engines in your lab on campus? Guthrie, would that have been secure?
 
-_Professor Ruiz:_ Actually, NASA helped us out here. Given the extensive computation necessary, we needed access to a supercomputer. Fortunately, I have connections in Mexico, so through NASA, the Mexican government gave us unlimited use of one of theirs, Kan Balam. It’s an older modelnot with the capacity of the latest supercomputersbut because we did not have to get in a queue and schedule our runs, it proved the best possible opportunity.
+_Professor Ruiz:_ Actually, NASA helped us out here. Given the extensive computation necessary, we needed access to a supercomputer. Fortunately, I have connections in Mexico, so through NASA, the Mexican government gave us unlimited use of one of theirs, Kan Balam. It’s an older model—not with the capacity of the latest supercomputersbut because we did not have to get in a queue and schedule our runs, it proved the best possible opportunity.
 
 _President Jimenez:_ Mexico knows something about this?
 
@@ -460,17 +460,17 @@ _Professor Ruiz:_ And yes. That is what did it. We used this layering of data to
 
 Our first results were productive and generated a probability that the signals were non-random: 92%. Our second results suggested with 78% probability that the signals were regular and sufficiently patterned to constitute an expression in a language. That’s what we were comfortable with, and that is what we first reported back to NASA.
 
-But they came back with pressure to decipher what the expression might have been. For that, we were clear that the dataset was far too small to attempt a decipherment were it not in a known language. But they told us to try anyway. So with that caveat in mind, we ran our data through all known human languagesand we included constructed languages, like Sindarin and Klingon, to explore any and all possibilities. The results were surprising. And that is what was in the memo that now you’re telling me was leaked.
+But they came back with pressure to decipher what the expression might have been. For that, we were clear that the dataset was far too small to attempt a decipherment were it not in a known language. But they told us to try anyway. So with that caveat in mind, we ran our data through all known human languages—and we included constructed languages, like Sindarin and Klingon, to explore any and all possibilities. The results were surprising. And that is what was in the memo that now you’re telling me was leaked.
 
-You can see there that with a 48% probability, our AI came back with the identification of the song lyrics “strewn with time’s dead flowers, bereft in deathly bloom,” along with their musical accompaniment, and two phrases also in English: “nihilistic inspiration” and “narcissistic species individualism.” No other possibilitieseven, for example, as images or soundscame back with anything higher than 2% probability of being accurate and none could make sense of the entire data set.
+You can see there that with a 48% probability, our AI came back with the identification of the song lyrics “strewn with time’s dead flowers, bereft in deathly bloom,” along with their musical accompaniment, and two phrases also in English: “nihilistic inspiration” and “narcissistic species individualism.” No other possibilities—even, for example, as images or sounds—came back with anything higher than 2% probability of being accurate and none could make sense of the entire data set.
 
 So we reported these results in the memo and received silence. Well, silence and a gag order.
 
-_Ms. Lopez:_ I have to be missing something. You’re telling us that you’re worried that this system, this ecosystem, accidentally picked up a bunch of signals that have somesomewhat decentchance of being interpreted as a message from extraterrestrials. That’s what you’re concerned about?
+_Ms. Lopez:_ I have to be missing something. You’re telling us that you’re worried that this system, this ecosystem, accidentally picked up a bunch of signals that have some—somewhat decent—chance of being interpreted as a message from extraterrestrials. That’s what you’re concerned about?
 
 Sure, I remember all the excitement in 2021 when the Pentagon released Navy jet video recordings of UFOs. But in this case, at the very least, we have plausible deniability about anything they might suggest about a conspiracy. To quote your political nemesis, Madam President: “it’s a nothing-burger.”
 
-_Mr. Guthrie:_ I’m afraid it’s not, Madam President.  
+_Mr. Guthrie:_ I’m afraid it’s not, Madam President.
 
 _Professor Ruiz:_ As of yesterday morning, it would have been that simple. But as of yesterday afternoon, that has changed entirely. Yesterday afternoon, we received proof that we are right. Not just probably right.
 
