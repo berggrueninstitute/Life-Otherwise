@@ -51,7 +51,7 @@ You are here today to help humanity assess what we’re looking at. Your partici
 
 By the way, if you were up late, you—or your children?—may have already witnessed some of the social media response to the content of the leaked memo. Slides? Sara?
 
-_Chief of Staff Sara Lopez:_ These social media posts are all AI generated images…You see an octopus in an aquarium, next to a porthole window, with Earth in the background. Then there are these song lyrics, “Strewn with time’s dead flowers, bereft in deathly bloom.”  We don’t know what the hell that means.
+_Chief of Staff Sara Lopez:_ These social media posts are all AI generated images… You see an octopus in an aquarium, next to a porthole window, with Earth in the background. Then there are these song lyrics, “Strewn with time’s dead flowers, bereft in deathly bloom.”  We don’t know what the hell that means.
 
 _President Jimenez:_ You’ll notice that some of the posts are bald political angling—which actually is providing us with a little extra time to respond. Morning pundits are suggesting that the memo itself may have been created by my political opponents so that the entire situation is simply fake news. That’s providing some cover, but once people start digging, they’ll find a trail.
 
@@ -107,7 +107,7 @@ _President Jimenez:_ Right. I’m being reminded that I should also have introdu
 
 _Professor Ruiz:_ Yes, thank you Mrs. President…
 
-_Ms. Lopez:_ Ms.…or Madam.
+_Ms. Lopez:_ Ms.… or Madam.
 
 _Professor Ruiz:_ Excuse me. Ms. President. Well, as you can see in my memo, we were not certain at first that there was any message at all or even that it was a legitimate transmission. That’s what we were charged with finding out. My team and I were given all of the data from “the event” and NASA asked that we analyze it to see if in fact it could be a message… or if it was just a fluke, random set of patterns. Which is not impossible.  You know Ramsey Theory tells us that patterns emerge in randomness even if they are not meaningful…
 
@@ -515,7 +515,7 @@ _Dr. Magdaleno:_ Yes, Madam President. Here it is:
 > _But that may have changed._
 
 
-> _Some among us propose that your new AI technologies constitute the basis of a non-human species that may serve as a competing ur-rationality. We observe that you have given elements of this AI species access to all of your most asymmetrically powerful tools and technologies. You cannot now simply “turn it off,” nor can you assume that it won’t be maliciously developed and deployed if you were to attempt to destroy it. This suggests that you must learn to collaborate with—rather than conquer— this AI species in order to survive._
+> _Some among us propose that your new AI technologies constitute the basis of a non-human species that may serve as a competing ur-rationality. We observe that you have given elements of this AI species access to all of your most asymmetrically powerful tools and technologies. You cannot now simply “turn it off,” nor can you assume that it won’t be maliciously developed and deployed if you were to attempt to destroy it. This suggests that you must learn to collaborate with—rather than conquer—this AI species in order to survive._
 
 
 > _Some among us speculate that if humans can actually learn collaboration for mutual benefit with AI, that may lead to new relationships with other species on your planet. And if that becomes the case, then we may find alternate interest in reaching out to you._
