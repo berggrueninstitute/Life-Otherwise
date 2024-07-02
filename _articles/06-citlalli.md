@@ -105,7 +105,7 @@ _President Jimenez:_ Ladies and gentlemen, there’s your octopus in space. Now,
 
 _President Jimenez:_ Right. I’m being reminded that I should also have introduced Dr. Jose Maria Ruiz, professor of Indigenous Studies at UC Santa Barbara, who is here with us today. He, too, is part of this team, and it was actually his memo of April 14 [2029], updating their work that was leaked last night. Professor Ruiz?
 
-_Professor Ruiz:_ Yes, thank you Mrs. President…
+_Professor Ruiz:_ Yes, thank you, Mrs. President…
 
 _Ms. Lopez:_ Ms.… or Madam.
 
