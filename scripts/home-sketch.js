@@ -10,7 +10,7 @@ var links;
 let spaceOpacity = 0
 let notScroll = false;
 let notScrollTimer
-let mobilePlanetAdj = (isTouchDevice) ? 150 : 0
+let mobilePlanetAdj = (isTouchDevice()) ? 150 : 0
 touchStartCustom = false;
 
 var speed;
